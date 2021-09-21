@@ -1,10 +1,16 @@
 # grupo_6_nombre
 
-Temática del Market Place: Venta delibros de fantasía, terror, novelas policiales, misterio.
+Temï¿½tica del Market Place: Venta delibros de fantasï¿½a, terror, novelas policiales, misterio.
 Nuestra Audiencia:
 Nuestra Oferta:
 Integrantes del Grupo:
-Clara Guastavino:
+Clara Guastavino: Tengo 18 aÃ±os, estudio de programacion web y recursos humanos. Me gusta leer y que las cosas me salgan bien.
 Amanda Zerpa:
 Leandro Larrama:
-Sofía Maltoni:
+Sofï¿½a Maltoni:
+
+Sitios de referencia:
+-Por productos : https://grupolibros.com.uy/
+-Por clientes : https://www.bookshop.com.uy/
+-Por estÃ©tica : https://www.agathachristie.com/
+-Por funcionalidades :   https://www.bookdepository.com/es/
