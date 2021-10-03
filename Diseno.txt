@@ -1,0 +1,16 @@
+Información de Diseño
+
+Colores: 
+#BF8A26
+#262120
+#8C1B1B
+#D9D9D9
+#0D0D0D
+
+Tipografía:
+Gemunu Libre
+Roboto
+
+Ejemplo: https://fonts.google.com/specimen/Gemunu+Libre?preview.size=18&preview.text_type=paragraph#pairings
+
+Wireframe: https://marvelapp.com/prototype/chh2466
