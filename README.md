@@ -16,6 +16,9 @@ Sitios de referencia para el proyecto:
 .Por funcionalidad : https://www.bookdepository.com/es/
 .Por estetica :  https://www.agathachristie.com/
 
+Repositorio de GitHub:
+https://github.com/ClaraGuasta/grupo_1_SKLibros
+
 
 
 
