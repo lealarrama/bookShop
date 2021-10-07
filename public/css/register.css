@@ -1,0 +1,63 @@
+.registro{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.registrate-nuestra-web{
+    background-color: #262120;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-grow: 0.5;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+}
+.inputs-registro{
+    height: 5%;
+    max-width: 50%;
+    margin: 3%;
+    padding: 4px;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-family: 'Gemunu Libre',sans-serif;
+    font-size: 1.1rem;
+}
+.boton-registrarme{
+    height: 40px;
+    width: 120px;
+    margin: 2%;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+}
+.registrate-con{
+    background-color: #8C1B1B;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-grow: 1;
+    align-self: stretch;
+    min-width: 70%;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+}
+.boton-registrarme-con{
+    height: 8%;
+    width: 80%;
+    margin: 2%;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-boton{
+    font-size: large;
+    vertical-align: middle;
+}
