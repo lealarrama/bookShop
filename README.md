@@ -19,6 +19,12 @@ Sitios de referencia para el proyecto:
 Repositorio de GitHub:
 https://github.com/ClaraGuasta/grupo_1_SKLibros
 
+Tablero Trello:
+https://trello.com/b/l99TP01u/sprint-2
+
+Invitación Tablero Trello:
+https://trello.com/invite/b/l99TP01u/9588cbea4e261ddc487386cb95f3fd16/sprint-2
+
 
 
 
