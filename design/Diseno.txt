@@ -1,4 +1,4 @@
-Información de Diseño
+Informaciï¿½n de Diseï¿½o
 
 Colores: 
 #BF8A26
@@ -7,9 +7,11 @@ Colores:
 #D9D9D9
 #0D0D0D
 
-Tipografía:
+Tipografï¿½a:
 Gemunu Libre
 Roboto
+
+Enlace: <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
 Ejemplo: https://fonts.google.com/specimen/Gemunu+Libre?preview.size=18&preview.text_type=paragraph#pairings
 

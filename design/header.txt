@@ -1,4 +1,60 @@
-*{
+/////////HTML/////////
+
+
+<header>
+        <div class="header-top-bar">
+            <img src="/imgs/logoecommerce.png" alt="" class="logo">
+            <nav class="nav-header-top-bar">
+                <ul class="lista-top-header">
+                    <li class="li-header-top">
+                        <a href="#" class="link-registrate">Regístrate</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="#" class=" link-inicia-sesion">Inicia Sesión</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom-bar">
+            <nav>
+                <ul class="lista-bottom-header">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="#" class=" links-bottom-header-nav">
+                           Categorías
+                           <i class="fas fa-sort-down"></i>
+                       </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="links-bottom-header-nav link-informacion">
+                            Información
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar libros" class="input-buscador">
+                <button class="boton-buscador">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    /////CSS//////
+
+    *{
     margin: 0px;
     padding: 0px;
 }

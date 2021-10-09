@@ -1,0 +1,7 @@
+Icono Google: <i class="fab fa-google">
+Icono FaceBook: <i class="fab fa-facebook-f">
+Icono Twitter: <i class="fab fa-twitter">
+Icono LinkedIn:<i class="fab fa-linkedin-in">
+
+Icono carrito:<i class="fas fa-shopping-cart"></i>
+Icono home: <i class="fas fa-home"></i>
