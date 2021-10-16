@@ -32,5 +32,5 @@ app.get("/login", function(req, res){
 })
 
 app.listen(RUTA, function(){
-    console.log("Servidor levantado en puerto 3000")
+    console.log("Servidor levantado en puerto 3030")
 });
