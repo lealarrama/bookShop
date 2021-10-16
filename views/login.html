@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-top-bar">
-            <img src="/imgs/logoecommerce.png" alt="" class="logo">
+            <img src="/img/logoecommerce.png" alt="" class="logo">
             <nav class="nav-header-top-bar">
                 <ul class="lista-top-header">
                     <li class="li-header-top">
@@ -59,19 +59,43 @@
             </div>
         </div>
     </header>
-    <form class="create-form">
-        <h2 class="titulo-principal">Inicia sesión</h2>
-        <div class="control-formulario">
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="control">
+
+    <main>
+        <div class="contenedor">
+            <form class="create-form">
+                <h2 class="titulo-principal">Inicia sesión</h2>
+                <div class="control-formulario">
+                    <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="control">
+                </div>
+                <div class="control-formulario">
+                    <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="control">
+                </div>
+                
+                <div class="checkbox">
+                    <form>
+                        <input type="checkbox" name="Recuerdame" id="Recuerdame">
+                        <label for= "Recuerdame">Recuerdame</label> 
+                    </form>
+                </div>
+
+                <div class="div-boton">
+                    <button type="submit"  class="boton-formulario">
+                        <a href="./">Ingresar</a>
+                    </button>
+                </div>
+                
+                <p>Olvidaste tu Contraseña?</p>
+                
+                <div class="div-boton">
+                    <button type="submit"  class="boton-registro">
+                        <a href="./">Registrarme</a>
+                    </button>
+                </div>
+                
+            </form>
+
         </div>
-        <div class="control-formulario">
-            <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="control">
-        </div>
-        <div class="div-boton">
-            <button type="submit"  class="boton-formulario">
-                <a href="./">Enviar</a>
-            </button>
-        </div>
-    </form>
+    </main>
+
 </body>
 </html>
