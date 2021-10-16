@@ -87,7 +87,7 @@
     background-color: #fff;
 }
 
-@media (min-width:769px){
+@media (min-width:450px){
     .links-bottom-header-nav{
         display: flex;
         margin-left: 60%;
@@ -103,7 +103,7 @@
     }
 }
 
-@media (min-width:1200px){
+@media (min-width:769px){
     header{
         font-size: 20px;
     }

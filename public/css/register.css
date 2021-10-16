@@ -47,8 +47,6 @@
     color:#262120;
     font-size: 18px;
 }
-
-
 .header-bottom-bar{
     background-color: #8C1B1B;
     display: flex;
@@ -89,7 +87,77 @@
     background-color: #fff;
 }
 
-@media (min-width:769px){
+
+
+/*REGISTRO*/
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 20px 0 ;
+}
+.registrate-nuestra-web{
+    background-color: #262120;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-grow: 0.5;
+    text-align: center;
+    color:white;
+    max-width: 80%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: 'Roboto',sans-serif;
+}
+.inputs-registro{
+    font-family: 'Gemunu Libre',sans-serif;
+    font-size: 1.3rem;
+    margin: 4% 0;
+    max-width: 55%;
+    padding-left: 15px;
+}
+.boton-registrarme{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+}
+.registrate-con{
+    background-color: #8C1B1B;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-grow: 0.5;
+    text-align: center;
+    color:white;
+    min-width: 80%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: 'Roboto',sans-serif;
+}
+.boton-registrarme-con{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    background-color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4% 0;
+    min-width: 60%;
+    border-radius: 30px;
+    height: 35px;
+}
+.logo-boton{
+    font-size: large;
+}
+
+
+/*MEDIA QUERIES*/
+/*TABLET*/
+@media (min-width:450px){
     .links-bottom-header-nav{
         display: flex;
         margin-left: 60%;
@@ -104,8 +172,8 @@
         margin-left: -70%;
     }
 }
-
-@media (min-width:1200px){
+/*LAPTOP*/
+@media (min-width:769px){
     header{
         font-size: 20px;
     }
@@ -118,80 +186,4 @@
     .li-header-top{
         font-size: 20px;
     }
-}
-
-
-
-
-
-
-
-
-/*REGISTRO*/
-
-
-
-
-.registro{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-}
-.registrate-nuestra-web{
-    background-color: #262120;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    flex-grow: 0.5;
-    text-align: center;
-    color:white;
-    font-family: 'Roboto',sans-serif;
-}
-.inputs-registro{
-    height: 5%;
-    max-width: 50%;
-    margin: 3%;
-    padding: 4px;
-    padding-left: 15px;
-    border-radius: 5px;
-    font-family: 'Gemunu Libre',sans-serif;
-    font-size: 1.1rem;
-}
-.boton-registrarme{
-    height: 40px;
-    width: 120px;
-    margin: 2%;
-    border-radius: 5px;
-    font-family: 'Roboto',sans-serif;
-    font-weight: bolder;
-}
-.registrate-con{
-    background-color: #8C1B1B;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    flex-grow: 1;
-    align-self: stretch;
-    min-width: 70%;
-    text-align: center;
-    color:white;
-    font-family: 'Roboto',sans-serif;
-}
-.boton-registrarme-con{
-    height: 8%;
-    width: 80%;
-    margin: 2%;
-    border-radius: 5px;
-    font-family: 'Roboto',sans-serif;
-    font-weight: bolder;
-    background-color: white;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.logo-boton{
-    font-size: large;
-    vertical-align: middle;
 }
