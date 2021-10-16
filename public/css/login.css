@@ -87,6 +87,83 @@
     margin-left: -15px;
     background-color: #fff;
 }
+/*main*/
+
+
+
+main{
+    background-color:white;
+}
+
+.contenedor{
+    background-color:#262120;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.titulo-principal{
+    text-align: center;
+    padding: 15px;
+    color:white;
+    font-family: Roboto;
+}
+
+input.control{
+    font-family: Gemunu Libre;
+    padding-left: 10px;
+    width: 55%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.control-formulario{
+text-align: center;
+padding: 15px;
+}
+.div-boton{
+    text-align: center;
+    
+}
+.boton-formulario{
+    background-color:#8C1B1B;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.boton-registro{
+    background-color:#8C1B1B;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+}
+p{
+    text-align: center;
+    color:white
+}
+
+.boton-registrarme {
+    text-align: center;
+
+}
+label {
+    color:white;
+}
+.checkbox{
+    text-align: center;
+}
+.div-boton a{
+    text-decoration: none;
+    color:white;    
+}
+
 
 /*MEDIA QUERIES*/
 /*TABLET*/
