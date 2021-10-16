@@ -88,6 +88,25 @@
     background-color: #fff;
 }
 
+.carrusel-top{
+    background-color:#262120;
+    padding:10px;
+}
+.carrusel-top a{
+    text-decoration:none;
+    color:#D9D9D9;
+    font-size:17px;
+}
+.carrusel-bottom img{
+    width:40%;
+
+}
+.carrusel-bottom{
+    width:100%;
+    background-color:#D9D9D9;
+}
+
+
 /*FOOTER*/
 
 /*MEDIA QUERIES*/
