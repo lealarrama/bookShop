@@ -136,6 +136,7 @@
 .input-buscador{
     border:none;
     border-radius: 5px;
+    padding-left:5px;
 }
 .boton-buscador{
     border: none;
