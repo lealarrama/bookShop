@@ -15,6 +15,54 @@
 
 <body>
     <header>
+        <div class="header-top-bar">
+            <img src="/img/logoecommerce.png" alt="" class="logo">
+            <nav class="nav-header-top-bar">
+                <ul class="lista-top-header">
+                    <li class="li-header-top">
+                        <a href="#" class="link-registrate">Regístrate</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="#" class=" link-inicia-sesion">Inicia Sesión</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom-bar">
+            <nav>
+                <ul class="lista-bottom-header">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class=" links-bottom-header-nav">
+                            Categorías
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="links-bottom-header-nav link-informacion">
+                            Información
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar libros" class="input-buscador">
+                <button class="boton-buscador">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
     </header>
     <main>
         <article>
@@ -33,17 +81,21 @@
                 <p>Suspenso</p>
             </div>
         </article>
-        <article>
+        <article class="noSeVeEnTablet">
+
             <div class="detalles">
-                <h2>Después</h2>
-                <img class="estrellas" src="/img/cuatro-estrellas.png">
-                <p>Formato papel, Español / Stephen King</p>
-                <div><img class="fotolibro" src="/img/despues.jpg"></div>
-                <div class="precio">
-                    <h2>ARS$1.999,99</h2>
+                <h2 class="tituloLibro">Después</h2>
+                <div class="costadoDerecho"><img class="estrellas" src="/img/cuatro-estrellas.png">
+                    <p>Formato papel, Español / Stephen King</p>
                 </div>
-                <div class="boton">
-                    <p>Añadir al carrito</p>
+                <div class="fotolibro"><img src="/img/despues.jpg"></div>
+                <div class="costadoDerecho">
+                    <div class="precio">
+                        <h2>ARS$1.999,99</h2>
+                    </div>
+                    <div class="boton">
+                        <p>Añadir al carrito</p>
+                    </div>
                 </div>
                 <div class="compartir">
                     <h4>Compartir</h4>
@@ -61,6 +113,46 @@
                         <i class="far fa-clock"></i>
                         <p>Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
+                </div>
+            </div>
+        </article>
+        <article class="tituloTablet">
+            <div>
+                <h2 class="miniborde">Después</h2>
+            </div>
+        </article>
+        <article class="seVeEnTablet">
+
+            <div class="itemImg">
+                <div><img src="/img/despues.jpg"></div>
+                <div class="compartir">
+                    <h4>Compartir</h4>
+                    <div><i class="far fa-envelope"></i></div>
+                    <div><i class="fab fa-facebook-f"></i></div>
+                    <div><i class="fab fa-twitter"></i></div>
+                    <div><i class="fab fa-pinterest-p"></i></div>
+                </div>
+            </div>
+
+            <div class="itemTools">
+                <div class="estrellasydatos"><img class="estrellas" src="/img/cuatro-estrellas.png">
+                    <p>Formato papel, Español / Stephen King</p>
+                </div>
+                <div class="precioTablet">
+                    <h2>ARS$1.999,99</h2>
+                </div>
+                <div class="contenedorEnvio">
+                    <div class="envio">
+                        <div class="cohete"><i class="fas fa-rocket"></i></div>
+                        <h4 class="texto">Envío gratis</h4>
+                    </div>
+                    <div class="disponible">
+                        <i class="far fa-clock"></i>
+                        <p>Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
+                    </div>
+                </div>
+                <div class="boton">
+                    <h5>Añadir al carrito</h5>
                 </div>
             </div>
         </article>
@@ -151,16 +243,18 @@
                     <div class="columna">
                         <img class="fotosfinal" src="/img/lasangre-manda.jpg">
                         <h4>La sangre manda</h4>
-                        <p>Stephen King<p>
-                        <img class="estrellas" src="/img/cuatro-estrellas.png">
+                        <p>Stephen King
+                        <p>
+                            <img class="estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="precios">$2.000</h2>
                         <p class="botones">Añadir al carrito</p>
                     </div>
                     <div class="columna">
                         <img class="fotosfinal" src="/img/visitante.jpg">
                         <h5>El visitante</h5>
-                        <p>Stephen King<p>
-                        <img class="estrellas"src="/img/cuatro-estrellas.png">
+                        <p>Stephen King
+                        <p>
+                            <img class="estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="precios">$2.499,99</h2>
                         <p class="botones">Añadir al carrito</p>
                     </div>
@@ -168,7 +262,39 @@
             </div>
         </article>
     </main>
-
+    <footer>
+        <div class="mantenteInformado" >
+            <p class="texto">Matente Informado</p>
+            <div>
+                <input class="email" type="text" name="" value="" placeholder="Dejanos tu mail">
+            </div>
+        </div>
+        <div class="contenedorFooter">
+            <div class="contactoYpedido">
+                <p>
+                    <a href="#">Contacto</a>
+                </p>
+                <p>
+                    <a href="#">¿Dónde está mi pedido?</a>
+                </p>
+            </div>
+            <div class="iconosFooter">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="ayudaYenvios">
+                <p>
+                    <a href="#">Ayuda</a>
+                </p>
+                <p>
+                    <a href="#">Envíos Internacionales</a>
+                </p>
+            </div>
+        </div>
+        <div class="copyRight"><p>Copyright © 2021 SK Libros</p></div>
+    </footer>
 
 
 

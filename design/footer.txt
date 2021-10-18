@@ -1,3 +1,5 @@
+HTML:
+
 <footer>
         <div>
             <p>Matente Informado</p>
@@ -31,3 +33,81 @@
             <p>Copyright © 2021 SK Libros</p>
         </div>
     </footer>
+
+
+    CSS:
+    /* FOOTER */
+.mantenteInformado{
+    display: flex;
+    background-color: #BF8A26;
+    flex-direction: row;
+    padding: 4px;
+    justify-content: space-around;
+}
+
+.texto{
+    flex-grow: 0.50;
+    font-family: 'Gemunu Libre';
+    font-size: 17px;
+}
+
+.email{
+    border-radius: 6px;
+}
+
+a {color: white; font-family: "gemunu libre"
+    ; text-decoration: none;}
+
+.contenedorFooter{
+    display: flex;
+    padding: 10px;
+    background-color: #262120;
+    justify-content: space-around;
+}
+
+.contactoYpedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconosFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.ayudaYenvios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyRight{
+    background-color: #262120;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (min-width:320px){
+    /*footer*/
+    .iconosFooter{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    /*footer*/
+    .iconosFooter{
+        display: flex;  
+        flex-direction: row;
+    }
+    .fa-instagram{
+        padding: 5px;
+        font-size: 20px;
+        color: white;
+        border: 1px solid #8c1b1b;
+        background-color: #8c1b1b;
+        border-radius: 20%;
+        margin: 3px;
+    }
+}
