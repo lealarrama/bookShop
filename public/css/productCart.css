@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header-top-bar{
+    background-color:#D9D9D9;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    width: 50px;
+    height: 70px;
+    margin-right: 10px;
+}
+.nav-header-top-bar{
+    max-width: 300px;
+    line-height: 4%;
+}
+.lista-top-header{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.li-header-top{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    
+}
+.link-registrate{
+    text-decoration: none;
+    color:#262120;
+}
+.link-inicia-sesion{
+    text-decoration: none;
+    color:#262120;
+    padding: 15px;
+}
+.fa-shopping-cart {
+    color:#262120;
+    font-size: 18px;
+}
+
+
+.header-bottom-bar{
+    background-color: #8C1B1B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.lista-bottom-header{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.links-bottom-header-nav{
+    text-decoration: none;
+    color:#D9D9D9;
+    display: none;
+}
+.fa-home{
+    color:#D9D9D9;
+    font-size: 25px;
+    margin-left: 38%;
+}
+.buscador{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    align-self: flex-start;
+}
+.input-buscador{
+    border:none;
+    border-radius: 5px;
+}
+.boton-buscador{
+    border: none;
+    margin-left: -15px;
+    background-color: #fff;
+}
+
+
+/*main*/
+
+main{background-color: #D9D9D9;
+    opacity: 0.9;
+}
+
+h1{
+    font-size: 24px;
+    font-family: gemunu libre;
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7%;
+}
+
+h3{
+font-family: gemunu libre;
+width: 85%;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.precio2{
+    padding: 0;
+}
+
+input.boton-de-pago{
+    text-align: center;
+    width: 120px;
+    background-color:#8C1B1B;
+    color: white;
+    border-radius:5px;
+}
+.subtítulo{
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    font-family:gemunu libre;
+}
+.message{
+    width: 100%;
+}
+
+.terminos{
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.inicio{
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+}
+
+.descripcion{
+display: block;
+margin-left: 15%;
+}
+
+
+.parte-derecha-descripcion{
+    display: flex;
+}
+
+.nombre-libro{
+    font-size: 20px;
+    font-family:gemunu libre;
+}
+
+.estrellas{
+    color:#eac926;
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+p{
+    font-size: 12px;
+    font-family: 'Roboto';
+    
+}
+
+.boton-cantidad{
+    width: 20px;
+    border-radius: 3px;
+}
+
+.boton-eliminar{
+    width: 50px;
+    background-color: #8C1B1B;
+    color:white;
+    border-radius: 5px;
+}
+
+.libro1 {
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.libro2{
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.libro3{
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.libro-despues{
+    width:30%;
+    height:30%;
+}
+.libro-visitante{
+    width:30%;
+    height:30%;
+}
+.libro-lasangremanda{
+    width:30%;
+    height:30%;
+}
+
+.formas-de-pago{
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.detalle-de-pago{
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    padding-bottom:10px;
+}
+
+.boton-comprar{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.seguir-comprando{
+    display: block;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: #8C1B1B;
+    color: white;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.boton-aplicar{
+    width: 50px;
+    background-color: #8C1B1B;
+    border-radius: 5px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.envío{
+    display: flex;
+    justify-content: space-between;   
+}
+.fab{
+    font-size: 20px;
+    color:#262120;
+}
+
+.info{
+    margin-left: auto;
+}
+.pago{
+    background-color: #8C1B1B;
+    width: 110px;
+    border-radius: 5px;
+}
+
+h4{
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (min-width:500px){
+
+    p{
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .descripcion{
+        margin-left: 25%;
+    }
+
+    .nombre-libro{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:768px){
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+    .nombre-libro{
+        font-size: 35px;
+    }
+    .precio2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .boton-eliminar{
+        width: 160px;
+        height: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .estrellas{
+        color:#eac926;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .info{
+        margin-left: auto;
+    }
+    .seguir-comprando{
+        width: 160px;
+        height: 30px;
+        text-align: center;
+    }
+    .pago{
+        width: 130px;
+        height: 30px;
+        text-align: center;
+    }
+    .boton-aplicar{
+        width: 150px;
+        height: 30px;
+        text-align: center;
+    }
+    .agregar-cupón{
+        height: 30px;
+        width: 150px;
+    }
+    .fab{
+        font-size: 35px;
+        color:#262120;
+    }
+    h5{
+        font-size: 20px;
+    }
+
+}
