@@ -299,6 +299,58 @@ h4{
     font-size: 40px;
     text-align: center;
 }
+/* FOOTER */
+.mantenteInformado{
+    display: flex;
+    background-color: #BF8A26;
+    flex-direction: row;
+    padding: 4px;
+    justify-content: space-around;
+}
+
+.texto{
+    flex-grow: 0.50;
+    font-family: 'Gemunu Libre';
+    font-size: 17px;
+}
+
+.email{
+    border-radius: 6px;
+}
+
+a {color: white; font-family: "gemunu libre"
+    ; text-decoration: none;}
+
+.contenedorFooter{
+    display: flex;
+    padding: 10px;
+    background-color: #262120;
+    justify-content: space-around;
+}
+
+.contactoYpedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconosFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.ayudaYenvios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyRight{
+    background-color: #262120;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
 @media (min-width:500px){
 
