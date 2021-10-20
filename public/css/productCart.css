@@ -155,6 +155,9 @@ display: block;
 margin-left: 15%;
 }
 
+.imagenes{
+    display: contents;
+}
 
 .parte-derecha-descripcion{
     display: flex;
