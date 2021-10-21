@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="/css/productCart.css">
-        <title>Sk Libros</title>
-    </head>
-    <body>
-        <header>
-            <div class="header-top-bar">
-                <img src="/img/logoecommerce.png" alt="" class="logo">
-                <nav class="nav-header-top-bar">
-                    <ul class="lista-top-header">
-                        <li class="li-header-top">
-                            <a href="#" class="link-registrate">Regístrate</a>
-                        </li>
-                        <li class="li-header-top">
-                            <a href="#" class=" link-inicia-sesion">Inicia Sesión</a>
-                        </li>
-                        <li class="li-header-top">
-                            <a href="#">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-bottom-bar">
-                <nav>
-                    <ul class="lista-bottom-header">
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-home"></i>
-                            </a>
-                        </li>
-                        <li>
-                        <a href="#" class=" links-bottom-header-nav">
-                            Categorías
+    <link rel="stylesheet" href="/css/productCart.css">
+    <title>SK Libros</title>
+</head>
+<body>
+    <header>
+        <div class="header-top-bar">
+            <a href="./"><img src="/img/SK libros logo 77 fondo gris.png" alt="" class="logo"></a>
+            <nav class="nav-header-top-bar">
+                <ul class="lista-top-header">
+                    <li class="li-header-top">
+                        <a href="/register" class="link-registrate">Regístrate</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="/login" class=" link-inicia-sesion">Inicia Sesión</a>
+                    </li>
+                    <li class="li-header-top">
+                        <a href="/productCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom-bar">
+            <nav>
+                <ul class="lista-bottom-header">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="#" class=" links-bottom-header-nav">
+                           Categorías
+                           <i class="fas fa-sort-down"></i>
+                       </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="links-bottom-header-nav link-informacion">
+                            Información
                             <i class="fas fa-sort-down"></i>
-                        </a> 
-                        </li>
-                        <li>
-                            <a href="#" class="links-bottom-header-nav link-informacion">
-                                Información
-                                <i class="fas fa-sort-down"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="buscador">
-                    <input type="text" placeholder="Buscar libros" class="input-buscador">
-                    <button class="boton-buscador">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar libros" class="input-buscador">
+                <button class="boton-buscador">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
-        </header>
+        </div>
+    </header>
         
         
         
@@ -66,8 +66,9 @@
             <h1>Tu cesta</h1>
             <div class="inicio">
                 <p class="message"><i class="fas fa-gift"></i> Tienes 3 articulos con un totoal de $$$ en tu cesta</p>
-                <input type="text" placeholder="Proceder al pago" class="boton-de-pago">
-            
+                <div class="boton-de-pago">
+                    <button type="submit">Proceder al Pago</button>
+                </div>
             </div>
         
             <p class="terminos">
@@ -79,7 +80,7 @@
             <section class="detalle-carrito-compras" >
                 <h3 class="subtítulo">Detalle de su cesta</h3>
                 <article class="libro1">
-                        <img src="img/despues.jpg" alt="" class="libro-despues">     
+                    <a href="/productDetail" class="imagenes"><img src="img/despues.jpg" alt="" class="libro-despues"></a>   
                         <div class="descripcion"> 
                             <h2 class="nombre-libro">Después</h2> 
                             <div class="estrellas">
@@ -100,7 +101,7 @@
                 </article>
 
                 <article class="libro2">
-                    <img src="img/visitante.jpg" alt="" class="libro-visitante">
+                    <a href="/productDetail" class="imagenes"><img src="img/visitante.jpg" alt="" class="libro-visitante"></a>
                     <div class="descripcion"> 
                         <h2 class="nombre-libro">Visitante</h2> 
                         <div class="estrellas">
@@ -120,7 +121,7 @@
                 </article>
                 
                 <article class="libro3">
-                    <img src="img/lasangre-manda.jpg" alt="" class="libro-lasangremanda">
+                   <a href="/productDetail" class="imagenes"><img src="img/lasangre-manda.jpg" alt="" class="libro-lasangremanda"></a>
                     <div class="descripcion"> 
                         <h2 class="nombre-libro">La Sangre Manda</h2>
                         <div class="estrellas">
@@ -180,38 +181,38 @@
         </main>
 
         <footer>
-                <div class="mantenteInformado" >
-                    <p class="texto">Matente Informado</p>
-                    <div>
-                        <input class="email" type="text" name="" value="" placeholder="Dejanos tu mail">
-                    </div>
+            <div class="mantenteInformado" >
+                <p class="texto">Matente Informado</p>
+                <div>
+                    <input class="email" type="text" name="" value="" placeholder="Dejanos tu mail">
                 </div>
-                <div class="contenedorFooter">
-                    <div class="contactoYpedido">
-                        <p>
-                            <a href="#">Contacto</a>
-                        </p>
-                        <p>
-                            <a href="#">¿Dónde está mi pedido?</a>
-                        </p>
-                    </div>
-                    <div class="iconosFooter">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="far fa-envelope"></i>
-                    </div>
-                    <div class="ayudaYenvios">
-                        <p>
-                            <a href="#">Ayuda</a>
-                        </p>
-                        <p>
-                            <a href="#">Envíos Internacionales</a>
-                        </p>
-                    </div>
+            </div>
+            <div class="contenedorFooter">
+                <div class="contactoYpedido">
+                    <p>
+                        <a href="#">Contacto</a>
+                    </p>
+                    <p>
+                        <a href="#">¿Dónde está mi pedido?</a>
+                    </p>
                 </div>
-                <div class="copyRight"><p>Copyright © 2021 SK Libros</p></div>
-        </footer>
+                <div class="iconosFooter">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+                <div class="ayudaYenvios">
+                    <p>
+                        <a href="#">Ayuda</a>
+                    </p>
+                    <p>
+                        <a href="#">Envíos Internacionales</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyRight"><p>Copyright © 2021 SK Libros</p></div>
+        </footer>    
 
     </body>
 
