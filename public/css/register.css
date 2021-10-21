@@ -177,7 +177,7 @@
     border-radius: 6px;
 }
 
-a {color: white; font-family: "gemunu libre"
+ footer a {color: white; font-family: "gemunu libre"
     ; text-decoration: none;}
 
 .contenedorFooter{
@@ -246,7 +246,7 @@ a {color: white; font-family: "gemunu libre"
         display: flex;  
         flex-direction: row;
     }
-    .fa-instagram{
+    .iconosFooter i{
         padding: 5px;
         font-size: 20px;
         color: white;
