@@ -140,8 +140,7 @@
 }
 .producto{
     margin: 10px 30px;
-    border: 3px #BF8A26 solid;
-    border-radius:3px;
+    border-radius: 5px;
 }
 .mensajito-producto{
     background-color: #8C1B1B;
@@ -151,6 +150,7 @@
     height: 20px;
     padding: 10px;
     text-align: center;
+    visibility: hidden;
 }
 .imagenes-productos img{
     width:80%;
@@ -158,8 +158,6 @@
     margin:5px 30px;
 }
 .caja-descripcion{
-    padding:15px;
-    background-color:white;
     text-align:center;
 }
 .precios{
@@ -189,11 +187,13 @@ main a:hover{
 }
 
 .anuncio{
-    background-color:#D9D9D9;
-    width:100%;
-    height:90px;
-    text-align:center;
-    margin:20px 0;
+    background-color:white;
+    width:80%;
+    height:100%;
+}
+.imgAnuncio{
+    width: 120%;
+    margin: 30px 10px;
 }
 
 /* FOOTER */
@@ -203,6 +203,7 @@ main a:hover{
     flex-direction: row;
     padding: 4px;
     justify-content: space-around;
+    margin-top: 30px;
 }
 .texto{
     flex-grow: 0.50;
@@ -249,11 +250,41 @@ main a:hover{
 /*MOVIL*/
 @media(min-width:320px){
     .esconderdelcel{display: none;}
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    .mensajito-producto{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        visibility: visible;
+    }
+    .descripciones{
+        display: none;
+    }
+    .agregar-carrito{
+        display: none;
+    }
+    .contenedorDetalles{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .precios{
+        font-size: 30px;
+    }
+    .descuentos{
+        font-size: 18px;
+    color: green;
+    margin-left: 2%;
+    }
 }
 /*TABLET*/
 @media (min-width:481px){
 
     /*HEADER*/
+    .logo{
+        height: 140px;
+        width: 140px;
+    }
     .links-bottom-header-nav{
         display: flex;
         margin-left: 60%;
@@ -266,6 +297,9 @@ main a:hover{
     }
     .fa-home{
         margin-left: -70%;
+    }
+    .fa-bars{
+        display: none;
     }
 
     /*MAIN*/
@@ -282,13 +316,26 @@ main a:hover{
 
     /*PRODUCTOS*/
     .caja-productos{
-        display:flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     .producto{
-        width: 50%;
+        width: 40%;
+        margin: 10px 30px;
+        border-radius: 5px;
     }
     .imagenes-productos img{
         margin: 10%;
+    }
+    .mensajito-producto{
+        background-color: #8C1B1B;
+    color: white;
+    position: absolute;
+    width: 10%;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
     }
 
     /*FOOTER*/
@@ -305,12 +352,31 @@ main a:hover{
         border-radius: 20%;
         margin: 3px;
     }
+    .contFooter{
+        display: flex;
+    }
+    footer button{
+        background-color: #8c1b1b;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+    .dejarMail{
+        border-radius: 4px
+    }
+    .mantenteInformado{
+        align-items: center;
+    }
 }
 
 /*LAPTOP*/
 @media (min-width:769px){
 
     /*HEADER*/
+    .logo{
+        height: 170px;
+        width: 170px;
+    }
     header{
         font-size: 20px;
     }
@@ -322,5 +388,42 @@ main a:hover{
     }
     .li-header-top{
         font-size: 20px;
+    }
+    .fa-bars{
+        display: none;
+    }
+
+    /*MAIN*/
+    .producto{
+        width: 18%;
+        height: 18%;
+    }
+    .mensajito-producto{
+        visibility: hidden;
+
+    }
+    .producto:hover .mensajito-producto{
+        visibility: visible;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+        padding: 5px;
+     }
+     .producto{
+        box-shadow: 0px 0px 0px;
+        width: 18%;
+        height: 18%;
+     }
+     .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+    }
+    .precios{
+        font-size: 20px;
+    }
+    .descripciones{
+        display: flex;
+        font-size: 20px;
+        padding: 10px;
+        justify-content: center;
     }
 }
