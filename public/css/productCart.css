@@ -1,7 +1,9 @@
 *{
+    font-family: Roboto;
     margin: 0px;
     padding: 0px;
 }
+/*HEDER*/
 .header-top-bar{
     background-color:#D9D9D9;
     opacity: 0.9;
@@ -86,7 +88,7 @@
     margin-left: -15px;
     background-color: #fff;
 }
-
+/*TERMINA HEADER*/
 
 /*main*/
 
@@ -114,7 +116,7 @@ h3{
     padding: 0;
 }
 
-input.boton-de-pago{
+.boton-de-pago{
     text-align: center;
     width: 120px;
     background-color:#8C1B1B;
@@ -225,14 +227,21 @@ p{
 .libro-despues{
     width:30%;
     height:30%;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    padding: 10px;
+    
 }
 .libro-visitante{
     width:30%;
     height:30%;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    padding: 10px;
 }
 .libro-lasangremanda{
     width:30%;
     height:30%;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    padding: 10px;
 }
 
 .formas-de-pago{
@@ -256,16 +265,14 @@ p{
     padding-bottom:10px;
 }
 
-.boton-comprar{
-    margin-top: 10px;
-    border-radius: 5px;
+h6{
+    font-size: 12px;
+    text-align: center;
 }
-
-.seguir-comprando{
+.boton-seguir-comprando{
     display: block;
     margin:auto;
-    margin-top:10px;
-    margin-bottom:10px;
+    padding: 10px;
     background-color: #8C1B1B;
     color: white;
     width: 120px;
@@ -276,6 +283,7 @@ p{
     width: 50px;
     background-color: #8C1B1B;
     border-radius: 5px;
+    color:white;
 }
 .total{
     display: flex;
@@ -303,6 +311,8 @@ h4{
     font-size: 40px;
     text-align: center;
 }
+/*TERMINA EL MAIN*/
+
 /* FOOTER */
 .mantenteInformado{
     display: flex;
@@ -310,92 +320,121 @@ h4{
     flex-direction: row;
     padding: 4px;
     justify-content: space-around;
+    margin-top: 30px;
 }
-
 .texto{
     flex-grow: 0.50;
     font-family: 'Gemunu Libre';
     font-size: 17px;
 }
-
 .email{
     border-radius: 6px;
 }
-
-a{color: white; 
-font-family: "gemunu libre"; 
-text-decoration: none;
+ footer a {
+    color: white; 
+    font-family: "gemunu libre";
+    text-decoration: none;
 }
-
 .contenedorFooter{
     display: flex;
     padding: 10px;
     background-color: #262120;
     justify-content: space-around;
 }
-
 .contactoYpedido{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .iconosFooter{
-    display: flex;
+    display: none;
     flex-direction: row;
 }
-
 .ayudaYenvios{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .copyRight{
     background-color: #262120;
     color: white;
     text-align: center;
     padding: 30px;
 }
-
-.fa-envelope{
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-    border: 1px solid #8c1b1b;
+footer button{
     background-color: #8c1b1b;
-    border-radius: 20%;
-    margin: 3px;
+    color: white;
+    padding: 5px;
+    margin: 5px;
 }
 
-.fa-facebook-f{
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-    border: 1px solid #8c1b1b;
-    background-color: #8c1b1b;
-    border-radius: 20%;
-    margin: 3px;
-}
+/*TERMINA EL FOOTER*/
 
-.fa-twitter{
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-    border: 1px solid #8c1b1b;
-    background-color: #8c1b1b;
-    border-radius: 20%;
-    margin: 3px;
-}
+/*MEDIA QUERIS*/
 
-.fa-instagram {
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-    border: 1px solid #8c1b1b;
-    background-color: #8c1b1b;
-    border-radius: 20%;
-    margin: 3px;
+/*TABLET*/
+@media (min-width:481px){
+
+    /*HEADER*/
+    .logo{
+        height: 140px;
+        width: 140px;
+    }
+    .links-bottom-header-nav{
+        display: flex;
+        margin-left: 60%;
+    }
+    .lista-bottom-header{
+        padding: 0 15%;
+    }
+    .link-informacion{
+        margin-left: 80%;
+    }
+    .fa-home{
+        margin-left: -70%;
+    }
+    .fa-bars{
+        display: none;
+    }
+
+   
+
+    /*FOOTER*/
+    .iconosFooter{
+        display: flex;  
+        flex-direction: row;
+    }
+    .iconosFooter i{
+        padding: 5px;
+        font-size: 20px;
+        color: white;
+        border: 1px solid #8c1b1b;
+        background-color: #8c1b1b;
+        border-radius: 20%;
+        margin: 3px;
+    }
+    .contFooter{
+        display: flex;
+    }
+    footer button{
+        background-color: #8c1b1b;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+    .dejarMail{
+        border-radius: 4px
+    }
+    .boton-Footer{
+        display: contents;
+        background-color: #8c1b1b;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+    .mantenteInformado{
+        align-items: center;
+    }
 }
 
 
@@ -450,11 +489,5 @@ text-decoration: none;
         height: 30px;
         width: 150px;
     }
-    .fab{
-        font-size: 35px;
-        
-    }
-    h5{
-        font-size: 20px;
-    }
+    
 }
