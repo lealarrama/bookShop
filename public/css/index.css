@@ -89,8 +89,10 @@
 }
 .boton-buscador{
     border: none;
+    border-radius: 5px;
     margin-left: -15px;
     background-color: #fff;
+    padding: 0 5px;
 }
 
 /*MAIN*/
@@ -256,8 +258,15 @@ main a:hover{
 /*MEDIA QUERIES*/
 /*MOVIL*/
 @media(min-width:320px){
+    /*HEADER*/
+    .logo{
+        margin-left: 10%;
+    }
     .esconderdelcel{
-        display: none;}
+        display: none;
+    }
+    /*MAIN*/
+    /*PRODUCTOS*/
     .producto{
         box-shadow: 0px 0px 10px rgb(100 100 100);
     }
@@ -281,10 +290,10 @@ main a:hover{
     }
     .descuentos{
         font-size: 18px;
-    color: green;
-    margin-left: 2%;
+        color: green;
+        margin-left: 2%;
     }
-    /*footer*/
+    /*FOOTER*/
     footer button{
         background-color: #8c1b1b;
         color: white;
@@ -303,10 +312,10 @@ main a:hover{
     }
     .dejarMail{
         border: none;
-    border-radius: 4px;
-    padding: 10px;
-    height: 5px;
-    width: 60%;
+        border-radius: 4px;
+        padding: 10px;
+        height: 5px;
+        width: 60%;
     }
 }
 /*TABLET*/
@@ -316,6 +325,7 @@ main a:hover{
     .logo{
         height: 140px;
         width: 140px;
+        margin-left: 40%;
     }
     .links-bottom-header-nav{
         display: flex;
@@ -335,6 +345,13 @@ main a:hover{
     }
     .esconderdelcel{
         display: flex;
+    }
+    .input-buscador{
+        height: 25px;
+        font-size: 15px;
+    }
+    .boton-buscador{
+        height: 25px;
     }
     /*MAIN*/
     /*CARRUSEL*/
@@ -364,12 +381,12 @@ main a:hover{
     }
     .mensajito-producto{
         background-color: #8C1B1B;
-    color: white;
-    position: absolute;
-    width: 10%;
-    height: 20px;
-    padding: 10px;
-    text-align: center;
+        color: white;
+        position: absolute;
+        width: 10%;
+        height: 20px;
+        padding: 10px;
+        text-align: center;
     }
 
     /*FOOTER*/
@@ -410,14 +427,15 @@ main a:hover{
 
     /*HEADER*/
     .logo{
-        height: 170px;
-        width: 170px;
+        height: 220px;
+        width: 220px;
+        margin-left:2%;
     }
     header{
         font-size: 20px;
     }
     .header-top-bar{
-        padding:30px 10%;
+        padding:30px 6%;
     }
     .header-bottom-bar{
         padding: 25px 8%;
@@ -428,7 +446,22 @@ main a:hover{
     .fa-bars{
         display: none;
     }
+    .input-buscador{
+        width: 240px;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 19px;
+    }
+    .boton-buscador{
+        height: 30px;
+        font-size: 19px;
+    }
     /*MAIN*/
+    /*PRODUCTOS*/
+    .titulo-productos h3 a{
+        font-size: 24px;
+        padding-left: 6%;
+    }
     .producto{
         width: 18%;
         height: 18%;
@@ -443,12 +476,12 @@ main a:hover{
         transition: all 400ms;
         padding: 5px;
      }
-     .producto{
+    .producto{
         box-shadow: 0px 0px 0px;
         width: 18%;
         height: 18%;
      }
-     .producto:hover{
+    .producto:hover{
         box-shadow: 0px 0px 10px rgb(100 100 100);
         transition: all 400ms;
     }

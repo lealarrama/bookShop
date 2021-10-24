@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*HEADER*/
@@ -29,7 +30,6 @@
     align-items: center;
 }
 .li-header-top{
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     
 }
@@ -86,15 +86,14 @@
     margin-left: -15px;
     background-color: #fff;
 }
-/*main*/
 
 
+/*MAIN*/
 
 main{
     background-color:white;
     padding-bottom: 30px;
 }
-
 .contenedor{
     background-color:#262120;
     width: 80%;
@@ -103,14 +102,12 @@ main{
     margin-top: 40px;
     padding: 20px;
 }
-
 .titulo-principal{
     text-align: center;
     padding: 15px;
     color:white;
     font-family: Roboto;
 }
-
 input.control{
     font-family: Gemunu Libre;
     padding-left: 10px;
@@ -119,7 +116,6 @@ input.control{
     font-size: 18px;
     border-radius: 5px;
 }
-
 .control-formulario{
 text-align: center;
 padding: 15px;
@@ -176,44 +172,39 @@ label {
     padding: 4px;
     justify-content: space-around;
 }
-
 .texto{
     flex-grow: 0.50;
     font-family: 'Gemunu Libre';
     font-size: 17px;
 }
-
 .email{
     border-radius: 6px;
 }
-
- footer a {color: white; font-family: "gemunu libre"
-    ; text-decoration: none;}
-
+footer a {
+    color: white;
+    font-family: "gemunu libre";
+    text-decoration: none;
+}
 .contenedorFooter{
     display: flex;
     padding: 10px;
     background-color: #262120;
     justify-content: space-around;
 }
-
 .contactoYpedido{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .iconosFooter{
     display: flex;
     flex-direction: row;
 }
-
 .ayudaYenvios{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .copyRight{
     background-color: #262120;
     color: white;
@@ -223,15 +214,15 @@ label {
 
 
 /*MEDIA QUERIES*/
-/*CELULAR*/
+/*MOVIL*/
 @media (min-width:320px){
-    /*footer*/
+    /*FOOTER*/
     .iconosFooter{
         display: none;
     }
 }
 /*TABLET*/
-@media (min-width:450px){
+@media (min-width:481px){
 
     /*HEADER*/
     .links-bottom-header-nav{
@@ -247,7 +238,7 @@ label {
     .fa-home{
         margin-left: -70%;
     }
-    /*footer*/
+    /*FOOTER*/
     .iconosFooter{
         display: flex;  
         flex-direction: row;
