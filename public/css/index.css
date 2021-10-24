@@ -190,9 +190,10 @@ main a:hover{
     border-radius:5px;
 }
 .anuncio{
-    background-color:white;
-    width:80%;
-    height:100%;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin-left: 250px;
 }
 .imgAnuncio{
     width: 120%;
