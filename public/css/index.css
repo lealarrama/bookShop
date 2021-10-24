@@ -52,12 +52,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px 8%;
+}
+.fa, .fas{
+    font-weight: 900;
+    margin-left: 5px;
 }
 .lista-bottom-header{
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 .links-bottom-header-nav{
     text-decoration: none;
@@ -91,7 +96,7 @@
 /*MAIN*/
 /*CARRUSEL*/
 .slider {
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -328,7 +333,9 @@ main a:hover{
     .fa-bars{
         display: none;
     }
-
+    .esconderdelcel{
+        display: flex;
+    }
     /*MAIN*/
     /*CARRUSEL*/
     .carrusel-bottom{
@@ -413,7 +420,7 @@ main a:hover{
         padding:30px 10%;
     }
     .header-bottom-bar{
-        padding: 25px 10%;
+        padding: 25px 8%;
     }
     .li-header-top{
         font-size: 20px;
@@ -421,7 +428,6 @@ main a:hover{
     .fa-bars{
         display: none;
     }
-
     /*MAIN*/
     .producto{
         width: 18%;
