@@ -204,7 +204,7 @@ main a:hover{
     display: flex;
     background-color: #BF8A26;
     flex-direction: row;
-    padding: 4px;
+    padding: 8px;
     justify-content: center;
     margin-top: 30px;
     align-items: center;
@@ -299,7 +299,9 @@ main a:hover{
         color: white;
         border-radius: 4px;
         padding: 5px 5px;
+        padding-left: 3px;
         border: none;
+        margin-left: -5px;
     }
     .divBoton{
         display: contents;
@@ -407,8 +409,6 @@ main a:hover{
         display: flex;
     }
     footer button{
-        background-color: #8c1b1b;
-        color: white;
         padding: 4px;
         border: none;
     
@@ -493,12 +493,5 @@ main a:hover{
         font-size: 20px;
         padding: 10px;
         justify-content: center;
-    }
-    /*FOOTER */
-    footer button{
-        border: none;
-    }
-    .dejarMail{
-        border: none;
     }
 }
