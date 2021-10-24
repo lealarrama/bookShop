@@ -92,8 +92,11 @@
 
 /*main*/
 
+body{
+    background-color: white;
+}
+
 main{
-    background-color: #D9D9D9;
     opacity: 0.9;
 }
 
@@ -108,7 +111,6 @@ h1{
 
 h3{
     font-family: gemunu libre;
-    width: 85%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -127,20 +129,19 @@ h3{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     font-family:gemunu libre;
 }
 .message{
     width: 100%;
 }
-
+.conteinerTodo{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    margin: 30px;
+}
 .terminos{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     text-align: center;
 }
 .inicio{
@@ -148,8 +149,6 @@ h3{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
 }
 
 .descripcion{
@@ -193,15 +192,17 @@ p{
     color:white;
     border-radius: 5px;
 }
+.conteinerDesc{
+    display: flex;
+}
 
 .libro1 {
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 
 .libro2{
@@ -209,9 +210,8 @@ p{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 
 .libro3{
@@ -219,29 +219,31 @@ p{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 
 .libro-despues{
-    width:30%;
-    height:30%;
+    width: 20%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     padding: 10px;
     
 }
 .libro-visitante{
-    width:30%;
-    height:30%;
+    width: 15%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     padding: 10px;
 }
 .libro-lasangremanda{
-    width:30%;
-    height:30%;
+    width: 16%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     padding: 10px;
+}
+.parte-derecha-descripcion{
+    display: flex;
+    line-height: 2;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .formas-de-pago{
@@ -249,8 +251,6 @@ p{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     padding-bottom: 10px;
     justify-content: space-between;
 }
@@ -258,8 +258,6 @@ p{
 .detalle-de-pago{
     border: solid #8C1B1B 1px;
     background-color: white;
-    max-width: 85%;
-    margin: auto;
     display: flex;
     padding: 15px;
     padding-bottom:10px;
@@ -297,9 +295,23 @@ h6{
     font-size: 20px;
     color:#262120;
 }
-
+.añadirCupon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto{
+    width: 40%;
+}
+.aplicar{
+    display: flex;
+    justify-content: space-evenly;
+}
 .info{
-    margin-left: auto;
+    margin-left: 600px;
+}
+.gastos{
+    padding-right: 200px;
 }
 .pago{
     background-color: #8C1B1B;
@@ -371,6 +383,13 @@ footer button{
 /*TERMINA EL FOOTER*/
 
 /*MEDIA QUERIS*/
+/*MOVIL*/
+@media (min-width:320){
+    .conteinerTodo{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        margin: 10px;
+    }
+}
 
 /*TABLET*/
 @media (min-width:481px){
@@ -397,7 +416,38 @@ footer button{
         display: none;
     }
 
-   
+    /*MAIN*/
+    .inicio{
+        border: solid #8C1B1B 6px;
+    }
+    .terminos{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .subtítulo{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .libro1{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .libro2{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .libro3{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .detalle-de-pago{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
+    .formas-de-pago{
+        border: solid #8C1B1B 6px;
+    border-top: none;
+    }
 
     /*FOOTER*/
     .iconosFooter{
@@ -454,6 +504,9 @@ footer button{
         font-size: 25px;
         margin-top: 20px;
     }
+    .libro-visitante{
+        width: 15%;
+    }
 
     .boton-eliminar{
         width: 160px;
@@ -481,13 +534,18 @@ footer button{
         text-align: center;
     }
     .boton-aplicar{
-        width: 150px;
-        height: 30px;
-        text-align: center;
+        width: 40%;
+    /* align-items: center; */
+    /* height: 30px; */
+    text-align: center;
     }
     .agregar-cupón{
-        height: 30px;
-        width: 150px;
+        width: 60%;
     }
     
+}
+@media (min-width:1600px){
+    .libro-visitante {
+        width: 10%;
+}
 }
