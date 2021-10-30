@@ -10,55 +10,7 @@
     <title>SK Libros</title>
 </head>
 <body>
-    <header>
-        <div class="header-top-bar">
-            <a href="./"><img src="/img/SK libros logo 77 fondo gris.png" alt="" class="logo"></a>
-            <nav class="nav-header-top-bar">
-                <ul class="lista-top-header">
-                    <li class="li-header-top">
-                        <a href="/register" class="link-registrate">Regístrate</a>
-                    </li>
-                    <li class="li-header-top">
-                        <a href="/login" class=" link-inicia-sesion">Inicia Sesión</a>
-                    </li>
-                    <li class="li-header-top">
-                        <a href="/productCart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-bottom-bar">
-            <nav>
-                <ul class="lista-bottom-header">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-home"></i>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="#" class=" links-bottom-header-nav">
-                           Categorías
-                           <i class="fas fa-sort-down"></i>
-                       </a> 
-                    </li>
-                    <li>
-                        <a href="#" class="links-bottom-header-nav link-informacion">
-                            Información
-                            <i class="fas fa-sort-down"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="buscador">
-                <input type="text" placeholder="Buscar libros" class="input-buscador">
-                <button class="boton-buscador">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+    <%- include("./partials/header") %>
     <main>
         <div class="contenedor">
             <form class="create-form">
@@ -97,41 +49,7 @@
 
         </div>
     </main>
-    <footer>
-        <div class="mantenteInformado">
-            <p>Matente Informado</p>
-            <div>
-                <input type="text" name="" value="" placeholder="Dejanos tu mail">
-            </div>
-        </div>
-        <div class="contenedorFooter">
-            <div class="contactoYpedido">
-               <p>
-                    <a href="#">Contacto</a>
-                </p>
-               <p>
-                    <a href="#">¿Dónde está mi pedido?</a>
-                </p> 
-            </div>
-            <div class="iconosFooter">
-                <i class="fab fa-facebook-f"></i> 
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="far fa-envelope"></i>
-            </div>
-            <div class="ayudaYenvios">
-               <p>
-                    <a href="#">Ayuda</a>
-                </p> 
-               <p>
-                    <a href="#">Envíos Internacionales</a>
-               </p>
-            </div>
-        </div>
-        <div class="copyRight">
-            <p>Copyright © 2021 SK Libros</p>
-        </div>
-    </footer>
+    <%- include("./partials/footer") %>
 
 </body>
 </html>

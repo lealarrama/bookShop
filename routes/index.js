@@ -18,6 +18,9 @@ router.get('/productDetail', mainControllers.productDetail);
 /* get productCart page*/
 router.get('/productCart', mainControllers.productCart);
 
+/* get createProduct page*/
+router.get('/createProduct', mainControllers.createProduct);
+
 
 
 module.exports = router;
