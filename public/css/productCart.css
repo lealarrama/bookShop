@@ -134,6 +134,11 @@ h3{
 .message{
     width: 100%;
 }
+.primeros-parrafos{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    margin: 30px;
+}
+
 .conteinerTodo{
     box-shadow: 0px 0px 10px rgb(100 100 100);
     margin: 30px;
@@ -158,10 +163,6 @@ margin-left: 15%;
 
 .imagenes{
     display: contents;
-}
-
-.parte-derecha-descripcion{
-    display: flex;
 }
 
 .nombre-libro{
@@ -389,6 +390,10 @@ footer button{
         box-shadow: 0px 0px 10px rgb(100 100 100);
         margin: 10px;
     }
+    .primeros-parrafos{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        margin: 30px;
+    }
 }
 
 /*TABLET*/
@@ -426,7 +431,6 @@ footer button{
     }
     .subtítulo{
         border: solid #8C1B1B 6px;
-    border-top: none;
     }
     .libro1{
         border: solid #8C1B1B 6px;
