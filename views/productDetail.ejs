@@ -14,56 +14,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-top-bar">
-            <a href="./"><img src="/img/SK libros logo 77 fondo gris.png" alt="" class="logo"></a>
-            <nav class="nav-header-top-bar">
-                <ul class="lista-top-header">
-                    <li class="li-header-top">
-                        <a href="/register" class="link-registrate">Regístrate</a>
-                    </li>
-                    <li class="li-header-top">
-                        <a href="/login" class=" link-inicia-sesion">Inicia Sesión</a>
-                    </li>
-                    <li class="li-header-top">
-                        <a href="/productCart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-bottom-bar">
-            <nav>
-                <ul class="lista-bottom-header">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-home"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class=" links-bottom-header-nav">
-                            Categorías
-                            <i class="fas fa-sort-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="links-bottom-header-nav link-informacion">
-                            Información
-                            <i class="fas fa-sort-down"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="buscador">
-                <input type="text" placeholder="Buscar libros" class="input-buscador">
-                <button class="boton-buscador">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
-
-    </header>
+    <%- include("./partials/header") %>
     <main>
         <article class="artEnvio">
             <div class="enviogratis">
@@ -323,49 +274,27 @@
                         <h2 class="precios">$1.999,99</h2>
                         <p class="botones">Añadir al carrito</p>
                     </div>
+                    <div class="columnaMasGrande">
+                        <img class="billy" src="/img/billysummers.jpeg">
+                        <h5>Billy Summers</h5>
+                        <p>Stephen King</p>
+                        <img class="estrellas" src="/img/cuatro-estrellas.png">
+                        <h2 class="precios">$2.500</h2>
+                        <p class="botones">Añadir al carrito</p>
+                    </div>
+                    <div class="columnaMasGrande">
+                        <img class="it" src="/img/it.png">
+                        <h5>It</h5>
+                        <p>Stephen King</p>
+                        <img class="estrellas" src="/img/cuatro-estrellas.png">
+                        <h2 class="precios">$1.500,50</h2>
+                        <p class="botones">Añadir al carrito</p>
+                    </div>
                 </div>
             </div>
         </article>
     </main>
-    <footer>
-        <div class="mantenteInformado">
-            <p class="texto">Matente Informado</p>
-            <div>
-                <input class="email" type="text" name="" value="" placeholder="Dejanos tu mail">
-            </div>
-        </div>
-        <div class="contenedorFooter">
-            <div class="contactoYpedido">
-                <p>
-                    <a href="#">Contacto</a>
-                </p>
-                <p>
-                    <a href="#">¿Dónde está mi pedido?</a>
-                </p>
-            </div>
-            <div class="iconosFooter">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="far fa-envelope"></i>
-            </div>
-            <div class="ayudaYenvios">
-                <p>
-                    <a href="#">Ayuda</a>
-                </p>
-                <p>
-                    <a href="#">Envíos Internacionales</a>
-                </p>
-            </div>
-        </div>
-        <div class="copyRight">
-            <p>Copyright © 2021 SK Libros</p>
-        </div>
-    </footer>
-
-
-
-
+   <%- include("./partials/footer") %>
 </body>
 
 </html>

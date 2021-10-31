@@ -411,6 +411,9 @@ a {color: white; font-family: "gemunu libre"
     .columnaCompu{
         display: none;
     }
+    .columnaMasGrande{
+        display: none;
+    }
     .visitante{
         width: 70%;
     }
@@ -538,6 +541,9 @@ a {color: white; font-family: "gemunu libre"
         width: 250px;
         align-items: center;
     }
+    .columnaMasGrande{
+        display: none;
+    }
     .visitante{
         width: 68%;
     }
@@ -644,13 +650,41 @@ a {color: white; font-family: "gemunu libre"
         justify-content: space-between;
     }
     .columna {
-        width: 270px;
+        width: 270px; 
+        padding: 10px 0px;
+    }
+    .columnaTablet{
+        padding: 10px 0px;
     }
     .columnaCompu{
         display: flex;
         flex-direction: column;
         width: 25%;
+        padding: 10px 0px;
         align-items: center;    
+    }
+    .columnaMasGrande{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding: 10px 0px;
+        align-items: center;
+    }
+    .columna:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+     }
+     .columnaTablet:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+     }
+    .columnaCompu:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+    }
+    .columnaMasGrande:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
     }
     .instituto{
         width: 74%;
@@ -661,10 +695,25 @@ a {color: white; font-family: "gemunu libre"
     .drsueño{
         width: 78%;
     }
+    .billy{
+        width: 76%;
+    }
+    .it{
+        width: 76%;
+    }
 }
 
-    @media(min-width:1600px){
+    @media(min-width:1400px){
             .seveEnCompu{
                 padding: 0px 20px 0px 20px;
+            }
+            .estrellas {
+                width: 12%;
+            }   
+            .columnaCompu{
+                width: 17%;
+            }
+            .columnaMasGrande{
+                width: 17%;
             }
     }
