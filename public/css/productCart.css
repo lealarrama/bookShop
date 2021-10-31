@@ -124,6 +124,7 @@ h3{
     background-color:#8C1B1B;
     color: white;
     border-radius:5px;
+    padding: 5px;
 }
 .subtítulo{
     padding: 15px;
@@ -187,8 +188,8 @@ p{
     border-radius: 3px;
 }
 
-.boton-eliminar{
-    width: 50px;
+button{
+    width: 70px;
     background-color: #8C1B1B;
     color:white;
     border-radius: 5px;
@@ -241,10 +242,17 @@ p{
     padding: 10px;
 }
 .parte-derecha-descripcion{
+    text-align: center;
     display: flex;
     line-height: 2;
     justify-content: center;
     flex-direction: column;
+}
+.boton-eliminar{
+    width: 120px;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .formas-de-pago{
@@ -271,18 +279,21 @@ h6{
 .boton-seguir-comprando{
     display: block;
     margin:auto;
-    padding: 10px;
+    padding: 5px;
     background-color: #8C1B1B;
     color: white;
-    width: 120px;
+    width: 150px;
     border-radius: 5px;
 }
 
 .boton-aplicar{
-    width: 50px;
     background-color: #8C1B1B;
     border-radius: 5px;
     color:white;
+    padding: 5px;
+}
+.agregar-cupon{
+    width: 65%;
 }
 .total{
     display: flex;
@@ -308,12 +319,7 @@ h6{
     display: flex;
     justify-content: space-evenly;
 }
-.info{
-    margin-left: 600px;
-}
-.gastos{
-    padding-right: 200px;
-}
+
 .pago{
     background-color: #8C1B1B;
     width: 110px;
@@ -420,6 +426,9 @@ footer button{
     .fa-bars{
         display: none;
     }
+    .info{
+        margin-left: auto;
+    }
 
     /*MAIN*/
     .inicio{
@@ -447,6 +456,9 @@ footer button{
     .detalle-de-pago{
         border: solid #8C1B1B 6px;
     border-top: none;
+    }
+    .gastos{
+        padding-right: 200px;
     }
     .formas-de-pago{
         border: solid #8C1B1B 6px;
@@ -511,13 +523,6 @@ footer button{
     .libro-visitante{
         width: 15%;
     }
-
-    .boton-eliminar{
-        width: 160px;
-        height: 30px;
-        margin-top: 20px;
-        text-align: center;
-    }
     .estrellas{
         color:#eac926;
         font-size: 20px;
@@ -538,18 +543,13 @@ footer button{
         text-align: center;
     }
     .boton-aplicar{
-        width: 40%;
-    /* align-items: center; */
-    /* height: 30px; */
-    text-align: center;
+        text-align: center;
     }
-    .agregar-cupón{
-        width: 60%;
-    }
-    
+   
 }
+
 @media (min-width:1600px){
-    .libro-visitante {
+    .libro-visitante{
         width: 10%;
-}
+    }
 }
