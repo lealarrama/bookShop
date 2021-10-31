@@ -50,6 +50,9 @@ const mainControllers = {
     createProduct: function(req, res){
         res.render("createProduct");
     },
+    editProduct: function(req, res){
+        res.render("editProduct");
+    },
 }
 
 

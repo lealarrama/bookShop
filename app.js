@@ -22,6 +22,8 @@ app.use("/productCart", router);
 
 app.use("/createProduct", router);
 
+app.use("/editProduct", router);
+
 
 
 app.listen(RUTA, function(){
