@@ -431,6 +431,9 @@ footer button{
     }
 
     /*MAIN*/
+    .conteinerTodo{
+        margin: 10px;
+    }
     .inicio{
         border: solid #8C1B1B 6px;
     }
@@ -444,6 +447,11 @@ footer button{
     .libro1{
         border: solid #8C1B1B 6px;
     border-top: none;
+    flex-wrap: wrap;
+    }
+    .libro-despues{
+        padding: 0px;
+        width: 50%;
     }
     .libro2{
         border: solid #8C1B1B 6px;
@@ -464,6 +472,16 @@ footer button{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
+    .parte-derecha-descripcion{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .precio2{
+        font-size: 17px;
+    }
+
 
     /*FOOTER*/
     .iconosFooter{

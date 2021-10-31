@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
 
     <title>Document</title>
     <link rel="stylesheet" href="/css/createProduct.css">
 </head>
+
 <body>
     <%- include("./partials/header") %>
-    
-    <%- include("./partials/footer") %>
+        <form class="formCreate">
+            <h2 class="tituloCreate">Crear producto</h2>
+            <div class="nombreCreate">
+                <label for="nombreProducto">Nombre del producto:</label>
+                <input class="nombreProducto" type="text" name="nombreProducto" placeholder="Ej: El visitante">
+            </div>
+            <div class="desCreate">
+                <label for="descripcion">Describe el producto</label>
+                <textarea class="descProducto" name="despripcion" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
+            </div>
+            <div class="divFoto">
+                <label for="foto">Selecciona una imagen del producto</label>
+                <input class="fotoCreate" type="file" name="foto">
+            </div>
+            <div class="categoriaCreate">
+                <label for="categoria">Género del libro</label>
+                <select class="genero" name="categoria">
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Fantasía">Fantasía</option>
+                </select>
+            </div>
+            <div class="precioCreate">
+                <label for="precio">Precio del producto</label>
+                <input class="precio" type="text" name="precio" placeholder="Ej: $2000">
+            </div>
+            <div >
+                    <button class="botónCreate" type="submit"  class="boton-registro">
+                        <a href="/">Crear producto</a>
+                    </button>
+            </div>
+        </form>
+        <%- include("./partials/footer") %>
 </body>
+
 </html>
