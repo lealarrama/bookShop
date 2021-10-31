@@ -102,26 +102,21 @@ p{
     padding:1px;
     font-size: 14px;
 }
-
 h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding:1px;
 }
-
 main article{
     display: flex;
     background-color: #D9D9D9;
     padding: 0px 20px 0px 20px;
 }
-
 .artEnvio{
     padding: 0px;
 }
-
 .enviogratis{
     background-color: #BF8A26;
     color: white;
@@ -131,7 +126,6 @@ main article{
     align-items: center;
     justify-content: center;
 }
-
 .categorias{
     display: flex;
     flex-direction: row;
@@ -145,17 +139,14 @@ main article{
     align-items: center;
     width: 100%;
 }
-
 .fotolibro{
     margin: 10px;
 }
-
 .tituloLibro{
     width: 100%;
     margin: 10px;
     background-color: white;
 }
-
 .detalles{
     display: flex;
     flex-direction: column;
@@ -166,22 +157,18 @@ main article{
     padding: 10px;
     align-items: center;
 }
-
 .derecha{
     display: flex;
     flex-direction: column;
 }
-
 .estrellas{
     width: 30%;
 }
-
 .precio{
     color: #8C1B1B;
     text-align: center;
     margin: 10px;
 }
-
 .boton{
     background-color: #8C1B1B;
     color: #D9D9D9;
@@ -189,7 +176,6 @@ main article{
     text-align: center;
     padding: 6px;
 }
-
 .compartir{
     display: flex;
     flex-direction: row;
@@ -198,7 +184,6 @@ main article{
     align-items: center;
     justify-content: center;
 }
-
 .fa-envelope{
     padding: 5px;
     font-size: 20px;
@@ -235,7 +220,6 @@ main article{
 .fa-twitter:hover{
     background-color: #a45d5d;
 }
-
 .fa-pinterest-p{
     padding: 5px;
     font-size: 20px;
@@ -254,39 +238,32 @@ main article{
     width:100%;
     border-top: 1px solid #D9D9D9;
 }
-
 .envio{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .disponible{
     display: flex;
     justify-content: center;
 }
-
 .cohete{
     font-size: 25px;
     padding: 3px;
 }
-
 .fa-clock{
     font-size: 25px;
     padding: 3px;
 }
-
 .miniborde{
     border-bottom: 1px solid #D9D9D9;;
 }
-
 .descripcion{
     background-color: white;
     border-radius: 2%;
     margin: 10px;
     padding:10px;
 }
-
 .descubre{
     background-color: white;
     border-radius: 2%;
@@ -294,7 +271,6 @@ main article{
     padding:10px;
     width: 100%;
 }
-
 .detalledelproducto{
     background-color: white;
     border-radius: 2%;
@@ -302,14 +278,12 @@ main article{
     padding:10px;
     width: 100%;
 }
-
 .alinear{
     display: flex;
     padding: 4px;
     flex-direction: row;
     align-items: center;
 }
-
 .productobuscado{
     background-color: white;
     border-radius: 2%;
@@ -317,27 +291,22 @@ main article{
     padding:10px;
     width: 100%;
 }
-
 .compraron{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
-
 .columna{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .sangremanda{
     width: 70%;
 }
-
 .precios{
     color: #8C1B1B;
 }
-
 .botones{
     background-color: #8C1B1B;
     color: #D9D9D9;
@@ -354,53 +323,57 @@ main article{
     display: flex;
     background-color: #BF8A26;
     flex-direction: row;
-    padding: 4px;
-    justify-content: space-around;
+    padding: 8px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
 }
-
+.dejarMail{
+    border-radius: 4px;
+    padding: 10px;
+    height: 5px;
+}
 .texto{
     flex-grow: 0.50;
     font-family: 'Gemunu Libre';
     font-size: 17px;
 }
-
 .email{
     border-radius: 6px;
 }
-
-a {color: white; font-family: "gemunu libre"
-    ; text-decoration: none;}
-
+ footer a {
+    color: white; 
+    font-family: "gemunu libre";
+    text-decoration: none;
+}
 .contenedorFooter{
     display: flex;
     padding: 10px;
     background-color: #262120;
     justify-content: space-around;
 }
-
 .contactoYpedido{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .iconosFooter{
-    display: flex;
+    display: none;
     flex-direction: row;
 }
-
 .ayudaYenvios{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .copyRight{
     background-color: #262120;
     color: white;
     text-align: center;
     padding: 30px;
 }
+
+/*MEDIAQUERIES*/
 /*CELULAR*/
 @media (min-width:320px){
 
@@ -412,6 +385,7 @@ a {color: white; font-family: "gemunu libre"
         display: none;
     }
 
+    /*MAIN*/
     .seVeEnTablet{
         display: none;
     }
@@ -434,12 +408,35 @@ a {color: white; font-family: "gemunu libre"
         width: 70%;
     }
        /*footer*/
-    .iconosFooter{
-        display: none;
+       footer button{
+        background-color: #8c1b1b;
+        color: white;
+        border-radius: 4px;
+        padding: 5px 5px;
+        padding-left: 3px;
+        border: none;
+        margin-left: -5px;
+    }
+    .divBoton{
+        display: contents;
+    }
+    .contFooter{
+        width: 50%;
+    }
+    .texto{
+        width: 30%;
+    }
+    .dejarMail{
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        height: 5px;
+        width: 60%;
     }
 }
 /*TABLET*/
-@media (min-width:481px){/*HEADER*/
+@media (min-width:481px){
+    /*HEADER*/
     .logo{
         height: 140px;
         width: 140px;
@@ -482,7 +479,6 @@ a {color: white; font-family: "gemunu libre"
     background-color: white;
     align-items: center;    
     }
-
     .itemTools{
         display: flex;
     flex-direction: column;
@@ -492,26 +488,23 @@ a {color: white; font-family: "gemunu libre"
     font-size: 20px;
     padding: 10px;
     }
-
-.compartir{
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
+    .compartir{
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
     .seVeEnTablet{
         display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px;
-    padding-top: 0px;
-    justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        padding-top: 0px;
+        justify-content: center;
     }
-
     .tituloTablet{
         display: flex;
         background-color: white;
@@ -522,15 +515,15 @@ a {color: white; font-family: "gemunu libre"
     }
     .estrellasydatos{
         flex-grow: 0.25;
-    padding-left: 10px;
+        padding-left: 10px;
     }
     .precioTablet{
         flex-grow: 0.25;
-    text-align: left;
-    font-size: 29px;
-    padding: 15px 10px 10px;
-    border-bottom: 1px solid #ebebeb;
-    color: #8C1B1B;
+        text-align: left;
+        font-size: 29px;
+        padding: 15px 10px 10px;
+        border-bottom: 1px solid #ebebeb;
+        color: #8C1B1B;
     }
     .seveEnCompu{
         display: none;
@@ -540,18 +533,18 @@ a {color: white; font-family: "gemunu libre"
     }
     .envio{
         display: flex;
-    flex-direction: row;
-    padding: 15px 0px;
-    align-items: center;
+        flex-direction: row;
+        padding: 15px 0px;
+        align-items: center;
     }
     .disponible{
         display: flex;
-    justify-content: center;
-    padding: 10px 0px;
+        justify-content: center;
+        padding: 10px 0px;
     }
     .contenedorEnvio{
         flex-grow: 0.25;
-    border-bottom: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
     } 
     .boton{
         background-color: #8C1B1B;
@@ -561,7 +554,7 @@ a {color: white; font-family: "gemunu libre"
         font-size: 20px;
         padding: 10px;
         border-radius: 5px;
-     margin: 10px;
+         margin: 10px;
     }
     .boton:hover{
         background-color: #a45d5d;
@@ -590,7 +583,7 @@ a {color: white; font-family: "gemunu libre"
         display: flex;  
         flex-direction: row;
     }
-    .fa-instagram{
+    .iconosFooter i{
         padding: 5px;
         font-size: 20px;
         color: white;
@@ -599,12 +592,27 @@ a {color: white; font-family: "gemunu libre"
         border-radius: 20%;
         margin: 3px;
     }
+    .contFooter{
+        display: flex;
+    }
+    footer button{
+        padding: 4px;
+        border: none;
+    
+    }
+    .dejarMail{
+        border-radius: 4px;
+        border: none;
+    }
+    .mantenteInformado{
+        align-items: center;
+    }
 }
 
 
 /*COMPU*/
 @media (min-width:769px){
-    /*HEADER*/
+    
     /*HEADER*/
     .logo{
         height: 220px;
@@ -727,7 +735,7 @@ a {color: white; font-family: "gemunu libre"
         box-shadow: 0px 0px 10px rgb(100 100 100);
         transition: all 400ms;
      }
-     .columnaTablet:hover{
+    .columnaTablet:hover{
         box-shadow: 0px 0px 10px rgb(100 100 100);
         transition: all 400ms;
      }
@@ -755,7 +763,7 @@ a {color: white; font-family: "gemunu libre"
         width: 76%;
     }
 }
-
+    /*PC*/
     @media(min-width:1400px){
             .seveEnCompu{
                 padding: 0px 20px 0px 20px;

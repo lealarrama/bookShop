@@ -176,8 +176,15 @@ label {
     display: flex;
     background-color: #BF8A26;
     flex-direction: row;
-    padding: 4px;
-    justify-content: space-around;
+    padding: 8px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+.dejarMail{
+    border-radius: 4px;
+    padding: 10px;
+    height: 5px;
 }
 .texto{
     flex-grow: 0.50;
@@ -187,8 +194,8 @@ label {
 .email{
     border-radius: 6px;
 }
-footer a {
-    color: white;
+ footer a {
+    color: white; 
     font-family: "gemunu libre";
     text-decoration: none;
 }
@@ -204,7 +211,7 @@ footer a {
     align-items: center;
 }
 .iconosFooter{
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 .ayudaYenvios{
@@ -232,15 +239,37 @@ footer a {
         display: none;
     }
     /*FOOTER*/
-    .iconosFooter{
-        display: none;
+    footer button{
+        background-color: #8c1b1b;
+        color: white;
+        border-radius: 4px;
+        padding: 5px 5px;
+        padding-left: 3px;
+        border: none;
+        margin-left: -5px;
+    }
+    .divBoton{
+        display: contents;
+    }
+    .contFooter{
+        width: 50%;
+    }
+    .texto{
+        width: 30%;
+    }
+    .dejarMail{
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        height: 5px;
+        width: 60%;
     }
 }
 /*TABLET*/
 @media (min-width:481px){
 
      /*HEADER*/
-     .logo{
+    .logo{
         height: 140px;
         width: 140px;
         margin-left: 40%;
@@ -284,6 +313,21 @@ footer a {
         background-color: #8c1b1b;
         border-radius: 20%;
         margin: 3px;
+    }
+    .contFooter{
+        display: flex;
+    }
+    footer button{
+        padding: 4px;
+        border: none;
+    
+    }
+    .dejarMail{
+        border-radius: 4px;
+        border: none;
+    }
+    .mantenteInformado{
+        align-items: center;
     }
 }
 
