@@ -12,11 +12,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 .logo{
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
 }
 .nav-header-top-bar{
     max-width: 300px;
@@ -44,7 +43,8 @@
 }
 .fa-shopping-cart {
     color:#262120;
-    font-size: 18px;
+    font-size: 22px;
+    padding-right: 32px
 }
 .header-bottom-bar{
     background-color: #8C1B1B;
@@ -52,22 +52,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px 8%;
+}
+.fa, .fas{
+    font-weight: 900;
+    margin-left: 5px;
 }
 .lista-bottom-header{
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 .links-bottom-header-nav{
     text-decoration: none;
     color:#D9D9D9;
     display: none;
 }
-.fa-home{
+.fa-bars{
     color:#D9D9D9;
     font-size: 25px;
     margin-left: 38%;
+    padding:5px;
 }
 .buscador{
     height: 20px;
@@ -83,10 +89,11 @@
 }
 .boton-buscador{
     border: none;
+    border-radius: 5px;
     margin-left: -15px;
     background-color: #fff;
+    padding: 0 5px;
 }
-
 
 /*MAIN*/
 
@@ -216,6 +223,14 @@ footer a {
 /*MEDIA QUERIES*/
 /*MOVIL*/
 @media (min-width:320px){
+
+    /*HEADER*/
+    .logo{
+        margin-left: 10%;
+    }
+    .esconderdelcel{
+        display: none;
+    }
     /*FOOTER*/
     .iconosFooter{
         display: none;
@@ -224,7 +239,12 @@ footer a {
 /*TABLET*/
 @media (min-width:481px){
 
-    /*HEADER*/
+     /*HEADER*/
+     .logo{
+        height: 140px;
+        width: 140px;
+        margin-left: 40%;
+    }
     .links-bottom-header-nav{
         display: flex;
         margin-left: 60%;
@@ -237,6 +257,19 @@ footer a {
     }
     .fa-home{
         margin-left: -70%;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .esconderdelcel{
+        display: flex;
+    }
+    .input-buscador{
+        height: 25px;
+        font-size: 15px;
+    }
+    .boton-buscador{
+        height: 25px;
     }
     /*FOOTER*/
     .iconosFooter{
@@ -257,17 +290,36 @@ footer a {
 /*LAPTOP*/
 @media (min-width:769px){
 
-    /*HEADER*/
+   /*HEADER*/
+   .logo{
+    height: 220px;
+    width: 220px;
+    margin-left:2%;
+}
     header{
         font-size: 20px;
     }
     .header-top-bar{
-        padding:30px 10%;
+        padding:30px 6%;
     }
     .header-bottom-bar{
-        padding: 25px 10%;
+        padding: 25px 8%;
     }
     .li-header-top{
         font-size: 20px;
     }
+    .fa-bars{
+        display: none;
+    }
+    .input-buscador{
+        width: 240px;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 19px;
+    }
+    .boton-buscador{
+        height: 30px;
+        font-size: 19px;
+    }
+
 }
