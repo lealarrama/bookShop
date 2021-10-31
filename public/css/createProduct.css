@@ -95,6 +95,84 @@
     padding: 0 5px;
 }
 
+/* MAIN */
+.formCreate{
+    border: 6pxsolid #262120;
+        background-color: #bf8a26;
+        text-align: center;
+        border-radius: 5px;
+        margin: 10PX;
+        padding-bottom: 10px;
+        line-height: 3;
+}
+.tituloCreate{
+    font-size: 30px;
+    font-family: 'GEMUNU LIBRE';
+    padding: 10px;
+}
+.nombreCreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nombreProducto{
+    border-radius: 5px;
+    padding: 10px;
+    width: 62%;
+}
+.desCreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descProducto{
+    border-radius: 5px;
+        padding: 7px;
+        width: 66%;
+        height: 52px;
+        margin-top: 16px;
+}
+.divFoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotoCreate{
+    font-size: 14px;
+}
+.categoriaCreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genero{
+    width: 61%;
+    border-radius: 8px;
+    padding: 10px;
+}
+.precioCreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.precio{
+    border-radius: 5px;
+        padding: 10px;
+    }
+.botónCreate{
+    background-color: #8C1B1B;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    margin: 10px;
+   width: 50%;
+   border-radius: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
 /* FOOTER */
 .mantenteInformado{
     display: flex;
@@ -225,6 +303,14 @@
         height: 25px;
     }
 
+    /*MAIN*/
+    .divFoto{
+        margin-bottom: 21px;
+    margin-top: 21px;
+    }
+    .formCreate{
+        margin: 30px;
+    }
 
     /*FOOTER*/
     .iconosFooter{
@@ -290,5 +376,90 @@
     .boton-buscador{
         height: 30px;
         font-size: 19px;
+    }
+    /*MAIN*/
+    .formCreate{
+        background-color: #bf8a26;
+    text-align: center;
+    border-radius: 5px;
+    margin: 30PX;
+    padding-bottom: 10px;
+    line-height: 3;
+    }
+    .tituloCreate{
+        font-size: 30px;
+        font-family: 'GEMUNU LIBRE';
+        margin: 11px;
+        border-bottom: 1px solid;
+    }
+    .nombreCreate{
+        display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    }
+    label{
+        font-size: 20px;
+    }
+    .nombreProducto{
+        border-radius: 5px;
+    padding: 10px;
+    width: 19%;
+    margin-left: 40px;
+    }
+    .desCreate{
+        display: flex;
+        flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    }
+    .descProducto{
+        border-radius: 5px;
+    padding: 7px;
+    width: 20%;
+    height: 52px;
+    margin-top: 16px;
+    margin-left: 40px;
+    }
+    .divFoto{
+        display: flex;
+        flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    justify-content: center;
+    }
+    .fotoCreate{
+        margin-left: 40px;
+        font-size: 17px;
+    }
+    .categoriaCreate{
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+    .genero{
+        width: 22%;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 86px;
+    }
+    .precioCreate{
+        display: flex;
+        flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    }
+    .precio{
+        border-radius: 5px;
+            padding: 10px;
+            width: 20%;
+            margin-left: 55px;
     }
 }
