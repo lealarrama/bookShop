@@ -21,6 +21,9 @@ router.get('/productCart', mainControllers.productCart);
 /* get createProduct page*/
 router.get('/createProduct', mainControllers.createProduct);
 
+/* get editProduct page*/
+router.get('/editProduct', mainControllers.editProduct);
+
 
 
 module.exports = router;
