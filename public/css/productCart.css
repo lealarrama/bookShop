@@ -3,99 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-/*HEDER*/
-.header-top-bar{
-    background-color:#D9D9D9;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    width: 110px;
-    height: 110px;
-}
-.nav-header-top-bar{
-    max-width: 300px;
-    line-height: 4%;
-}
-.lista-top-header{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.li-header-top{
-    font-size: 15px;
-    
-}
-.link-registrate{
-    text-decoration: none;
-    color:#262120;
-    display: none;
-}
-.link-inicia-sesion{
-    text-decoration: none;
-    color:#262120;
-    padding: 15px;
-    display: none;
-}
-.fa-shopping-cart {
-    color:#262120;
-    font-size: 22px;
-    padding-right: 32px
-}
-.header-bottom-bar{
-    background-color: #8C1B1B;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
-}
-.fa, .fas{
-    font-weight: 900;
-    margin-left: 5px;
-}
-.lista-bottom-header{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.links-bottom-header-nav{
-    text-decoration: none;
-    color:#D9D9D9;
-    display: none;
-}
-.fa-bars{
-    color:#D9D9D9;
-    font-size: 25px;
-    margin-left: 38%;
-    padding:5px;
-}
-.buscador{
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    align-self: flex-start;
-}
-.input-buscador{
-    border:none;
-    border-radius: 5px;
-    padding-left:5px;
-}
-.boton-buscador{
-    border: none;
-    border-radius: 5px;
-    margin-left: -15px;
-    background-color: #fff;
-    padding: 0 5px;
-}
-/*TERMINA HEADER*/
 
 /*main*/
 
@@ -118,10 +25,10 @@ h3{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.precio2{
+.pcart-precio2{
     padding: 0;
 }
-.boton-de-pago{
+.pcart-boton-de-pago{
     text-align: center;
     width: 120px;
     background-color:#8C1B1B;
@@ -129,47 +36,47 @@ h3{
     border-radius:5px;
     padding: 5px;
 }
-.subtítulo{
+.pcart-subtítulo{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
     font-family:gemunu libre;
 }
-.message{
+.pcart-message{
     width: 100%;
 }
-.primeros-parrafos{
+.pcart-primeros-parrafos{
     box-shadow: 0px 0px 10px rgb(100 100 100);
     margin: 5px;
 }
-.conteinerTodo{
+.pcart-conteinerTodo{
     box-shadow: 0px 0px 10px rgb(100 100 100);
     margin: 5px;
 }
-.terminos{
+.pcart-terminos{
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
     text-align: center;
 }
-.inicio{
+.pcart-inicio{
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
     background-color: white;
 }
-.descripcion{
-display: block;
-margin-left: 15%;
+.pcart-descripcion{
+    display: block;
+    margin-left: 15%;
 }
-.imagenes{
+.pcart-imagenes{
     display: contents;
 }
-.nombre-libro{
+.pcart-nombre-libro{
     font-size: 20px;
     font-family:gemunu libre;
 }
-.estrellas{
+.pcart-estrellas{
     color:#eac926;
     font-size: 8px;
     padding-top: 5px;
@@ -179,7 +86,7 @@ p{
     font-family: 'Roboto';
     
 }
-.boton-cantidad{
+.pcart-boton-cantidad{
     width: 20px;
     border-radius: 3px;
 }
@@ -187,18 +94,10 @@ button{
     background-color: #8C1B1B;
     border-radius: 5px;
 }
-.conteinerDesc{
+.pcart-conteinerDesc{
     display: flex;
 }
-.libro1 {
-    display: flex;
-    padding: 15px;
-    border: solid #8C1B1B 1px;
-    background-color: white;
-    padding-bottom: 10px;
-    justify-content: space-between;
-}
-.libro2{
+.pcart-libro1 {
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
@@ -206,7 +105,7 @@ button{
     padding-bottom: 10px;
     justify-content: space-between;
 }
-.libro3{
+.pcart-libro2{
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
@@ -214,33 +113,41 @@ button{
     padding-bottom: 10px;
     justify-content: space-between;
 }
-.libro-despues{
+.pcart-libro3{
+    display: flex;
+    padding: 15px;
+    border: solid #8C1B1B 1px;
+    background-color: white;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.pcart-libro-despues{
     width: 30%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     
 }
-.libro-visitante{
+.pcart-libro-visitante{
     width: 30%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
 }
-.libro-lasangremanda{
+.pcart-libro-lasangremanda{
     width: 30%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
 }
-.parte-derecha-descripcion{
+.pcart-parte-derecha-descripcion{
     text-align: center;
     display: flex;
     line-height: 2;
     justify-content: center;
     flex-direction: column;
 }
-.boton-eliminar{
+.pcart-boton-eliminar{
     width: 80px;
     padding: 5px;
     text-align: center;
     color: white;
 }
-.formas-de-pago{
+.pcart-formas-de-pago{
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
@@ -248,21 +155,21 @@ button{
     padding-bottom: 10px;
     justify-content: space-between;
 }
-.detalle-de-pago{
+.pcart-detalle-de-pago{
     border: solid #8C1B1B 1px;
     background-color: white;
     display: flex;
     padding: 15px;
     padding-bottom:10px;
 }
-.info{
+.pcart-info{
     margin-left: auto;
 }
 h6{
     font-size: 12px;
     text-align: center;
 }
-.boton-seguir-comprando{
+.pcart-boton-seguir-comprando{
     display: block;
     margin:auto;
     padding: 5px;
@@ -271,20 +178,20 @@ h6{
     width: 150px;
     border-radius: 5px;
 }
-.boton-aplicar{
+.pcart-boton-aplicar{
     background-color: #8C1B1B;
     border-radius: 5px;
     color:white;
     padding: 5px;
 }
-.agregar-cupon{
+.pcart-agregar-cupon{
     width: 65%;
 }
-.total{
+.pcart-total{
     display: flex;
     justify-content: space-between;
 }
-.envío{
+.pcart-envío{
     display: flex;
     justify-content: space-between;   
 }
@@ -292,19 +199,19 @@ h6{
     font-size: 20px;
     color:#262120;
 }
-.añadirCupon{
+.pcart-añadirCupon{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.texto{
+.pcart-texto{
     width: 40%;
 }
-.aplicar{
+.pcart-aplicar{
     display: flex;
     justify-content: space-evenly;
 }
-.pago{
+.pcart-pago{
     background-color: #8C1B1B;
     width: 110px;
     border-radius: 5px;
@@ -315,299 +222,88 @@ h4{
 }
 /*TERMINA EL MAIN*/
 
-/* FOOTER */
-.mantenteInformado{
-    display: flex;
-    background-color: #BF8A26;
-    flex-direction: row;
-    padding: 8px;
-    justify-content: center;
-    margin-top: 30px;
-    align-items: center;
-}
-.dejarMail{
-    border-radius: 4px;
-    padding: 10px;
-    height: 5px;
-}
-.texto{
-    flex-grow: 0.50;
-    font-family: 'Gemunu Libre';
-    font-size: 17px;
-}
-.email{
-    border-radius: 6px;
-}
- footer a {
-    color: white; 
-    font-family: "gemunu libre";
-    text-decoration: none;
-}
-.contenedorFooter{
-    display: flex;
-    padding: 10px;
-    background-color: #262120;
-    justify-content: space-around;
-}
-.contactoYpedido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.iconosFooter{
-    display: none;
-    flex-direction: row;
-}
-.ayudaYenvios{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.copyRight{
-    background-color: #262120;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-/*TERMINA EL FOOTER*/
-
-/*MEDIA QUERIS*/
-/*MOVIL*/
-@media (min-width:320){
-    /*HEADER*/
-    .logo{
-        margin-left: 10%;
-    }
-    .esconderdelcel{
-        display: none;
-    }
-    .conteinerTodo{
-        box-shadow: 0px 0px 10px rgb(100 100 100);
-        margin: 10px;
-    }
-    .primeros-parrafos{
-        box-shadow: 0px 0px 10px rgb(100 100 100);
-        margin: 30px;
-    }
-
-    /*FOOTER*/
-    footer button{
-        background-color: #8c1b1b;
-        color: white;
-        border-radius: 4px;
-        padding: 5px 5px;
-        padding-left: 3px;
-        border: none;
-        margin-left: -5px;
-    }
-    .divBoton{
-        display: contents;
-    }
-    .contFooter{
-        width: 50%;
-    }
-    .texto{
-        width: 30%;
-    }
-    .dejarMail{
-        border: none;
-        border-radius: 4px;
-        padding: 10px;
-        height: 5px;
-        width: 60%;
-    }
-}
-
 /*TABLET*/
 @media (min-width:481px){
 
-     /*HEADER*/
-     .logo{
-        height: 140px;
-        width: 140px;
-        margin-left: 40%;
-    }
-    .links-bottom-header-nav{
-        display: flex;
-        margin-left: 60%;
-    }
-    .lista-bottom-header{
-        padding: 0 15%;
-    }
-    .link-informacion{
-        margin-left: 80%;
-    }
-    .fa-home{
-        margin-left: -70%;
-    }
-    .fa-bars{
-        display: none;
-    }
-    .esconderdelcel{
-        display: flex;
-    }
-    .input-buscador{
-        height: 25px;
-        font-size: 15px;
-    }
-    .boton-buscador{
-        height: 25px;
-    }
-    .link-registrate{
-        display: flex;
-    }
-    .link-inicia-sesion{
-        display: flex;
-    }
+    
     /*MAIN*/
-    /*CARRUSEL*/
-    .carrusel-bottom{
-        justify-content:center;
-    }
-    .carrusel-bottom img{
-        width:25%;
-    }
-    .imagen-2{
-        display:flex;
-    }
-
-    /*MAIN*/
-    .primeros-parrafos{
+    .pcart-primeros-parrafos{
         margin: 30px;
     }
-    .conteinerTodo{
+    .pcart-conteinerTodo{
         margin: 30px;
     }
-    .inicio{
+    .pcart-inicio{
         border: solid #8C1B1B 6px;
     }
-    .terminos{
+    .pcart-terminos{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
-    .subtítulo{
+    .pcart-subtítulo{
         border: solid #8C1B1B 6px;
     }
-    .estrellas{
+    .pcart-estrellas{
         font-size: 10px;
         padding-top: 15px;
     }
-    .boton-eliminar{
+    .pcart-boton-eliminar{
         width: 120px;
         margin-top: 20px;
     }
-    .libro-despues{
+    .pcart-libro-despues{
         padding: 10px;
         width: 20%;
         
     }
-    .libro-lasangremanda{
+    .pcart-libro-lasangremanda{
         padding: 10px;
         width: 20%;
     }
-    .libro-visitante{
+    .pcart-libro-visitante{
         padding: 10px;
         width: 20%;
     }
-    .libro1{
+    .pcart-libro1{
         border: solid #8C1B1B 6px;
         border-top: none;
     }
-    .libro2{
+    .pcart-libro2{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
-    .libro3{
+    .pcart-libro3{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
-    .detalle-de-pago{
+    .pcart-detalle-de-pago{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
     
-    .gastos{
+    .pcart-gastos{
         padding-right: 200px;
     }
-    .formas-de-pago{
+    .pcart-formas-de-pago{
         border: solid #8C1B1B 6px;
     border-top: none;
     }
-    .parte-derecha-descripcion{
+    .pcart-parte-derecha-descripcion{
         display: flex;
         align-items: center;
     }
-    .precio2{
+    .pcart-precio2{
         font-size: 17px;
     }
 
 
-    /*FOOTER*/
-    .iconosFooter{
-        display: flex;  
-        flex-direction: row;
-    }
-    .iconosFooter i{
-        padding: 5px;
-        font-size: 20px;
-        color: white;
-        border: 1px solid #8c1b1b;
-        background-color: #8c1b1b;
-        border-radius: 20%;
-        margin: 3px;
-    }
-    .contFooter{
-        display: flex;
-    }
-    footer button{
-        padding: 4px;
-        border: none;
     
-    }
-    .dejarMail{
-        border-radius: 4px;
-        border: none;
-    }
-    .mantenteInformado{
-        align-items: center;
-    }
 }
 
 
 
 @media (min-width:769px){
-/*HEADER*/
-.logo{
-    height: 220px;
-    width: 220px;
-    margin-left:2%;
-}
-header{
-    font-size: 20px;
-}
-.header-top-bar{
-    padding:30px 6%;
-}
-.header-bottom-bar{
-    padding: 25px 8%;
-}
-.li-header-top{
-    font-size: 20px;
-}
-.fa-bars{
-    display: none;
-}
-.input-buscador{
-    width: 240px;
-    height: 30px;
-    padding-left: 10px;
-    font-size: 19px;
-}
-.boton-buscador{
-    height: 30px;
-    font-size: 19px;
-}
+
  /*MAIN*/
     /*PRODUCTOS*/
     h1{
@@ -616,45 +312,45 @@ header{
     p{
         font-size: 20px;
     }
-    .libro-lasangremanda{
+    .pcart-libro-lasangremanda{
         width: 16%;
     }
-    .libro-visitante{
+    .pcart-libro-visitante{
         width: 16%;
     }
     
-    .nombre-libro{
+    .pcart-nombre-libro{
         font-size: 35px;
     }
-    .precio2{
+    .pcart-precio2{
         font-size: 25px;
         margin-top: 20px;
     }
 
-    .estrellas{
+    .pcart-estrellas{
         color:#eac926;
         font-size: 20px;
         padding-top: 15px;
     }
     
-    .seguir-comprando{
+    .pcart-seguir-comprando{
         width: 160px;
         height: 30px;
         text-align: center;
     }
-    .pago{
+    .pcart-pago{
         width: 130px;
         height: 30px;
         text-align: center;
     }
-    .boton-aplicar{
+    .pcart-boton-aplicar{
         text-align: center;
     }
    
 }
 
 @media (min-width:1600px){
-    .libro-visitante{
+    .pcart-libro-visitante{
         width: 10%;
     }
 }
