@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/index.css">
-    <title>SK Libros</title>
+    <%- include("./partials/head") %>
 </head>
 <body>
     <%- include("./partials/header") %>
-    <main>
+    <main class="index-main">
     <!--CARRUSEL-->
-    <div class="slider">
+    <div class="index-slider">
         <ul>
             <li><img src="img/carrusel 3.png" alt=""></li>
             <li><img src="img/carrusel.webp" alt=""></li>
@@ -22,173 +16,166 @@
         </ul>
     </div>
     <!--PRODUCTOS-->
-        <div class="titulo-productos">
+        <div class="index-titulo-productos">
             <h3>
-                 <a href="">
-                    Terror
-                 </a>
+                 <a href="">Terror</a>
             </h3>
         </div>
-        <section class="caja-productos">
-            <div class="producto">
-                <div class="imagenes-productos">
-                    <div class="mensajito-producto">
+        <section class="index-caja-productos">
+            <div class="index-producto">
+                <div class="index-img-productos">
+                    <div class="index-msj-producto">
                         <p>Nuevo!</p>
                     </div>
                     <img src="/img/visitante.jpg" alt=""> 
                 </div>
-                <div class="caja-descripcion">
-                    <a href="/productDetail"><p class="descripciones">
-                        <b>El Visitante</b>
-                    </p></a>
-                    <div class="contenedorDetalles">
-                        <p class="precios">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
+                <div class="index-caja-descripcion">
+                    <a href="/productDetail">
+                        <p class="index-descripciones"><b>El Visitante</b></p>
+                    </a>
+                    <div class="index-contenedor-detalles">
+                        <p class="index-precios">$6.770</p>
+                        <p class="index-descuentos">40% OFF</p>
                     </div>
-                    <button type="" class="agregar-carrito">Agregar al carrito</button>
+                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-            <div class="producto">
-                    <div class="imagenes-productos">
-                        <div class="mensajito-producto">
-                            <p>Nuevo!</p>
-                        </div>
-                        <img src="/img/lasangre-manda.jpg" alt=""> 
-                    </div>
-                    <div class="caja-descripcion">
-                        <a href="/productDetail"><p class="descripciones">
-                            <b>La sangre manda</b>
-                        </p></a>
-                            <div class="contenedorDetalles">
-                                <p class="precios">$6.770</p>
-                                <p class="descuentos">40% OFF</p>
-                            </div>
-                            <button type="" class="agregar-carrito">Agregar al carrito</button>
-                    </div>
-            </div>
-            </div>
-            <div class="producto">
-                <div class="imagenes-productos">
-                    <div class="mensajito-producto">
-                        <p>Nuevo!</p>
-                    </div>
-                    <img src="/img/despues.jpg" alt=""> 
-                </div>
-                <div class="caja-descripcion">
-                    <a href="/productDetail">  <p class="descripciones">
-                        <b>Después</b>
-                    </p></a>
-                    <div class="contenedorDetalles">
-                        <p class="precios">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
-                    </div>
-                    <button type="" class="agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <div class="imagenes-productos">
-                    <div class="mensajito-producto">
-                        <p>Nuevo!</p>
-                    </div>
-                    <img src="/img/elinstituto.jpg" alt=""> 
-                </div>
-                <div class="caja-descripcion">
-                    <a href="/productDetail"><p class="descripciones">
-                        <b>El Instituto</b>
-                    </p></a>
-                    <div class="contenedorDetalles">
-                        <p class="precios">$2.770</p>
-                        <p class="descuentos">25% OFF</p>
-                    </div>
-                    <button type="" class="agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-        </section>
-    <!--ANUNCIO-->
-        <div class="anuncio">
-            <img src="/img/anuncio" class="imgAnuncio">
-        </div>
-    <!--PRODUCTOS-->
-    <div class="titulo-productos">
-        <h3>
-             <a href="">
-                Suspenso
-             </a>
-        </h3>
-    </div>
-    <section class="caja-productos">
-        <div class="producto">
-            <div class="imagenes-productos">
-                <div class="mensajito-producto">
-                    <p>Nuevo!</p>
-                </div>
-                <img src="/img/visitante.jpg" alt=""> 
-            </div>
-            <div class="caja-descripcion">
-                <a href="/productDetail"><p class="descripciones">
-                    <b>El Visitante</b>
-                </p></a>
-                <div class="contenedorDetalles">
-                    <p class="precios">$6.770</p>
-                    <p class="descuentos">40% OFF</p>
-                </div>
-                <button type="" class="agregar-carrito">Agregar al carrito</button>
-            </div>
-        </div>
-        <div class="producto">
-                <div class="imagenes-productos">
-                    <div class="mensajito-producto">
+            <div class="index-producto">
+                <div class="index-img-productos">
+                    <div class="index-msj-producto">
                         <p>Nuevo!</p>
                     </div>
                     <img src="/img/lasangre-manda.jpg" alt=""> 
                 </div>
-                <div class="caja-descripcion">
-                    <a href="/productDetail"><p class="descripciones">
-                        <b>La sangre manda</b>
-                    </p></a>
-                        <div class="contenedorDetalles">
-                            <p class="precios">$6.770</p>
-                            <p class="descuentos">40% OFF</p>
-                        </div>
-                        <button type="" class="agregar-carrito">Agregar al carrito</button>
+                <div class="index-caja-descripcion">
+                    <a href="/productDetail">
+                        <p class="index-descripciones"><b>La sangre manda</b></p>
+                    </a>
+                    <div class="index-contenedor-detalles">
+                        <p class="index-precios">$6.770</p>
+                        <p class="index-descuentos">40% OFF</p>
+                    </div>
+                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
+            </div>
+            <div class="index-producto">
+                <div class="index-img-productos">
+                    <div class="index-msj-producto">
+                        <p>Nuevo!</p>
+                    </div>
+                    <img src="/img/despues.jpg" alt=""> 
+                </div>
+                <div class="index-caja-descripcion">
+                    <a href="/productDetail">  
+                        <p class="index-descripciones"><b>Después</b></p>
+                    </a>
+                    <div class="index-contenedor-detalles">
+                        <p class="index-precios">$6.770</p>
+                        <p class="index-descuentos">40% OFF</p>
+                    </div>
+                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="index-producto">
+                <div class="index-img-productos">
+                    <div class="index-msj-producto">
+                        <p>Nuevo!</p>
+                    </div>
+                    <img src="/img/elinstituto.jpg" alt=""> 
+                </div>
+                <div class="index-caja-descripcion">
+                    <a href="/productDetail">
+                        <p class="index-descripciones"><b>El Instituto</b></p>
+                    </a>
+                    <div class="index-contenedor-detalles">
+                        <p class="index-precios">$2.770</p>
+                        <p class="index-descuentos">25% OFF</p>
+                    </div>
+                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+    <!--ANUNCIO-->
+        <div class="index-anuncio">
+            <img src="/img/anuncio" class="ndex-img-anuncio">
         </div>
+    <!--PRODUCTOS-->
+    <div class="index-titulo-productos">
+        <h3>
+             <a href="">Suspenso</a>
+        </h3>
+    </div>
+    <section class="index-caja-productos">
+        <div class="index-producto">
+            <div class="index-img-productos">
+                <div class="index-msj-producto">
+                    <p>Nuevo!</p>
+                </div>
+                <img src="/img/visitante.jpg" alt=""> 
+            </div>
+            <div class="index-caja-descripcion">
+                <a href="/productDetail">
+                    <p class="index-descripciones"><b>El Visitante</b></p>
+                </a>
+                <div class="index-contenedor-detalles">
+                    <p class="index-precios">$6.770</p>
+                    <p class="index-descuentos">40% OFF</p>
+                </div>
+                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+            </div>
         </div>
-        <div class="producto">
-            <div class="imagenes-productos">
-                <div class="mensajito-producto">
+        <div class="index-producto">
+            <div class="index-img-productos">
+                <div class="index-msj-producto">
+                    <p>Nuevo!</p>
+                </div>
+                <img src="/img/lasangre-manda.jpg" alt=""> 
+            </div>
+            <div class="index-caja-descripcion">
+                <a href="/productDetail">
+                    <p class="index-descripciones"><b>La sangre manda</b></p>
+                </a>
+                <div class="index-contenedor-detalles">
+                    <p class="index-precios">$6.770</p>
+                    <p class="index-descuentos">40% OFF</p>
+                </div>
+                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="index-producto">
+            <div class="index-img-productos">
+                <div class="index-msj-producto">
                     <p>Nuevo!</p>
                 </div>
                 <img src="/img/despues.jpg" alt=""> 
             </div>
-            <div class="caja-descripcion">
-                <a href="/productDetail"><p class="descripciones">
-                    <b>Después</b>
-                </p></a>
-                <div class="contenedorDetalles">
-                    <p class="precios">$6.770</p>
-                    <p class="descuentos">40% OFF</p>
+            <div class="index-caja-descripcion">
+                <a href="/productDetail">  
+                    <p class="index-descripciones"><b>Después</b></p>
+                </a>
+                <div class="index-contenedor-detalles">
+                    <p class="index-precios">$6.770</p>
+                    <p class="index-descuentos">40% OFF</p>
                 </div>
-                <button type="" class="agregar-carrito">Agregar al carrito</button>
+                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
-        <div class="producto">
-            <div class="imagenes-productos">
-                <div class="mensajito-producto">
+        <div class="index-producto">
+            <div class="index-img-productos">
+                <div class="index-msj-producto">
                     <p>Nuevo!</p>
                 </div>
                 <img src="/img/elinstituto.jpg" alt=""> 
             </div>
-            <div class="caja-descripcion">
-                <a href="/productDetail"><p class="descripciones">
-                    <b>El Instituto</b>
-                </p></a>
-                <div class="contenedorDetalles">
-                    <p class="precios">$2.770</p>
-                    <p class="descuentos">25% OFF</p>
+            <div class="index-caja-descripcion">
+                <a href="/productDetail">
+                    <p class="index-descripciones"><b>El Instituto</b></p>
+                </a>
+                <div class="index-contenedor-detalles">
+                    <p class="index-precios">$2.770</p>
+                    <p class="index-descuentos">25% OFF</p>
                 </div>
-                <button type="" class="agregar-carrito">Agregar al carrito</button>
+                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
     </section>
