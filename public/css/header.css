@@ -13,35 +13,35 @@
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+.header-logo{
     width: 110px;
     height: 110px;
 }
-.nav-header-top-bar{
+.header-nav-header-top-bar{
     max-width: 300px;
     line-height: 4%;
 }
-.lista-top-header{
+.header-lista-top-header{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.li-header-top{
+.header-li-header-top{
     font-size: 15px;
     
 }
-.link-registrate{
+.header-link-registrate{
     text-decoration: none;
     color:#262120;
 }
-.link-inicia-sesion{
+.header-link-inicia-sesion{
     text-decoration: none;
     color:#262120;
     padding: 15px;
 }
-.fa-shopping-cart {
+header .fa-shopping-cart {
     color:#262120;
     font-size: 22px;
     padding-right: 32px
@@ -54,40 +54,40 @@
     align-items: center;
     padding: 25px 8%;
 }
-.fa, .fas{
+header .fa, .fas{
     font-weight: 900;
     margin-left: 5px;
 }
-.lista-bottom-header{
+.header-lista-bottom-header{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-.links-bottom-header-nav{
+.header-links-bottom-header-nav{
     text-decoration: none;
     color:#D9D9D9;
     display: none;
 }
-.fa-bars{
+header .fa-bars{
     color:#D9D9D9;
     font-size: 25px;
     margin-left: 38%;
     padding:5px;
 }
-.buscador{
+.header-buscador{
     height: 20px;
     display: flex;
     flex-direction: row;
     margin-left: 5%;
     align-self: flex-start;
 }
-.input-buscador{
+.header-input-buscador{
     border:none;
     border-radius: 5px;
     padding-left:5px;
 }
-.boton-buscador{
+.header-boton-buscador{
     border: none;
     border-radius: 5px;
     margin-left: -15px;
@@ -100,10 +100,10 @@
 /*MOVIL*/
 @media(min-width:320px){
     /*HEADER*/
-    .logo{
+    .header-logo{
         margin-left: 10%;
     }
-    .esconderdelcel{
+    .header-esconderdelcel{
         display: none;
     }
 }
@@ -111,35 +111,35 @@
 @media (min-width:481px){
 
     /*HEADER*/
-    .logo{
+    .header-logo{
         height: 140px;
         width: 140px;
         margin-left: 40%;
     }
-    .links-bottom-header-nav{
+    .header-links-bottom-header-nav{
         display: flex;
         margin-left: 60%;
     }
-    .lista-bottom-header{
+    .header-lista-bottom-header{
         padding: 0 15%;
     }
-    .link-informacion{
+    .header-link-informacion{
         margin-left: 80%;
     }
-    .fa-home{
+    header .fa-home{
         margin-left: -70%;
     }
-    .fa-bars{
+    header .fa-bars{
         display: none;
     }
-    .esconderdelcel{
+    .header-esconderdelcel{
         display: flex;
     }
-    .input-buscador{
+    .header-input-buscador{
         height: 25px;
         font-size: 15px;
     }
-    .boton-buscador{
+    .header-boton-buscador{
         height: 25px;
     }
 }
@@ -147,7 +147,7 @@
 @media (min-width:769px){
 
     /*HEADER*/
-    .logo{
+    .header-logo{
         height: 220px;
         width: 220px;
         margin-left:2%;
@@ -161,19 +161,19 @@
     .header-bottom-bar{
         padding: 25px 8%;
     }
-    .li-header-top{
+    .header-li-header-top{
         font-size: 20px;
     }
-    .fa-bars{
+    header .fa-bars{
         display: none;
     }
-    .input-buscador{
+    .header-input-buscador{
         width: 240px;
         height: 30px;
         padding-left: 10px;
         font-size: 19px;
     }
-    .boton-buscador{
+    .header-boton-buscador{
         height: 30px;
         font-size: 19px;
     }

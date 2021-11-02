@@ -4,109 +4,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-/* HEADER*/
-
-.header-top-bar{
-    background-color:#D9D9D9;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    width: 110px;
-    height: 110px;
-}
-.nav-header-top-bar{
-    max-width: 300px;
-    line-height: 4%;
-}
-.lista-top-header{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.li-header-top{
-    font-size: 15px;
-    
-}
-.link-registrate{
-    text-decoration: none;
-    color:#262120;
-}
-.link-inicia-sesion{
-    text-decoration: none;
-    color:#262120;
-    padding: 15px;
-}
-.fa-shopping-cart {
-    color:#262120;
-    font-size: 22px;
-    padding-right: 32px
-}
-.header-bottom-bar{
-    background-color: #8C1B1B;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
-}
-.fa, .fas{
-    font-weight: 900;
-    margin-left: 5px;
-}
-.lista-bottom-header{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.links-bottom-header-nav{
-    text-decoration: none;
-    color:#D9D9D9;
-    display: none;
-}
-.fa-bars{
-    color:#D9D9D9;
-    font-size: 25px;
-    margin-left: 38%;
-    padding:5px;
-}
-.buscador{
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    align-self: flex-start;
-}
-.input-buscador{
-    border:none;
-    border-radius: 5px;
-    padding-left:5px;
-}
-.boton-buscador{
-    border: none;
-    border-radius: 5px;
-    margin-left: -15px;
-    background-color: #fff;
-    padding: 0 5px;
-}
-
-
 /*REGISTRO*/
 
-.registro{
+.reg-main-div{
     display: flex;
     flex-direction: column;
     align-items:center;
     margin: 20px 0 ;
 }
-.registrate-nuestra-web{
+.reg-div-nuestra-web{
     background-color: #262120;
     display: flex;
     flex-direction: column;
@@ -118,30 +24,30 @@
     margin-bottom: 5%;
     padding: 2%;
 }
-.inputs-registro{
+.reg-inputs{
     font-family: 'Gemunu Libre',sans-serif;
     font-size: 1.3rem;
     margin: 4% 0;
     max-width: 55%;
     padding-left: 15px;
 }
-.botones-registrarme{
+.reg-botones-nuestra-web{
     background-color:#8C1B1B;
     padding: 8px;
     border-radius: 8px;
     margin: 10px;
     width: 45%;
 }
-.botones-registrarme a{
+.reg-botones-nuestra-web a{
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bolder;
 }
-.textregist{
+.reg-text{
     padding: 20px;
 }
-.registrate-con{
+.reg-con{
     background-color: #8C1B1B;
     display: flex;
     flex-direction: column;
@@ -152,7 +58,7 @@
     margin-bottom: 5%;
     padding: 8% 2%;
 }
-.boton-registrarme-con{
+.reg-con-boton{
     font-weight: bolder;
     background-color: white;
     font-size: 1.2rem;
@@ -165,256 +71,70 @@
     border: none;
     height: 35px;
 }
-.google{
+.reg-google{
     height: 20px;
     margin: 0;
 }
-.facebook{
+.reg-facebook{
     color:#1877F2 ;
 }
-.twitter{
+.reg-twitter{
     color: rgb(29, 155, 240);
 }
-.linkedIn{
+.reg-linkedIn{
     color:#0a66c2;
-}
-
-/* FOOTER */
-.mantenteInformado{
-    display: flex;
-    background-color: #BF8A26;
-    flex-direction: row;
-    padding: 8px;
-    justify-content: center;
-    margin-top: 30px;
-    align-items: center;
-}
-.dejarMail{
-    border-radius: 4px;
-    padding: 10px;
-    height: 5px;
-}
-.texto{
-    flex-grow: 0.50;
-    font-family: 'Gemunu Libre';
-    font-size: 17px;
-}
-.email{
-    border-radius: 6px;
-}
- footer a {
-    color: white; 
-    font-family: "gemunu libre";
-    text-decoration: none;
-}
-.contenedorFooter{
-    display: flex;
-    padding: 10px;
-    background-color: #262120;
-    justify-content: space-around;
-}
-.contactoYpedido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.iconosFooter{
-    display: none;
-    flex-direction: row;
-}
-.ayudaYenvios{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.copyRight{
-    background-color: #262120;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-/*MEDIA QUERIES*/
-/*MOVIL*/
-@media(min-width:320px){
-    /*HEADER*/
-    .logo{
-        margin-left: 10%;
-    }
-    .esconderdelcel{
-        display: none;
-    }
-
-    /*FOOTER*/
-    footer button{
-        background-color: #8c1b1b;
-        color: white;
-        border-radius: 4px;
-        padding: 5px 5px;
-        padding-left: 3px;
-        border: none;
-        margin-left: -5px;
-    }
-    .divBoton{
-        display: contents;
-    }
-    .contFooter{
-        width: 50%;
-    }
-    .texto{
-        width: 30%;
-    }
-    .dejarMail{
-        border: none;
-        border-radius: 4px;
-        padding: 10px;
-        height: 5px;
-        width: 60%;
-    }
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media (min-width:481px){
-    /*HEADER*/
-    .logo{
-        height: 140px;
-        width: 140px;
-        margin-left: 40%;
-    }
-    .links-bottom-header-nav{
-        display: flex;
-        margin-left: 60%;
-    }
-    .lista-bottom-header{
-        padding: 0 15%;
-    }
-    .link-informacion{
-        margin-left: 80%;
-    }
-    .fa-home{
-        margin-left: -70%;
-    }
-    .fa-bars{
-        display: none;
-    }
-    .esconderdelcel{
-        display: flex;
-    }
-    .input-buscador{
-        height: 25px;
-        font-size: 15px;
-    }
-    .boton-buscador{
-        height: 25px;
-    }
-
     /*MAIN*/
-    .registro{
+    .reg-main-div{
         flex-direction: row;
         margin:5%;
     }
-    .registrate-con{
+    .reg-con{
         align-self: stretch;
         padding:  2%;
     }
-    .registrate-con h2{
+    .reg-con h2{
         padding-bottom: 10%;
-    }
-    /*FOOTER*/
-    .iconosFooter{
-        display: flex;  
-        flex-direction: row;
-    }
-    .iconosFooter i{
-        padding: 5px;
-        font-size: 20px;
-        color: white;
-        border: 1px solid #8c1b1b;
-        background-color: #8c1b1b;
-        border-radius: 20%;
-        margin: 3px;
-    }
-    .contFooter{
-        display: flex;
-    }
-    footer button{
-        padding: 4px;
-        border: none;
-    
-    }
-    .dejarMail{
-        border-radius: 4px;
-        border: none;
-    }
-    .mantenteInformado{
-        align-items: center;
     }
 }
     /*LAPTOP*/
 @media (min-width:769px){
-     /*HEADER*/
-     .logo{
-        height: 220px;
-        width: 220px;
-        margin-left:2%;
-    }
-    header{
-        font-size: 20px;
-    }
-    .header-top-bar{
-        padding:30px 6%;
-    }
-    .header-bottom-bar{
-        padding: 25px 8%;
-    }
-    .li-header-top{
-        font-size: 20px;
-    }
-    .fa-bars{
-        display: none;
-    }
-    .input-buscador{
-        width: 240px;
-        height: 30px;
-        padding-left: 10px;
-        font-size: 19px;
-    }
-    .boton-buscador{
-        height: 30px;
-        font-size: 19px;
-    }
+     
     /*MAIN*/
-    .registro{
+    .reg-main-div{
         margin: 5% 15%;
     }
-    form{
+    .reg-form{
         width: 70%;
     }
-    .inputs-registro{
+    .reg-inputs{
         font-family: 'Gemunu Libre',sans-serif;
         font-size: 1.3rem;
         margin: 4% 0;
         max-width: 70%;
         padding-left: 15px;
     }
-    .botones-registrarme{
+    .reg-botones-nuestra-web{
         width: 50%;
     }
-    .botones-registrarme:hover{
+    .reg-botones-nuestra-web:hover{
         background-color: rgba(140, 27, 27, 0.8);
     }
-    .boton-registrarme-con{
+    .reg-con-boton{
         margin: 3% 0;
     }
-    .facebook:hover{
+    .reg-facebook:hover{
         background-color: #1877F2;
         color: white;
     }
-    .twitter:hover{
+    .reg-twitter:hover{
         background-color: rgb(29, 155, 240);
         color: white;
     }
-    .linkedIn:hover{
+    .reg-linkedIn:hover{
         background-color: #0a66c2;
         color: white;
     }

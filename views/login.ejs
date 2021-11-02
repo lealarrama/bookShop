@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/login.css">
-    <title>SK Libros</title>
+    <%- include("./partials/head") %>
 </head>
 <body>
     <%- include("./partials/header") %>
-    <main>
-        <div class="contenedor">
-            <form class="create-form">
-                <h2 class="titulo-principal">Inicia sesión</h2>
-                <div class="control-formulario">
-                    <input type="text" name="nombreUsuario" placeholder="Correo electrónico" class="control">
+    <main class="log-main">
+        <div class="log-contenedor">
+            <form>
+                <h2 class="log-titulo-principal">Inicia sesión</h2>
+                <div class="log-control-formulario">
+                    <input type="text" name="nombreUsuario" placeholder="Correo electrónico" class="log-control">
                 </div>
-                <div class="control-formulario">
-                    <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="control">
+                <div class="log-control-formulario">
+                    <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="log-control">
                 </div>
                 
-                <div class="checkbox">
+                <div class="log-checkbox">
                     <form>
                         <input type="checkbox" name="Recuerdame" id="Recuerdame">
-                        <label for= "Recuerdame">Recordarme en este equipo</label> 
+                        <label for= "Recuerdame" class="log-label">Recordarme en este equipo</label> 
                     </form>
                 </div>
 
-                <div class="div-boton">
-                    <button type="submit"  class="boton-formulario">
+                <div class="log-div-boton">
+                    <button type="submit"  class="log-boton-formulario">
                         <a href="./">Ingresar</a>
                     </button>
                 </div>
                 
-                <p>Olvidé mi contraseña</p>
+                <p class="log-p">Olvidé mi contraseña</p>
 
-                <p class="textregist">No tienes una cuenta?</p>
+                <p class="log-text-regist">No tienes una cuenta?</p>
                 
-                <div class="div-boton"> 
-                    <button type="submit"  class="boton-registro">
+                <div class="log-div-boton"> 
+                    <button type="submit"  class="log-boton-formulario">
                         <a href="/register">Regístrate</a>
                     </button>
                 </div>
