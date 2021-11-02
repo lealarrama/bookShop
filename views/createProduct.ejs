@@ -17,35 +17,35 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="formCreate">
-            <h2 class="tituloCreate">Crear producto</h2>
-            <div class="nombreCreate">
-                <label for="nombreProducto">Nombre del producto:</label>
-                <input class="nombreProducto" type="text" name="nombreProducto" placeholder="Ej: El visitante">
+        <form class="cr-formCreate">
+            <h2 class="cr-tituloCreate">Crear producto</h2>
+            <div class="cr-nombreCreate">
+                <label class="cr-label" for="nombreProducto">Nombre del producto:</label>
+                <input class="cr-nombreProducto" type="text" name="nombreProducto" placeholder="Ej: El visitante">
             </div>
-            <div class="desCreate">
-                <label for="descripcion">Describe el producto</label>
-                <textarea class="descProducto" name="despripcion" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
+            <div class="cr-desCreate">
+                <label class="cr-label" for="descripcion">Describe el producto</label>
+                <textarea class="cr-descProducto" name="despripcion" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
             </div>
-            <div class="divFoto">
-                <label for="foto">Selecciona una imagen del producto</label>
-                <input class="fotoCreate" type="file" name="foto">
+            <div class="cr-divFoto">
+                <label class="cr-label" for="foto">Selecciona una imagen del producto</label>
+                <input class="cr-fotoCreate" type="file" name="foto">
             </div>
-            <div class="categoriaCreate">
-                <label for="categoria">Género del producto</label>
-                <select class="genero" name="categoria">
+            <div class="cr-categoriaCreate">
+                <label class="cr-label" for="categoria">Género del producto</label>
+                <select class="cr-genero" name="categoria">
                     <option value="Suspenso">Suspenso</option>
                     <option value="Terror">Terror</option>
                     <option value="Fantasía">Fantasía</option>
                 </select>
             </div>
-            <div class="precioCreate">
-                <label for="precio">Precio del producto</label>
-                <input class="precio" type="text" name="precio" placeholder="Ej: $2000">
+            <div class="cr-precioCreate">
+                <label class="cr-label" for="precio">Precio del producto</label>
+                <input class="cr-precio" type="text" name="precio" placeholder="Ej: $2000">
             </div>
             <div >
-                    <button class="botónCreate" type="submit"  class="boton-registro">
-                        <a href="/">Crear producto</a>
+                    <button class="cr-botónCreate" type="submit"  class="boton-registro">
+                        <a class="cr-a" href="/">Crear producto</a>
                     </button>
             </div>
         </form>
