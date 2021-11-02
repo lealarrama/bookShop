@@ -6,7 +6,7 @@
 
 
 /* FOOTER */
-.mantenteInformado{
+.footer-mantenteInformado{
     display: flex;
     background-color: #BF8A26;
     flex-direction: row;
@@ -15,17 +15,17 @@
     margin-top: 30px;
     align-items: center;
 }
-.dejarMail{
+.footer-dejarMail{
     border-radius: 4px;
     padding: 10px;
     height: 5px;
 }
-.texto{
+.footer-texto{
     flex-grow: 0.50;
     font-family: 'Gemunu Libre';
     font-size: 17px;
 }
-.email{
+.footer-email{
     border-radius: 6px;
 }
  footer a {
@@ -33,27 +33,27 @@
     font-family: "gemunu libre";
     text-decoration: none;
 }
-.contenedorFooter{
+.footer-contenedorFooter{
     display: flex;
     padding: 10px;
     background-color: #262120;
     justify-content: space-around;
 }
-.contactoYpedido{
+.footer-contactoYpedido{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.iconosFooter{
+.footer-iconosFooter{
     display: none;
     flex-direction: row;
 }
-.ayudaYenvios{
+.footer-ayudaYenvios{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.copyRight{
+.footer-copyRight{
     background-color: #262120;
     color: white;
     text-align: center;
@@ -71,16 +71,16 @@ footer button{
     border: none;
     margin-left: -5px;
 }
-.divBoton{
+.footer-divBoton{
     display: contents;
 }
-.contFooter{
+.footer-contFooter{
     width: 50%;
 }
-.texto{
+.footer-texto{
     width: 30%;
 }
-.dejarMail{
+.footer-dejarMail{
     border: none;
     border-radius: 4px;
     padding: 10px;
@@ -92,11 +92,11 @@ footer button{
 /*TABLET*/
 @media (min-width:481px){
     /*FOOTER*/
-    .iconosFooter{
+    .footer-iconosFooter{
         display: flex;  
         flex-direction: row;
     }
-    .iconosFooter i{
+    .footer-footer-iconosFooter i{
         padding: 5px;
         font-size: 20px;
         color: white;
@@ -105,7 +105,7 @@ footer button{
         border-radius: 20%;
         margin: 3px;
     }
-    .contFooter{
+    .footer-contFooter{
         display: flex;
     }
     footer button{
@@ -113,11 +113,11 @@ footer button{
         border: none;
     
     }
-    .dejarMail{
+    .footer-dejarMail{
         border-radius: 4px;
         border: none;
     }
-    .mantenteInformado{
+    .footer-mantenteInformado{
         align-items: center;
     }
 }
