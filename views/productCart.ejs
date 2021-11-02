@@ -2,46 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/productCart.css">
-    <title>SK Libros</title>
+    <%- include("./partials/head") %>
 </head>
 
 <body>
     <%- include("./partials/header") %>
     <main>
         <h1>Tu cesta</h1>
-        <div class="primeros-parrafos">
-            <div class="inicio">
-                <p class="message"><i class="fas fa-gift"></i> Tienes 3 articulos con un totoal de $$$ en tu cesta</p>
+        <div class="pcart-primeros-parrafos">
+            <div class="pcart-inicio">
+                <p class="pcart-message"><i class="fas fa-gift"></i> Tienes 3 articulos con un totoal de $$$ en tu cesta</p>
                 <div>
-                    <button class="boton-de-pago">Proceder al Pago</button>
+                    <button class="pcart-boton-de-pago">Proceder al Pago</button>
                 </div>
             </div>
 
-            <p class="terminos">
+            <p class="pcart-terminos">
                 Al realizar tu pedido confirmas que has leido y aceptas nuetros Terminos y condiciones. Consulta también
                 nuestra politica de privacidad y nuestra cookies.
             </p>
         </div>
 
-        <div class="conteinerTodo">
-            <section class="detalle-carrito-compras">
-                <h3 class="subtítulo">Detalle de su cesta</h3>
-                <article class="libro1">
-                    <div class="conteinerDesc">
-                        <a href="/productDetail" class="imagenes"><img src="img/despues.jpg" alt=""
-                                class="libro-despues"></a>
-                        <div class="descripcion">
-                            <h2 class="nombre-libro">Después</h2>
-                            <div class="estrellas">
+        <div class="pcart-conteinerTodo">
+            <section class="pcart-detalle-carrito-compras">
+                <h3 class="pcart-subtítulo">Detalle de su cesta</h3>
+                <article class="pcart-libro1">
+                    <div class="pcart-conteinerDesc">
+                        <a href="/productDetail" class="pcart-imagenes"><img src="img/despues.jpg" alt=""
+                                class="pcart-libro-despues"></a>
+                        <div class="pcart-descripcion">
+                            <h2 class="pcart-nombre-libro">Después</h2>
+                            <div class="pcart-estrellas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -52,25 +43,25 @@
                             <p> Disponible en Argentina en 5 días habiles</p>
                         </div>
                     </div>
-                    <div class="parte-derecha-descripcion">
+                    <div class="pcart-parte-derecha-descripcion">
                         <p>Cantidad<select name="cantidad">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
                         </p>
-                        <h3 class="precio2">ARS $1999 </h3>
-                        <button class="boton-eliminar">Eliminar</button>
+                        <h3 class="pcart-precio2">ARS $1999 </h3>
+                        <button class="pcart-boton-eliminar">Eliminar</button>
                     </div>
                 </article>
 
-                <article class="libro2">
-                    <div class="conteinerDesc">
+                <article class="pcart-libro2">
+                    <div class="pcart-conteinerDesc">
                         <a href="/productDetail" class="imagenes"><img src="img/visitante.jpg" alt=""
-                                class="libro-visitante"></a>
-                        <div class="descripcion">
-                            <h2 class="nombre-libro">Visitante</h2>
-                            <div class="estrellas">
+                                class="pcart-libro-visitante"></a>
+                        <div class="pcart-descripcion">
+                            <h2 class="pcart-nombre-libro">Visitante</h2>
+                            <div class="pcart-estrellas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -80,26 +71,25 @@
                             <p> Disponible en Argentina en 5 días habiles</p>
                         </div>
                     </div>
-                    <div class="parte-derecha-descripcion">
+                    <div class="pcart-parte-derecha-descripcion">
                         <p>Cantidad<select name="cantidad">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
                         </p>
-                        <h3 class="precio2">ARS $1050 </h3>
-                        <button class="boton-eliminar">Eliminar</button>
+                        <h3 class="pcart-precio2">ARS $1050 </h3>
+                        <button class="pcart-boton-eliminar">Eliminar</button>
                     </div>
 
                 </article>
 
-                <article class="libro3">
-                    <div class="conteinerDesc">
-                        <a href="/productDetail" class="imagenes"><img src="img/lasangre-manda.jpg" alt=""
-                                class="libro-lasangremanda"></a>
-                        <div class="descripcion">
-                            <h2 class="nombre-libro">La Sangre Manda</h2>
-                            <div class="estrellas">
+                <article class="pcart-libro3">
+                    <div class="pcart-conteinerDesc">
+                        <a href="/productDetail" class="imagenes"><img src="img/lasangre-manda.jpg" alt=""class="pcart-libro-lasangremanda"></a>
+                        <div class="pcart-descripcion">
+                            <h2 class="pcart-nombre-libro">La Sangre Manda</h2>
+                            <div class="pcart-estrellas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -110,50 +100,50 @@
                             <p> Disponible en Argentina en 5 días habiles</p>
                         </div>
                     </div>
-                    <div class="parte-derecha-descripcion">
+                    <div class="pcart-parte-derecha-descripcion">
                         <p>Cantidad<select name="cantidad">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
                         </p>
-                        <h3 class="precio2">ARS $2050 </h3>
-                        <button class="boton-eliminar">Eliminar</button>
+                        <h3 class="pcart-precio2">ARS $2050 </h3>
+                        <button class="pcart-boton-eliminar">Eliminar</button>
                     </div>
                 </article>
 
             </section>
 
         
-            <article class="detalle-de-pago">
-                <div class="info">
-                    <div class="envío">
-                        <h5 class="gastos">Gastos de envío</h5>
+            <article class="pcart-detalle-de-pago">
+                <div class="pcart-info">
+                    <div class="pcart-envío">
+                        <h5 class="pcart-gastos">Gastos de envío</h5>
                         <h5>GRATIS</h5>
                     </div>
-                    <div class="total">
+                    <div class="pcart-total">
                         <h5>TOTAL</h5>
                         <h5> ARS $ 5099</h5>
                     </div>
-                    <div class="añadirCupon">
-                        <h5 class="texto">Añadir cupón:</h5>
-                    <div class="aplicar">
-                        <input type="text" class="agregar-cupon">
-                        <button class="boton-aplicar">Aplicar</button>
+                    <div class="pcart-añadirCupon">
+                        <h5 class="pcart-texto">Añadir cupón:</h5>
+                    <div class="pcart-aplicar">
+                        <input type="text" class="pcart-agregar-cupon">
+                        <button class="pcart-boton-aplicar">Aplicar</button>
                     </div>
                 </div>
             </article>
 
-            <div class="formas-de-pago">
+            <div class="pcart-formas-de-pago">
                 <i class="fab fa-cc-visa"></i>
                 <i class="fab fa-cc-mastercard"></i>
                 <i class="fab fa-paypal"></i>
                 <i class="fab fa-cc-amex"></i>
-                <button class="boton-de-pago">Proceder al Pago</button>
+                <button class="pcart-boton-de-pago">Proceder al Pago</button>
             </div>
         </div>
 
-        <button class="boton-seguir-comprando">Seguir comprando</button>
+        <button class="pcart-boton-seguir-comprando">Seguir comprando</button>
 
     </main>
 
