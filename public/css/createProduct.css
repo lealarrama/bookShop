@@ -13,6 +13,7 @@
     font-size: 30px;
     font-family: 'GEMUNU LIBRE';
     padding: 10px;
+    border-bottom: 1px solid;
 }
 .cr-nombreCreate{
     display: flex;
@@ -42,7 +43,7 @@
     align-items: center;
 }
 .cr-fotoCreate{
-    font-size: 14px;
+    font-size: 12px;
 }
 .cr-categoriaCreate{
     display: flex;
@@ -91,7 +92,9 @@
     .cr-formCreate{
         margin: 30px;
     }
-
+    .cr-fotoCreate{
+        font-size: 14px;
+    }
 }
 
 /*LAPTOP*/
@@ -110,7 +113,7 @@
         font-size: 30px;
         font-family: 'GEMUNU LIBRE';
         margin: 11px;
-        border-bottom: 1px solid;
+        
     }
     .cr-nombreCreate{
         display: flex;

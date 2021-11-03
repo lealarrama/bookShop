@@ -97,7 +97,7 @@ button{
 .pcart-conteinerDesc{
     display: flex;
 }
-.pcart-libro1 {
+.pcart-libro {
     display: flex;
     padding: 15px;
     border: solid #8C1B1B 1px;
@@ -105,22 +105,7 @@ button{
     padding-bottom: 10px;
     justify-content: space-between;
 }
-.pcart-libro2{
-    display: flex;
-    padding: 15px;
-    border: solid #8C1B1B 1px;
-    background-color: white;
-    padding-bottom: 10px;
-    justify-content: space-between;
-}
-.pcart-libro3{
-    display: flex;
-    padding: 15px;
-    border: solid #8C1B1B 1px;
-    background-color: white;
-    padding-bottom: 10px;
-    justify-content: space-between;
-}
+
 .pcart-libro-despues{
     width: 30%;
     box-shadow: 0px 0px 10px rgb(100 100 100);
@@ -234,14 +219,14 @@ h4{
         margin: 30px;
     }
     .pcart-inicio{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     }
     .pcart-terminos{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     border-top: none;
     }
     .pcart-subtítulo{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     }
     .pcart-estrellas{
         font-size: 10px;
@@ -265,19 +250,19 @@ h4{
         width: 20%;
     }
     .pcart-libro1{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
         border-top: none;
     }
     .pcart-libro2{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     border-top: none;
     }
     .pcart-libro3{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     border-top: none;
     }
     .pcart-detalle-de-pago{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     border-top: none;
     }
     
@@ -285,7 +270,7 @@ h4{
         padding-right: 200px;
     }
     .pcart-formas-de-pago{
-        border: solid #8C1B1B 6px;
+        border: solid #8C1B1B 1px;
     border-top: none;
     }
     .pcart-parte-derecha-descripcion{

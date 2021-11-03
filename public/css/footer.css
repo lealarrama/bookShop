@@ -96,7 +96,7 @@ footer button{
         display: flex;  
         flex-direction: row;
     }
-    .footer-footer-iconosFooter i{
+    .footer-iconosFooter i{
         padding: 5px;
         font-size: 20px;
         color: white;

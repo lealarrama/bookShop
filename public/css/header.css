@@ -52,7 +52,7 @@ header .fa-shopping-cart {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
+    padding: 17px 8%;
 }
 header .fa, .fas{
     font-weight: 900;

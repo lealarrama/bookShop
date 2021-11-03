@@ -41,7 +41,6 @@
 /*PRODUCTOS*/
 .index-titulo-productos{
     background-color:#262120;
-    padding:8px;
     margin:30px 0 20px 0;
 }
 .index-titulo-productos h3 a{
@@ -59,7 +58,6 @@
     color:white;
     position: relative;
     width: 25%;
-    height: 20px;
     padding: 10px;
     text-align: center;
     visibility: hidden;
@@ -163,7 +161,7 @@
         color: white;
         position: absolute;
         width: 10%;
-        height: 20px;
+        height: 5%;
         padding: 10px;
         text-align: center;
     }
@@ -192,7 +190,16 @@
         box-shadow: 0px 0px 10px rgb(100 100 100);
         transition: all 400ms;
         padding: 5px;
+        height: 4%;
     }
+    .index-producto:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 400ms;
+    }
+    .index-parrafo-nuevo{
+        font-size: 14px;
+    }
+
     .index-precios{
         font-size: 20px;
     }

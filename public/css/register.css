@@ -143,11 +143,15 @@
     .reg-con-boton{
         margin: 3% 0;
     }
+    .reg-con-boton .fa-facebook-f{
+        background-color: #1877F2;
+        color: white;
+    }
     .reg-fa-facebook-f:hover{
         background-color: #1877F2;
         color: white;
     }
-    .reg-twitter:hover{
+    .twitter:hover{
         background-color: rgb(29, 155, 240);
         color: white;
     }
