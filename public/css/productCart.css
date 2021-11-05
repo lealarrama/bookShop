@@ -12,7 +12,7 @@ body{
 main{
     opacity: 0.9;
 }
-h1{
+.pcart-titulo{
     font-size: 24px;
     font-family: gemunu libre;
     width: 85%;
@@ -20,14 +20,7 @@ h1{
     padding-bottom: 10px;
     padding-left: 7%;
 }
-h3{
-    font-family: gemunu libre;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.pcart-precio2{
-    padding: 0;
-}
+
 .pcart-boton-de-pago{
     text-align: center;
     width: 120px;
@@ -69,11 +62,14 @@ h3{
     display: block;
     margin-left: 15%;
 }
+.pcart-texto{
+    font-size: 12px;
+}
 .pcart-imagenes{
     display: contents;
 }
 .pcart-nombre-libro{
-    font-size: 20px;
+    font-size: 17px;
     font-family:gemunu libre;
 }
 .pcart-estrellas{
@@ -81,18 +77,16 @@ h3{
     font-size: 8px;
     padding-top: 5px;
 }
-p{
+.pcart-cupon{
     font-size: 12px;
     font-family: 'Roboto';
-    
 }
 .pcart-boton-cantidad{
     width: 20px;
     border-radius: 3px;
 }
-button{
-    background-color: #8C1B1B;
-    border-radius: 5px;
+.pcart-precio{
+    font-size: 12px;
 }
 .pcart-conteinerDesc{
     display: flex;
@@ -106,18 +100,10 @@ button{
     justify-content: space-between;
 }
 
-.pcart-libro-despues{
-    width: 30%;
+.pcart-foto{
+    width: 77px;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     
-}
-.pcart-libro-visitante{
-    width: 30%;
-    box-shadow: 0px 0px 10px rgb(100 100 100);
-}
-.pcart-libro-lasangremanda{
-    width: 30%;
-    box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 .pcart-parte-derecha-descripcion{
     text-align: center;
@@ -127,10 +113,11 @@ button{
     flex-direction: column;
 }
 .pcart-boton-eliminar{
-    width: 80px;
     padding: 5px;
     text-align: center;
     color: white;
+    background-color: #8C1B1B;
+    border-radius: 5px;
 }
 .pcart-formas-de-pago{
     display: flex;
@@ -150,10 +137,7 @@ button{
 .pcart-info{
     margin-left: auto;
 }
-h6{
-    font-size: 12px;
-    text-align: center;
-}
+
 .pcart-boton-seguir-comprando{
     display: block;
     margin:auto;
@@ -184,13 +168,16 @@ h6{
     font-size: 20px;
     color:#262120;
 }
+.pcart-h5{
+    font-size: 16px;
+}
+.pcart-gastos{
+    font-size: 16px;
+}
 .pcart-añadirCupon{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.pcart-texto{
-    width: 40%;
 }
 .pcart-aplicar{
     display: flex;
@@ -201,10 +188,7 @@ h6{
     width: 110px;
     border-radius: 5px;
 }
-h4{
-    font-size: 40px;
-    text-align: center;
-}
+
 /*TERMINA EL MAIN*/
 
 /*TABLET*/
@@ -218,16 +202,6 @@ h4{
     .pcart-conteinerTodo{
         margin: 30px;
     }
-    .pcart-inicio{
-        border: solid #8C1B1B 1px;
-    }
-    .pcart-terminos{
-        border: solid #8C1B1B 1px;
-    border-top: none;
-    }
-    .pcart-subtítulo{
-        border: solid #8C1B1B 1px;
-    }
     .pcart-estrellas{
         font-size: 10px;
         padding-top: 15px;
@@ -236,42 +210,17 @@ h4{
         width: 120px;
         margin-top: 20px;
     }
-    .pcart-libro-despues{
-        padding: 10px;
-        width: 20%;
-        
-    }
-    .pcart-libro-lasangremanda{
-        padding: 10px;
-        width: 20%;
-    }
-    .pcart-libro-visitante{
-        padding: 10px;
-        width: 20%;
-    }
-    .pcart-libro1{
-        border: solid #8C1B1B 1px;
+    .pcart-libro{
         border-top: none;
     }
-    .pcart-libro2{
-        border: solid #8C1B1B 1px;
-    border-top: none;
-    }
-    .pcart-libro3{
-        border: solid #8C1B1B 1px;
-    border-top: none;
-    }
     .pcart-detalle-de-pago{
-        border: solid #8C1B1B 1px;
     border-top: none;
     }
-    
     .pcart-gastos{
         padding-right: 200px;
     }
     .pcart-formas-de-pago{
-        border: solid #8C1B1B 1px;
-    border-top: none;
+      border-top: none;
     }
     .pcart-parte-derecha-descripcion{
         display: flex;
@@ -279,36 +228,32 @@ h4{
     }
     .pcart-precio2{
         font-size: 17px;
-    }
-
-
-    
+    }  
 }
-
 
 
 @media (min-width:769px){
 
  /*MAIN*/
     /*PRODUCTOS*/
-    h1{
+    .pcart-titulo{
         font-size: 40px;
     }
-    p{
+    .pcart-texto{
         font-size: 20px;
     }
-    .pcart-libro-lasangremanda{
-        width: 16%;
-    }
-    .pcart-libro-visitante{
-        width: 16%;
-    }
-    
+.pcart-precio{
+    font-size: 20px;
+}
+
     .pcart-nombre-libro{
         font-size: 35px;
     }
+    .pcart-foto{
+        width: 120px;
+    }
     .pcart-precio2{
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 20px;
     }
 
@@ -331,11 +276,14 @@ h4{
     .pcart-boton-aplicar{
         text-align: center;
     }
-   
 }
 
-@media (min-width:1600px){
-    .pcart-libro-visitante{
-        width: 10%;
+/* LAPTO */
+@media (min-width:1024px){
+    .pcart-gastos{
+        font-size: 18px;
+    }
+    .pcart-h5{
+        font-size: 18px;
     }
 }
