@@ -27,3 +27,17 @@ Avisarnos en qué archivo estamos trabajando, para que sigamos sin tener errores
 Trabajar individualmente en la parte visual.
 5. Dejar de hacer.
 Comunicarnos mejor sobre las reuniones, y a futuro ser tolerables con los errores y brindar ayuda para resolverlos.
+
+
+SPRINT 3
+
+1. Comenzar a hacer.
+Organizarnos mejor con el código.
+2. Hacer más.
+Ayudarnos entre nosotros con lo que necesitemos.
+3. Continuar haciendo.
+Mantener el orden con los git pull y git push, para seguir siendo ordenados y que no salten errores.
+4. Hacer menos.
+Trabajar a último momento con detalles que faltan o quedan por hacer.
+5. Dejar de hacer.
+        -

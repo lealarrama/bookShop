@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 
-const router = require("./routes/index")
+const router = require("./routes/index");
+const productRouter = require("./routes/products");
+const userRouter = require("./routes/users");
 
 const RUTA = 3030;
 const path = require("path");
@@ -12,17 +14,17 @@ app.set("view engine", "ejs");
 
 app.use("/", router);
 
-app.use("/login", router);
+app.use("/login", userRouter);
 
-app.use("/register", router);
+app.use("/register", userRouter);
 
-app.use("/productDetail", router);
+app.use("/productDetail", productRouter);
 
-app.use("/productCart", router);
+app.use("/productCart", productRouter);
 
-app.use("/createProduct", router);
+app.use("/createProduct", productRouter);
 
-app.use("/editProduct", router);
+app.use("/editProduct", productRouter);
 
 
 
