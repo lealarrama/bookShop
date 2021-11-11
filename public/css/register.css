@@ -97,17 +97,23 @@
 }
 .reg-tienes-cuenta{
     text-align: center;
-    margin: 0 15%;
     margin-bottom: 5%;
     background-color: #d9d9d9;
 }
 /*MEDIA QUERIES*/
+/*MOVIL*/
+@media (min-width:320px){
+    /*MAIN*/
+    .reg-tienes-cuenta{
+        margin-top: -20px;
+    }
+}
 /*TABLET*/
 @media (min-width:481px){
     /*MAIN*/
     .reg-main-div{
         flex-direction: row;
-        margin:5%;
+        margin:5% 5% 0;
     }
     .reg-con{
         align-self: stretch;
@@ -115,6 +121,9 @@
     }
     .reg-con h2{
         padding-bottom: 10%;
+    }
+    .reg-tienes-cuenta{
+        margin-top: 0px;
     }
 }
     /*LAPTOP*/
@@ -137,13 +146,16 @@
     .reg-botones-nuestra-web{
         width: 50%;
     }
-    .reg-botones-nuestra-web:hover{
+    .reg-botones-nuestra-web:hover {
+        background-color: rgba(140, 27, 27, 0.8);
+    }
+    .reg-boton-ingresar:hover{
         background-color: rgba(140, 27, 27, 0.8);
     }
     .reg-con-boton{
         margin: 3% 0;
     }
-    .reg-con-boton .fa-facebook-f{
+    .reg-con-boton:hover .fa-facebook-f{
         background-color: #1877F2;
         color: white;
     }
@@ -151,12 +163,23 @@
         background-color: #1877F2;
         color: white;
     }
-    .twitter:hover{
+    .reg-con-boton:hover .fa-twitter{
         background-color: rgb(29, 155, 240);
+        color: white;
+    }
+    .reg-twitter:hover{
+        background-color: rgb(29, 155, 240);
+        color: white;
+    }
+    .reg-con-boton:hover .fa-linkedin-in{
+        background-color: #0a66c2;
         color: white;
     }
     .reg-linkedIn:hover{
         background-color: #0a66c2;
         color: white;
+    }
+    .reg-tienes-cuenta{
+        margin: 0 15%;
     }
 }

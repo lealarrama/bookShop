@@ -7,15 +7,15 @@ const productController= require("../controllers/productController");
 // productRouter.get('/products', productController.products);
 
 /* get productDetail page*/
-productRouter.get('/productDetail', productController.productDetail);
+productRouter.get('/detail', productController.productDetail);
 
 /* get productCart page*/
-productRouter.get('/productCart', productController.productCart);
+productRouter.get('/cart', productController.productCart);
 
 /* get createProduct page*/
-productRouter.get('/createProduct', productController.createProduct);
+productRouter.get('/create', productController.createProduct);
 
 /* get editProduct page*/
-productRouter.get('/editProduct', productController.editProduct);
+productRouter.get('/edit', productController.editProduct);
 
 module.exports = productRouter;

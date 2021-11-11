@@ -14,17 +14,9 @@ app.set("view engine", "ejs");
 
 app.use("/", router);
 
-app.use("/login", userRouter);
+app.use("/users", userRouter);
 
-app.use("/register", userRouter);
-
-app.use("/productDetail", productRouter);
-
-app.use("/productCart", productRouter);
-
-app.use("/createProduct", productRouter);
-
-app.use("/editProduct", productRouter);
+app.use("/products", productRouter);
 
 
 
