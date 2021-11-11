@@ -5,6 +5,28 @@
 </head>
 <body>
     <%- include("./partials/header") %>
+
+    <% for(let i=0; i < products.length ; i++) { %>
+        <div class="index-producto">
+            <div class="index-img-productos">
+                <div class="index-msj-producto">
+                    <p class="index-parrafo-nuevo">Nuevo!</p>
+                </div>
+                <img src="/img/products/<%= products[i].image %>" alt=""> 
+            </div>
+            <div class="index-caja-descripcion">
+                <a href="/products/detail/<%= products[i].id %>">
+                    <p class="index-descripciones"><b><%= products[i].name%></b></p>
+                </a>
+                <div class="index-contenedor-detalles">
+                    <p class="index-precios"><%= products[i].price%></p>
+                    <p class="index-descuentos"><%= products[i].discount%></p>
+                </div>
+                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+            </div>
+        </div>
+    <% } %>
+
     <%- include("./partials/footer") %>
 </body>
 </html>
