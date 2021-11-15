@@ -106,9 +106,43 @@
  },
  {
   "id": 16,
-  "name": "El resplandor",
-  "price": "1700",
-  "description": "Jack comienza a perder el juicio de forma progresiva, y acabará convirtiéndose en un psicópata violento dispuesto a asesinar a su familia.",
+  "nombreProducto": "ghfghfg",
+  "despripcion": "fhsdh",
+  "foto": "",
+  "categoria": "Terror",
+  "precio": "16000"
+ },
+ {
+  "id": 17,
+  "name": "carrie",
+  "price": "4899",
+  "description": "holaaaaaaaaa 155555",
   "gender": "Terror"
+ },
+ {
+  "id": 18,
+  "name": "19884",
+  "description": "WEFW",
+  "image": "default-image.png",
+  "gender": "Terror",
+  "price": "15698"
+ },
+ {
+  "id": 19,
+  "name": "hola grupo",
+  "description": "",
+  "filename": "",
+  "gender": "Suspenso",
+  "price": "",
+  "image": "default-image.png"
+ },
+ {
+  "id": 20,
+  "name": "lgtigt",
+  "description": "gttbtb",
+  "filename": "carrie.jfif",
+  "gender": "Terror",
+  "price": "85654",
+  "image": "default-image.png"
  }
 ]

@@ -133,6 +133,7 @@ main{
     display: flex;
     padding: 15px;
     padding-bottom:10px;
+    line-height: 1.5;
 }
 .pcart-info{
     margin-left: auto;
@@ -226,7 +227,7 @@ main{
         display: flex;
         align-items: center;
     }
-    .pcart-precio2{
+    .pcart-precio{
         font-size: 17px;
     }  
 }
@@ -252,7 +253,7 @@ main{
     .pcart-foto{
         width: 120px;
     }
-    .pcart-precio2{
+    .pcart-precio{
         font-size: 20px;
         margin-top: 20px;
     }
@@ -276,6 +277,10 @@ main{
     .pcart-boton-aplicar{
         text-align: center;
     }
+    
+    .pcart-detalle-de-pago{
+        line-height: 2;
+        }
 }
 
 /* LAPTO */

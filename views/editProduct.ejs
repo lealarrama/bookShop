@@ -7,11 +7,11 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="editp-formCreate">
-            <h2 class="editp-tituloCreate">Editar producto</h2>
+        <form class="editp-formCreate" action="/products/edit/<%=productToEdit.id%>?_method=PATCH" method="POST" enctype = "multipart / form-data "> 
+            <h2 class="editp-tituloCreate">Estas editando el producto: <%= productToEdit.name%> </h2>
             <div class="editp-nombreCreate">
                 <label for="nombreProducto">Nombre del producto:</label>
-                <input class="editp-nombreProducto" type="text" name="nombreProducto" placeholder="Ej: El visitante">
+                <input class="editp-nombreProducto" type="text" name="nombreProducto" placeholder= '<%= productToEdit.name%>'>
             </div>
             <div class="desCreate">
                 <label for="descripcion">Describe el producto</label>
@@ -34,11 +34,9 @@
                 <input class="editp-precio" type="text" name="precio" placeholder="Ej: $2000">
             </div>
             <div >
-                    <button class="editp-botónCreate" type="submit"  class="editp-boton-registro">
-                        <a href="/">Editar producto</a>
-                    </button>
+                    <button class="editp-botónCreate" type="submit"  class="editp-boton-registro">Editar producto</button>
             </div>
-        </form>
+        </action=>
         <%- include("./partials/footer") %>
 </body>
 

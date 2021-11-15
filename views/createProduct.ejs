@@ -7,7 +7,7 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="cr-formCreate" action="/products" method="POST">
+        <form class="cr-formCreate" action="/products" method="POST" enctype = "multipart / form-data"> 
             <h2 class="cr-tituloCreate">Crear producto</h2>
             <div class="cr-nombreCreate">
                 <label class="cr-label" for="name">Nombre del producto:</label>
@@ -18,8 +18,8 @@
                 <textarea class="cr-descProducto" name="description" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
             </div>
             <div class="cr-divFoto">
-                <label class="cr-label" for="filename">Selecciona una imagen del producto</label>
-                <input class="cr-fotoCreate" type="file" name="filename">
+                <label class="cr-label" for="image">Selecciona una imagen del producto</label>
+                <input class="cr-fotoCreate" type="file" name="image">
             </div>
             <div class="cr-categoriaCreate">
                 <label class="cr-label" for="gender">Género del producto</label>
