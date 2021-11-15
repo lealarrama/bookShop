@@ -42,6 +42,14 @@
                     <div class="detail-boton">
                         <p>Añadir al carrito</p>
                     </div>
+                    <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="detail-boton">
+                            <h5>Eliminar producto</h5>
+                        </button>
+                    </form>
+                    <button><div class="detail-boton">
+                        <p>Editar producto</p>
+                    </div></button>
                 </div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
@@ -66,7 +74,7 @@
     <article class="detail-mainarticle">
         <article class="detail-artTitulo">
             <div class="detail-tituloTablet">
-                <h2 class="detail-miniborde">Después</h2>
+                <h2 class="detail-miniborde"><%= product.name %></h2>
             </div>
         </article>
 </article>
@@ -74,7 +82,7 @@
         <article  class="detail-seVeEnTablet">
 
             <div class="detail-itemImg">
-                <div><img src="/img/despues.jpg"></div>
+                <div><img src="/img/products/<%= product.image %>"></div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
                     <div><i class="far fa-envelope"></i></div>
@@ -89,7 +97,7 @@
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-precioTablet">
-                    <h2 class="detail-h2">ARS$1.999,99</h2>
+                    <h2 class="detail-h2"><%= product.price %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -104,16 +112,24 @@
                 <div class="detail-boton">
                     <h5>Añadir al carrito</h5>
                 </div>
+                <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                    <button type="submit" class="detail-boton">
+                        <h5>Eliminar producto</h5>
+                    </button>
+                </form>
+                <button><div class="detail-boton">
+                    <p>Editar producto</p>
+                </div></button>
             </div>
         </article>
         </article>
         <article class="detail-mainarticle">
         <article  class="detail-seveEnCompu">
             <div class="detail-contenedorCompu">
-                <div class="detail-itemImg"><img src="/img/despues.jpg"></div>
+                <div class="detail-itemImg"><img src="/img/products/<%= product.image %>"></div>
                 <div class="detail-item-info">
                     <div class="detail-tituloCompu">
-                        <h2 class="detail-h2" class="detail-miniborde">Después</h2>
+                        <h2 class="detail-h2" class="detail-miniborde"><%= product.name %></h2>
                     </div>
                     <div class="detail-estrellasydatos"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <p class="detail-p">Formato papel, Español / Stephen King</p>
@@ -126,29 +142,13 @@
                         <div><i class="fab fa-pinterest-p"></i></div>
                     </div>
                     <div class="detail-sinopsis">
-                        <p class="detail-p"> En ocasiones, para crecer debes vencer a tus demonios.
-
-                            Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal.
-                            Sin
-                            embargo, desde que nació tiene una habilidad sobrenatural que su madre le insta a mantener
-                            en
-                            secreto: puede hacer hablar a los muertos. Cuando una detective del Departamento de Policía
-                            de
-                            Nueva York le arrastra a la persecución de un asesino que amenaza con seguir atacando
-                            incluso desde su
-                            tumba, Jamie no tardará en descubrir que el precio a pagar por su poder tal vez sea
-                            demasiado
-                            alto...
-                        </p>
-                        <p class="detail-p">«Es mitad historia de detectives, mitad thriller... Emocionante y auténtica.»
-
-                            The New York Times</p>
+                        <p class="detail-p"> <%= product.description %> </p>
                     </div>
                 </div>
             </div>
             <div class="detail-checkoutTools">
                 <div class="detail-precioTablet">
-                    <h2>ARS$1.999,99</h2>
+                    <h2><%= product.price %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -163,6 +163,12 @@
                 <div class="detail-boton">
                     <h5>Añadir al carrito</h5>
                 </div>
+                <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                <button type="submit" class="detail-boton">
+                    <h5>Eliminar producto</h5>
+                </button>
+            </form>
+            <button><a href="/products/edit/<%= product.id %>"><div class="detail-boton"><p>Editar producto</p></div></a></button>
             </div>
         </article>
     </article>
@@ -170,14 +176,7 @@
         <article class="detail-mainarticle">
             <div class="detail-descripcion">
                 <h4 class="detail-miniborde">Descripción</h4>
-                <p class="detail-p"> Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal. Sin
-                    embargo, desde que nació tiene una habilidad sobrenatural que su madre le insta a mantener en
-                    secreto: puede hacer hablar a los muertos. Cuando una detective del Departamento de Policía de Nueva
-                    York le arrastra a la persecución de un asesino que amenaza con seguir atacando incluso desde su
-                    tumba, Jamie no tardará en descubrir que el precio a pagar por su poder tal vez sea demasiado alto.
-                </p>
-                <p class="detail-p">«Es mitad historia de detectives, mitad thriller... Emocionante y auténtica.»
-                    The New York Times</p>
+                <p class="detail-p"> <%= product.description %>
             </div>
         </article>
         <article class="detail-mainarticle">
@@ -290,6 +289,7 @@
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="detail-h2">$1.500,50</h2>
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+
                     </div>
                 </div>
             </div>

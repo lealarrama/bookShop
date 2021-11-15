@@ -135,14 +135,5 @@
   "gender": "Suspenso",
   "price": "",
   "image": "default-image.png"
- },
- {
-  "id": 20,
-  "name": "lgtigt",
-  "description": "gttbtb",
-  "filename": "carrie.jfif",
-  "gender": "Terror",
-  "price": "85654",
-  "image": "default-image.png"
  }
 ]
