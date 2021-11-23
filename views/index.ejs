@@ -21,8 +21,9 @@
                  <a href="">Terror</a>
             </h3>
         </div>
-        <% for(let i=0; i < terror.length ; i++) { %>
         <section class="index-caja-productos">
+        <% for(let i=0; i < terror.length ; i++) { %>
+        
             <div class="index-producto">
                 <div class="index-img-productos">
                     <div class="index-msj-producto">
@@ -41,8 +42,9 @@
                     <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        
             <% } %>
+        </section>
     <!--ANUNCIO-->
         <div class="index-anuncio">
             <img src="/img/anuncio" class="index-img-anuncio">
@@ -54,8 +56,8 @@
              <a href="">Suspenso</a>
         </h3>
     </div>
-    <% for(let i=0; i < suspenso.length ; i++) { %>
     <section class="index-caja-productos">
+    <% for(let i=0; i < suspenso.length ; i++) { %>
         <div class="index-producto">
             <div class="index-img-productos">
                 <div class="index-msj-producto">
@@ -74,16 +76,17 @@
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
-        </section>
        <% } %>
+    </section>
        <!--PRODUCTOS Fantasía-->
     <div class="index-titulo-productos">
         <h3>
              <a href="">Suspenso</a>
         </h3>
     </div>
-    <% for(let i=0; i < fantasía.length ; i++) { %>
     <section class="index-caja-productos">
+    <% for(let i=0; i < fantasía.length ; i++) { %>
+    
         <div class="index-producto">
             <div class="index-img-productos">
                 <div class="index-msj-producto">
@@ -102,9 +105,9 @@
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
-    </section>
-       <% } %>
     
+       <% } %>
+    </section>
     </main>
     <%- include("./partials/footer") %>
 </body>
