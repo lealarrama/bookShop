@@ -54,5 +54,21 @@
   "image": "image-1637627749159.png",
   "description": "Esto es lo que se proponen averiguar los protagonistas de esta novela. Tras veintisiete años de tranquilidad y lejanía, una antigua promesa infantil les hace volver al lugar en el que vivieron su infancia y juventud como una terrible pesadilla.\r\n",
   "gender": "Terror"
+ },
+ {
+  "id": 8,
+  "name": "La historia de Lisey",
+  "price": "2599",
+  "image": "image-1637630490466.jpg",
+  "description": "Hacía casi dos años que Lisey Debusher había perdido a su marido Scott, después de veinticinco años de matrimonio y de una intimidad tan profunda que a veces le daba miedo.\r\n",
+  "gender": "Fantasía"
+ },
+ {
+  "id": 9,
+  "name": "Skeleton Crew",
+  "price": "4630",
+  "image": "image-1637630683022.jpg",
+  "description": "Skeleton Crew es la segunda recopilación de relatos cortos de horror del autor norteamericano Stephen King. Esta recopilación fue traducida al castellano en cuatro libros diferentes: La Niebla, La Expedición, Historias fantásticas y Dos historias para no dormir.\r\n",
+  "gender": "Fantasía"
  }
 ]

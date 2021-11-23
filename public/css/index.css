@@ -204,6 +204,7 @@
         font-size: 20px;
     }
     .index-descripciones{
+        color: black;
         display: flex;
         font-size: 20px;
         padding: 10px;

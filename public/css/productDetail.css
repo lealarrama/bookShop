@@ -81,7 +81,7 @@
     flex-direction: column;
 }
 
-.detail-estrellas{
+.detail-mainarticle .detail-estrellas{
     width: 30%;
 }
 
@@ -260,6 +260,9 @@
 
 /*CELULAR*/
 @media (min-width:320px){
+    .detail-mainarticle img{
+        width: 93%;
+    }
 
     .detail-esconderdelcel{
         display: none;
@@ -322,6 +325,7 @@
 }
 
     .detail-seVeEnTablet{
+        background-color: white;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -412,6 +416,9 @@
 @media (min-width:769px){
     
     /*MAIN*/
+    .detail-mainarticle img{
+        width: 60%;
+    }
     p{
         font-size: 16.8px;
     }
@@ -536,7 +543,7 @@
             .detail-seveEnCompu{
                 padding: 0px 20px 0px 20px;
             }
-            .detail-estrellas {
+            .detail-mainarticle .detail-estrellas {
                 width: 12%;
             }   
             .detail-columnaCompu{
