@@ -32,7 +32,7 @@ const productController = {
             id: products.length + 1,
             name: req.body.name,
             price: req.body.price,
-            image: req.file.filename,
+            image: req.files[0].filename,
             description: req.body.description,
             discount: req.body.discount,
             gender: req.body.gender,

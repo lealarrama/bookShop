@@ -135,5 +135,43 @@
   "gender": "Suspenso",
   "price": "",
   "image": "default-image.png"
+ },
+ {
+  "id": 20,
+  "name": "libro",
+  "price": "12",
+  "description": "gffnfgn",
+  "gender": "Suspenso"
+ },
+ {
+  "id": 21,
+  "name": "CARRIEEEEEE424572",
+  "price": "1",
+  "description": "fggf",
+  "gender": "Suspenso"
+ },
+ {
+  "id": 22,
+  "name": "CARRIEE 50",
+  "price": "2",
+  "image": "image-1637520098209.jfif",
+  "description": "dvsdv",
+  "gender": "Terror"
+ },
+ {
+  "id": 23,
+  "name": "libro",
+  "price": "uj",
+  "image": "image-1637525369885.jfif",
+  "description": "yju",
+  "gender": "Fantasía"
+ },
+ {
+  "id": 24,
+  "name": "Mr. Mercedes",
+  "price": "1554",
+  "image": "image-1637526069521.jpg",
+  "description": "había una vez....",
+  "gender": "Suspenso"
  }
 ]
