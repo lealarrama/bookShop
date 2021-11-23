@@ -15,171 +15,96 @@
             <li><img src="img/carrusel4.png" alt=""></li>
         </ul>
     </div>
-    <!--PRODUCTOS-->
+    <!--PRODUCTOS Terror-->
         <div class="index-titulo-productos">
             <h3>
                  <a href="">Terror</a>
             </h3>
         </div>
+        <% for(let i=0; i < terror.length ; i++) { %>
         <section class="index-caja-productos">
             <div class="index-producto">
                 <div class="index-img-productos">
                     <div class="index-msj-producto">
                         <p class="index-parrafo-nuevo">Nuevo!</p>
                     </div>
-                    <img src="/img/visitante.jpg" alt=""> 
+                    <img src="/img/products/<%= terror[i].image %>" alt=""> 
                 </div>
                 <div class="index-caja-descripcion">
-                    <a href="/products/detail">
-                        <p class="index-descripciones"><b>El Visitante</b></p>
+                    <a href="/products/detail/<%= terror[i].id %>">
+                        <p class="index-descripciones"><b><%= terror[i].name %></b></p>
                     </a>
                     <div class="index-contenedor-detalles">
-                        <p class="index-precios">$6.770</p>
+                        <p class="index-precios">$<%= terror[i].price %></p>
                         <p class="index-descuentos">40% OFF</p>
-                    </div>
-                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="index-producto">
-                <div class="index-img-productos">
-                    <div class="index-msj-producto">
-                        <p class="index-parrafo-nuevo">Nuevo!</p>
-                    </div>
-                    <img src="/img/lasangre-manda.jpg" alt=""> 
-                </div>
-                <div class="index-caja-descripcion">
-                    <a href="/products/detail">
-                        <p class="index-descripciones"><b>La sangre manda</b></p>
-                    </a>
-                    <div class="index-contenedor-detalles">
-                        <p class="index-precios">$6.770</p>
-                        <p class="index-descuentos">40% OFF</p>
-                    </div>
-                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="index-producto">
-                <div class="index-img-productos">
-                    <div class="index-msj-producto">
-                        <p class="index-parrafo-nuevo">Nuevo!</p>
-                    </div>
-                    <img src="/img/despues.jpg" alt=""> 
-                </div>
-                <div class="index-caja-descripcion">
-                    <a href="/products/detail">  
-                        <p class="index-descripciones"><b>Después</b></p>
-                    </a>
-                    <div class="index-contenedor-detalles">
-                        <p class="index-precios">$6.770</p>
-                        <p class="index-descuentos">40% OFF</p>
-                    </div>
-                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="index-producto">
-                <div class="index-img-productos">
-                    <div class="index-msj-producto">
-                        <p class="index-parrafo-nuevo">Nuevo!</p>
-                    </div>
-                    <img src="/img/elinstituto.jpg" alt=""> 
-                </div>
-                <div class="index-caja-descripcion">
-                    <a href="/products/detail">
-                        <p class="index-descripciones"><b>El Instituto</b></p>
-                    </a>
-                    <div class="index-contenedor-detalles">
-                        <p class="index-precios">$2.770</p>
-                        <p class="index-descuentos">25% OFF</p>
                     </div>
                     <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
         </section>
+            <% } %>
     <!--ANUNCIO-->
         <div class="index-anuncio">
             <img src="/img/anuncio" class="index-img-anuncio">
         </div>
     
-    <!--PRODUCTOS-->
+    <!--PRODUCTOS Suspenso-->
     <div class="index-titulo-productos">
         <h3>
              <a href="">Suspenso</a>
         </h3>
     </div>
+    <% for(let i=0; i < suspenso.length ; i++) { %>
     <section class="index-caja-productos">
         <div class="index-producto">
             <div class="index-img-productos">
                 <div class="index-msj-producto">
                     <p class="index-parrafo-nuevo">Nuevo!</p>
                 </div>
-                <img src="/img/visitante.jpg" alt=""> 
+                <img src="/img/products/<%= suspenso[i].image %>" alt=""> 
             </div>
             <div class="index-caja-descripcion">
-                <a href="/products/detail">
-                    <p class="index-descripciones"><b>El Visitante</b></p>
+                <a href="/products/detail/<%= suspenso[i].id %>">
+                    <p class="index-descripciones"><b><%= suspenso[i].name %></b></p>
                 </a>
                 <div class="index-contenedor-detalles">
-                    <p class="index-precios">$6.770</p>
+                    <p class="index-precios">$<%= suspenso[i].price %></p>
                     <p class="index-descuentos">40% OFF</p>
                 </div>
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
+        </section>
+       <% } %>
+       <!--PRODUCTOS Fantasía-->
+    <div class="index-titulo-productos">
+        <h3>
+             <a href="">Suspenso</a>
+        </h3>
+    </div>
+    <% for(let i=0; i < fantasía.length ; i++) { %>
+    <section class="index-caja-productos">
         <div class="index-producto">
             <div class="index-img-productos">
                 <div class="index-msj-producto">
                     <p class="index-parrafo-nuevo">Nuevo!</p>
                 </div>
-                <img src="/img/lasangre-manda.jpg" alt=""> 
+                <img src="/img/products/<%= fantasía[i].image %>" alt=""> 
             </div>
             <div class="index-caja-descripcion">
-                <a href="/products/detail">
-                    <p class="index-descripciones"><b>La sangre manda</b></p>
+                <a href="/products/detail/<%= fantasía[i].id %>">
+                    <p class="index-descripciones"><b><%= fantasía[i].name %></b></p>
                 </a>
                 <div class="index-contenedor-detalles">
-                    <p class="index-precios">$6.770</p>
+                    <p class="index-precios">$<%= fantasía[i].price %></p>
                     <p class="index-descuentos">40% OFF</p>
-                </div>
-                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-            </div>
-        </div>
-        <div class="index-producto">
-            <div class="index-img-productos">
-                <div class="index-msj-producto">
-                    <p class="index-parrafo-nuevo">Nuevo!</p>
-                </div>
-                <img src="/img/despues.jpg" alt=""> 
-            </div>
-            <div class="index-caja-descripcion">
-                <a href="/products/detail">  
-                    <p class="index-descripciones"><b>Después</b></p>
-                </a>
-                <div class="index-contenedor-detalles">
-                    <p class="index-precios">$6.770</p>
-                    <p class="index-descuentos">40% OFF</p>
-                </div>
-                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-            </div>
-        </div>
-        <div class="index-producto">
-            <div class="index-img-productos">
-                <div class="index-msj-producto">
-                    <p class="index-parrafo-nuevo">Nuevo!</p>
-                </div>
-                <img src="/img/elinstituto.jpg" alt=""> 
-            </div>
-            <div class="index-caja-descripcion">
-                <a href="/products/detail">
-                    <p class="index-descripciones"><b>El Instituto</b></p>
-                </a>
-                <div class="index-contenedor-detalles">
-                    <p class="index-precios">$2.770</p>
-                    <p class="index-descuentos">25% OFF</p>
                 </div>
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
         </div>
     </section>
+       <% } %>
+    
     </main>
     <%- include("./partials/footer") %>
 </body>

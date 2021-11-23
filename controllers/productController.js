@@ -6,6 +6,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
 const productController = {
+
     products: function (req, res) {
         res.render("products", {products : products});
     },
@@ -82,7 +83,7 @@ const productController = {
 		let id = req.params.id;
 		let finalProducts = products.filter(product => product.id != id);
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-		res.redirect('/');
+		res.redirect('/products');
 	},
 }
 

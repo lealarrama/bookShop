@@ -35,7 +35,7 @@ productRouter.patch('/edit/:id', upload.any(), productController.update);
 productRouter.delete('/delete/:id', productController.destroy); 
 
 /* get productDetail page*/
-productRouter.get('/:id', productController.detail);
+productRouter.get('/detail/:id', productController.detail);
 
 
 module.exports = productRouter;
