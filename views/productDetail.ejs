@@ -30,11 +30,11 @@
         <article class="detail-noSeVeEnTablet">
 
             <div class="detail-detalles">
-                <h2 class="detail-h2" class="detail-tituloLibro"><%= product.name %></h2>
+                <h2 class="detail-h2" class="detail-tituloLibro"><%=product.name%></h2>
                 <div class="detail-costadoDerecho"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
-                <div class="detail-fotolibro"><img src="/img/products/<%= product.image %>"></div>
+                <div class="detail-fotolibro"><img src="/img/products/<%=product.image%>"></div>
                 <div class="detail-costadoDerecho">
                     <div class="detail-precio">
                         <h2>ARS$ <%= product.price %></h2>
@@ -54,8 +54,8 @@
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
                     <div><i class="far fa-envelope"></i></div>
-                    <div><i class="fab fa-facebook-f"></i></div>
-                    <div><i class="fab fa-twitter"></i></div>
+                    <div><i class="fab pdetail-fa-facebook-f"></i></div>
+                    <div><i class="fab pdetail-fa-twitter"></i></div>
                     <div><i class="fab fa-pinterest-p"></i></div>
                 </div>
                 <div class="detail-articulodisponible">

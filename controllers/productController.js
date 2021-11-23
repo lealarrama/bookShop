@@ -12,10 +12,10 @@ const productController = {
 // Detail - Detail from one product
     detail: (req, res) => {
 		const id = req.params.id
-		const filtrada = products.find(product=>{
+		const product = products.find(product=>{
 			return product.id == id
 		})
-		res.render('productDetail', {product : filtrada})
+		res.render('productDetail', {product : product, products})
 	},
     
     productCart: function(req, res){

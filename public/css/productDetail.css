@@ -120,7 +120,7 @@
 .fa-envelope:hover{
     background-color: #a45d5d;
 }
-.fa-facebook-f{
+.pdetail-fa-facebook-f{
     padding: 5px;
     font-size: 20px;
     color: white;
@@ -129,10 +129,10 @@
     border-radius: 20%;
     margin: 3px;
 }
-.fa-facebook-f:hover{
+.pdetail-fa-facebook-f:hover{
     background-color: #a45d5d;
 }
-.fa-twitter{
+.pdetail-fa-twitter{
     padding: 5px;
     font-size: 20px;
     color: white;

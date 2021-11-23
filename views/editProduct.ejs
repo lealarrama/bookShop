@@ -7,36 +7,58 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="editp-formCreate" action="/products/edit/<%=productToEdit.id%>?_method=PATCH" method="POST" enctype = "multipart / form-data "> 
+        <form class="editp-formCreate" action="/products/edit/<%=productToEdit.id%>?_method=PATCH" method="POST" enctype = "multipart/form-data "> 
             <h2 class="editp-tituloCreate">Estas editando el producto: <%= productToEdit.name%> </h2>
-            <div class="editp-nombreCreate">
-                <label for="nombreProducto">Nombre del producto:</label>
-                <input class="editp-nombreProducto" type="text" name="nombreProducto" placeholder= '<%= productToEdit.name%>'>
-            </div>
-            <div class="desCreate">
-                <label for="descripcion">Describe el producto</label>
-                <textarea class="editp-descProducto" name="despripcion" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
-            </div>
-            <div class="divFoto">
-                <label for="foto">Selecciona una imagen del producto</label>
-                <input class="editp-fotoCreate" type="file" name="foto">
-            </div>
-            <div class="categoriaCreate">
-                <label for="categoria">Género del producto</label>
-                <select class="editp-genero" name="categoria">
-                    <option value="Suspenso">Suspenso</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Fantasía">Fantasía</option>
-                </select>
-            </div>
-            <div class="precioCreate">
-                <label for="editp-precio">Precio del producto</label>
-                <input class="editp-precio" type="text" name="precio" placeholder="Ej: $2000">
+            <div class="editp-main-div">
+                <div class="editp-div-inputs">
+                    <div class="editp-label">
+                        <label for="nombreProducto">Nombre</label>
+                    </div>
+                    <div class="editp-input-solo">
+                        <input class="editp-input" type="text" name="nombreProducto" placeholder= "<%=productToEdit.name%>">
+                    </div>
+                </div>
+                <div class="editp-div-inputs">
+                    <div class="editp-label editp-descripcion-label">
+                        <label for="descripcion">Descripción</label>
+                    </div>
+                    <div class=" editp-descripcion editp-input-solo">
+                        <textarea class="editp-input" name="despripcion" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
+                    </div>
+                </div>
+                <div class="editp-div-inputs">
+                    <div class="editp-label">
+                        <label for="foto">Imagen</label>
+                    </div>
+                    <div class="editp-input-solo">
+                        <input class="editp-input" type="file" name="foto">
+                    </div>
+                </div>
+                <div class="editp-div-inputs">
+                    <div class="editp-label">
+                        <label for="categoria">Género</label>
+                    </div>
+                    <div class="editp-input-solo">
+                        <select class="editp-input" name="categoria">
+                            <option value="Suspenso">Suspenso</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Fantasía">Ciencia Ficción</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="editp-div-inputs">
+                    <div class="editp-label">
+                        <label for="editp-precio">Precio</label>
+                    </div>
+                    <div class="editp-input-solo">
+                        <input class="editp-input" type="text" name="precio" placeholder="Ej: $2000">
+                    </div>
+                </div>
             </div>
             <div >
-                    <button class="editp-botónCreate" type="submit"  class="editp-boton-registro">Editar producto</button>
+                    <button class="editp-botónCreate" type="submit"  class="editp-boton-registro">Editar</button>
             </div>
-        </action=>
+        </form>
         <%- include("./partials/footer") %>
 </body>
 

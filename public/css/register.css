@@ -105,7 +105,10 @@
 @media (min-width:320px){
     /*MAIN*/
     .reg-tienes-cuenta{
-        margin-top: -20px;
+        margin: -20px 10% 0 10%;
+    }
+    .reg-boton-ingresar{
+        width: 35%;
     }
 }
 /*TABLET*/
@@ -123,7 +126,10 @@
         padding-bottom: 10%;
     }
     .reg-tienes-cuenta{
-        margin-top: 0px;
+        margin: 0px 5% 0 5%;
+    }
+    .reg-boton-ingresar{
+        width: 20%;
     }
 }
     /*LAPTOP*/

@@ -6,77 +6,47 @@
 
 /* MAIN */
 .editp-formCreate{
-    border: 6pxsolid #262120;
-        background-color: #bf8a26;
-        text-align: center;
-        border-radius: 5px;
-        margin: 10PX;
-        padding-bottom: 10px;
-        line-height: 3;
+    border: 1px solid #262120;
+    background-color: #bf8a26;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    padding-bottom: 10px;
 }
 .editp-tituloCreate{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'GEMUNU LIBRE';
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid;
 }
-.editp-nombreCreate{
+.editp-main-div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.editp-nombreProducto{
+.editp-div-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.editp-input{
     border-radius: 5px;
     padding: 10px;
-    width: 62%;
+    width: 200px;
+    border: none;
+    margin-top: 5px;
 }
-.editp-desCreate{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.editp-label{
+    margin-top: 15px;
 }
-.editp-descProducto{
-    border-radius: 5px;
-        padding: 7px;
-        width: 66%;
-        height: 52px;
-        margin-top: 16px;
-}
-.editp-divFoto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.editp-fotoCreate{
-    font-size: 12px;
-}
-.editp-categoriaCreate{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.editp-genero{
-    width: 61%;
-    border-radius: 8px;
-    padding: 10px;
-}
-.editp-precioCreate{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.editp-precio{
-    border-radius: 5px;
-        padding: 10px;
-    }
 .editp-botónCreate{
     background-color: #8C1B1B;
     color: white;
     font-size: 18px;
     padding: 8px;
     margin: 10px;
-   width: 50%;
-   border-radius: 5px;
+    width: 25%;
+    border-radius: 5px;
 }
 a{
     color: white;
@@ -91,105 +61,48 @@ a{
 @media (min-width:481px){
 
     /*MAIN*/
-    .editp-divFoto{
-        margin-bottom: 21px;
-    margin-top: 21px;
-    }
     .editp-formCreate{
-        margin: 30px;
+        margin: 20px 70px;
+        padding-bottom: 10px;
     }
-    .editp-fotoCreate{
-        font-size: 14px;
+    .editp-div-inputs{
+        flex-direction: row;
     }
-
+    .editp-input{
+        width: 240px;
+    }
+    .editp-label{
+        margin: 20px;
+    }
+    .editp-input-solo{
+        margin: 10px 20px;
+    }
+    .editp-descripcion{
+        margin-left: -10px;
+    }
+    .editp-descripcion-label{
+        margin-right: 30px;
+    }
 }
 
-/*LAPTOP*/
+/*LAPTOP
 @media (min-width:769px){
 
-    /*MAIN*/
+    /*MAIN
     .editp-formCreate{
         background-color: #bf8a26;
-    text-align: center;
-    border-radius: 5px;
-    margin: 30PX;
-    padding-bottom: 10px;
-    line-height: 3;
+        text-align: center;
+        border-radius: 5px;
+        margin: 30px 150px;
+        padding-bottom: 10px;
+        line-height: 3;
     }
     .editp-tituloCreate{
         font-size: 30px;
         font-family: 'GEMUNU LIBRE';
         margin: 11px;
-        
-    }
-    .editp-nombreCreate{
-        display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
     }
     label{
         font-size: 20px;
-    }
-    .editp-nombreProducto{
-        border-radius: 5px;
-    padding: 10px;
-    width: 19%;
-    margin-left: 40px;
-    }
-    .editp-desCreate{
-        display: flex;
-        flex-direction: row;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    }
-    .editp-descProducto{
-        border-radius: 5px;
-    padding: 7px;
-    width: 20%;
-    height: 52px;
-    margin-top: 16px;
-    margin-left: 40px;
-    }
-    .editp-divFoto{
-        display: flex;
-        flex-direction: row;
-    /* flex-direction: column; */
-    align-items: center;
-    margin-bottom: 21px;
-    margin-top: 21px;
-    justify-content: center;
-    }
-    .editp-fotoCreate{
-        margin-left: 40px;
-        font-size: 17px;
-    }
-    .editp-categoriaCreate{
-        display: flex;
-        flex-direction: row;
-        /* flex-direction: column; */
-        align-items: center;
-        justify-content: center;
-    }
-    .editp-genero{
-        width: 22%;
-        border-radius: 8px;
-        padding: 10px;
-        margin-left: 86px;
-    }
-    .editp-precioCreate{
-        display: flex;
-        flex-direction: row;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    }
-    .editp-precio{
-        border-radius: 5px;
-            padding: 10px;
-            width: 20%;
-            margin-left: 55px;
     }
 }
