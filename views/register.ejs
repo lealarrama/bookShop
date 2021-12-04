@@ -9,15 +9,54 @@
         <div class="reg-main-div">
             <div class="reg-div-nuestra-web">
                 <h2>Regístrate</h2>
-                <form action="" class="reg-form">
-                    <input type="text" placeholder="Nombre" class="reg-inputs" name="nombre" required>
-                    <input type="text" placeholder="Apellido" class="reg-inputs" name="apellido" required>
-                    <input type="text" placeholder="E-mail" class="reg-inputs" name="e-mail" required>
-                    <input type="text" placeholder="Confirmar e-mail" class="reg-inputs" name="confirmacionEmail" required>
-                    <input type="text" placeholder="Contraseña" class="reg-inputs" name="contrasenia" required>
-                    <input type="text" placeholder="Confirmar contraseña" class="reg-inputs" name="confirmacionContrasenia" required>
-                    <button class="reg-botones-nuestra-web">
-                        <a href="/">Registrarme</a>
+                <form action="/users/register" method='POST' class="reg-form" enctype = "multipart/form-data ">
+                    <input type="text" placeholder="Nombre" class="reg-inputs" name="nombre" 
+                    value="<%=locals.oldData ? oldData.nombre : null %>">
+
+                    <% if(locals.errors && errors.nombre){%>
+                        <div>
+                        <%= errors.nombre.msg%> 
+                        </div>  
+                    <% } %> 
+                    
+                    <input type="text" placeholder="Apellido" class="reg-inputs" name="apellido" 
+                    value="<%=locals.oldData ? oldData.apellido: null %>">
+
+                    <% if(locals.errors && errors.apellido){%>
+                        <div>
+                        <%= errors.apellido.msg%> 
+                        </div>  
+                    <% } %> 
+                        
+                    <input type="text" placeholder="E-mail" class="reg-inputs" name="email" 
+                    value="<%=locals.oldData ? oldData.email : null %>">
+
+                    <% if(locals.errors && errors.email){%>
+                        <div>
+                        <%= errors.email.msg%> 
+                        </div>  
+                    <% } %> 
+
+                    <input type="text" placeholder="Contraseña" class="reg-inputs" name="contrasenia" >
+
+                    <% if(locals.errors && errors.contrasenia){%>
+                        <div>
+                        <%= errors.contrasenia.msg%> 
+                        </div>  
+                    <% } %> 
+
+                    <div class="cr-divFoto">
+                        <label class="cr-label" for="image">Selecciona una imagen del producto</label>
+                        <input class="cr-fotoCreate" type="file" name="image"
+                        value="<%=locals.oldData ? oldData.image : null %>">
+                        <% if(locals.errors && errors.image){%>
+                            <div>
+                            <%= errors.image.msg%> 
+                            </div>  
+                        <% } %> 
+    
+                    </div>
+                    <button type ='submit' class="reg-botones-nuestra-web"> Registrarme 
                     </button>
                 </form>
             </div>
