@@ -2,7 +2,7 @@ const { validationResult }= require('express-validator');
 const path = require ('path');
 const fs = require ('fs');
 const User = require('../models/User');
-const bcrypt = require ('bcryptjs');
+const bcryptjs = require ('bcryptjs');
 
 
 
@@ -74,8 +74,8 @@ const userController = {
 
         let userToCreate = {
             ...req.body,
-            password: bcrypt.hashSync(req.body.contrasenia,10),
-            avatar: req.file.filename
+            contrasenia: bcryptjs.hashSync(req.body.contrasenia,10),
+            // avatar: req.file.filename
         }
 
         let userCreated = User.create(userToCreate)
@@ -83,7 +83,7 @@ const userController = {
     
     },
     profile: function(req, res){
-        return res.render("profile",{
+        return res.render('profile',{
         user: req.session.userLogged});
     },
 

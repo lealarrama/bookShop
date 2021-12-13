@@ -10,9 +10,9 @@ const User = {
     // genera un id
     generateId: function () {
         let allUsers = this.findAll();
-        let lastUser = allUsers.pop();
+        const lastUser = allUsers.pop();
         if (lastUser) {
-            return lastUSer.id + 1;
+            return lastUser.id + 1;
         }
         return 1;
     },

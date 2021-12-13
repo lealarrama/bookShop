@@ -1,182 +1,207 @@
 [
-    {
-        "id": 1,
-        "first_name": "Rey",
-        "last_name": "Jewar",
-        "email": "rjewar0@baidu.com",
-        "password": "iyEdzLtH1B",
-        "category": "user",
-        "image": "user_1.jpg"
-    },
-    {
-        "id": 2,
-        "first_name": "Kara-lynn",
-        "last_name": "Mulrenan",
-        "email": "kmulrenan1@princeton.edu",
-        "password": "GE2ujNA",
-        "category": "user",
-        "image": "user_2.jpg"
-    },
-    {
-        "id": 3,
-        "first_name": "Ambur",
-        "last_name": "Pund",
-        "email": "apund2@japanpost.jp",
-        "password": "EsOCd3lf",
-        "category": "user",
-        "image": "user_3.jpg"
-    },
-    {
-        "id": 4,
-        "first_name": "Des",
-        "last_name": "Deuss",
-        "email": "ddeuss3@webs.com",
-        "password": "thlXitlTd",
-        "category": "user",
-        "image": "user_4.jpg"
-    },
-    {
-        "id": 5,
-        "first_name": "Lillis",
-        "last_name": "Bellee",
-        "email": "lbellee4@eepurl.com",
-        "password": "tjnSdgyMC",
-        "category": "user",
-        "image": "user_5.jpg"
-    },
-    {
-        "id": 6,
-        "first_name": "Olly",
-        "last_name": "Ainsby",
-        "email": "oainsby5@mayoclinic.com",
-        "password": "Qwg9k3",
-        "category": "user",
-        "image": "user_6.jpg"
-    },
-    {
-        "id": 7,
-        "first_name": "Preston",
-        "last_name": "Puddin",
-        "email": "ppuddin6@networkadvertising.org",
-        "password": "aiXtJv5P",
-        "category": "user",
-        "image": "user_7.jpg"
-    },
-    {
-        "id": 8,
-        "first_name": "Remus",
-        "last_name": "Melliard",
-        "email": "rmelliard7@nsw.gov.au",
-        "password": "eYXWSmRlH",
-        "category": "user",
-        "image": "user_8.jpg"
-    },
-    {
-        "id": 9,
-        "first_name": "Jandy",
-        "last_name": "Rimmington",
-        "email": "jrimmington8@taobao.com",
-        "password": "56wNemTUvbu",
-        "category": "user",
-        "image": "user_9.jpg"
-    },
-    {
-        "id": 10,
-        "first_name": "Rafe",
-        "last_name": "Kobierra",
-        "email": "rkobierra9@amazon.co.uk",
-        "password": "X2KVY4o6",
-        "category": "user",
-        "image": "user_10.jpg"
-    },
-    {
-        "id": 11,
-        "first_name": "Hillary",
-        "last_name": "Priver",
-        "email": "hprivera@woothemes.com",
-        "password": "w4abH9zP",
-        "category": "user",
-        "image": "user_11.jpg"
-    },
-    {
-        "id": 12,
-        "first_name": "Gill",
-        "last_name": "Infantino",
-        "email": "ginfantinob@youku.com",
-        "password": "dYhr5ut8J7c",
-        "category": "user",
-        "image": "user_12.jpg"
-    },
-    {
-        "id": 13,
-        "first_name": "Melisenda",
-        "last_name": "Barajas",
-        "email": "mbarajasc@reuters.com",
-        "password": "15GoYYa",
-        "category": "user",
-        "image": "user_13.jpg"
-    },
-    {
-        "id": 14,
-        "first_name": "Farleigh",
-        "last_name": "MacTrustrie",
-        "email": "fmactrustried@phpbb.com",
-        "password": "OHAYw5olXW",
-        "category": "user",
-        "image": "user_14.jpg"
-    },
-    {
-        "id": 15,
-        "first_name": "Fredi",
-        "last_name": "Quig",
-        "email": "fquige@wikispaces.com",
-        "password": "xTgFMMdPOQ8C",
-        "category": "user",
-        "image": "user_15.jpg"
-    },
-    {
-        "id": 16,
-        "first_name": "Shoshana",
-        "last_name": "Finnes",
-        "email": "sfinnesf@epa.gov",
-        "password": "krhRwTYFlqH",
-        "category": "user",
-        "image": "user_16.jpg"
-    },
-    {
-        "id": 17,
-        "first_name": "Florrie",
-        "last_name": "Corter",
-        "email": "fcorterg@pbs.org",
-        "password": "g3DSUO9",
-        "category": "user",
-        "image": "user_17.jpg"
-    },
-    {
-        "id": 18,
-        "first_name": "Pail",
-        "last_name": "Readitt",
-        "email": "preaditth@hugedomains.com",
-        "password": "kP834Tiz9sr",
-        "category": "user",
-        "image": "user_18.jpg"
-    },
-    {
-        "id": 19,
-        "first_name": "Julina",
-        "last_name": "Powis",
-        "email": "jpowisi@patch.com",
-        "password": "oSMq5eJ",
-        "category": "user",
-        "image": "user_19.jpg"
-    },
-    {
-        "id": 20,
-        "first_name": "Mikaela",
-        "last_name": "Josse",
-        "email": "mjossej@aol.com",
-        "password": "LZaRZ93r",
-        "category": "user",
-        "image": "user_20.jpg"
-    }
+ {
+  "id": 1,
+  "first_name": "Rey",
+  "last_name": "Jewar",
+  "email": "rjewar0@baidu.com",
+  "password": "iyEdzLtH1B",
+  "category": "user",
+  "image": "user_1.jpg"
+ },
+ {
+  "id": 2,
+  "first_name": "Kara-lynn",
+  "last_name": "Mulrenan",
+  "email": "kmulrenan1@princeton.edu",
+  "password": "GE2ujNA",
+  "category": "user",
+  "image": "user_2.jpg"
+ },
+ {
+  "id": 3,
+  "first_name": "Ambur",
+  "last_name": "Pund",
+  "email": "apund2@japanpost.jp",
+  "password": "EsOCd3lf",
+  "category": "user",
+  "image": "user_3.jpg"
+ },
+ {
+  "id": 4,
+  "first_name": "Des",
+  "last_name": "Deuss",
+  "email": "ddeuss3@webs.com",
+  "password": "thlXitlTd",
+  "category": "user",
+  "image": "user_4.jpg"
+ },
+ {
+  "id": 5,
+  "first_name": "Lillis",
+  "last_name": "Bellee",
+  "email": "lbellee4@eepurl.com",
+  "password": "tjnSdgyMC",
+  "category": "user",
+  "image": "user_5.jpg"
+ },
+ {
+  "id": 6,
+  "first_name": "Olly",
+  "last_name": "Ainsby",
+  "email": "oainsby5@mayoclinic.com",
+  "password": "Qwg9k3",
+  "category": "user",
+  "image": "user_6.jpg"
+ },
+ {
+  "id": 7,
+  "first_name": "Preston",
+  "last_name": "Puddin",
+  "email": "ppuddin6@networkadvertising.org",
+  "password": "aiXtJv5P",
+  "category": "user",
+  "image": "user_7.jpg"
+ },
+ {
+  "id": 8,
+  "first_name": "Remus",
+  "last_name": "Melliard",
+  "email": "rmelliard7@nsw.gov.au",
+  "password": "eYXWSmRlH",
+  "category": "user",
+  "image": "user_8.jpg"
+ },
+ {
+  "id": 9,
+  "first_name": "Jandy",
+  "last_name": "Rimmington",
+  "email": "jrimmington8@taobao.com",
+  "password": "56wNemTUvbu",
+  "category": "user",
+  "image": "user_9.jpg"
+ },
+ {
+  "id": 10,
+  "first_name": "Rafe",
+  "last_name": "Kobierra",
+  "email": "rkobierra9@amazon.co.uk",
+  "password": "X2KVY4o6",
+  "category": "user",
+  "image": "user_10.jpg"
+ },
+ {
+  "id": 11,
+  "first_name": "Hillary",
+  "last_name": "Priver",
+  "email": "hprivera@woothemes.com",
+  "password": "w4abH9zP",
+  "category": "user",
+  "image": "user_11.jpg"
+ },
+ {
+  "id": 12,
+  "first_name": "Gill",
+  "last_name": "Infantino",
+  "email": "ginfantinob@youku.com",
+  "password": "dYhr5ut8J7c",
+  "category": "user",
+  "image": "user_12.jpg"
+ },
+ {
+  "id": 13,
+  "first_name": "Melisenda",
+  "last_name": "Barajas",
+  "email": "mbarajasc@reuters.com",
+  "password": "15GoYYa",
+  "category": "user",
+  "image": "user_13.jpg"
+ },
+ {
+  "id": 14,
+  "first_name": "Farleigh",
+  "last_name": "MacTrustrie",
+  "email": "fmactrustried@phpbb.com",
+  "password": "OHAYw5olXW",
+  "category": "user",
+  "image": "user_14.jpg"
+ },
+ {
+  "id": 15,
+  "first_name": "Fredi",
+  "last_name": "Quig",
+  "email": "fquige@wikispaces.com",
+  "password": "xTgFMMdPOQ8C",
+  "category": "user",
+  "image": "user_15.jpg"
+ },
+ {
+  "id": 16,
+  "first_name": "Shoshana",
+  "last_name": "Finnes",
+  "email": "sfinnesf@epa.gov",
+  "password": "krhRwTYFlqH",
+  "category": "user",
+  "image": "user_16.jpg"
+ },
+ {
+  "id": 17,
+  "first_name": "Florrie",
+  "last_name": "Corter",
+  "email": "fcorterg@pbs.org",
+  "password": "g3DSUO9",
+  "category": "user",
+  "image": "user_17.jpg"
+ },
+ {
+  "id": 18,
+  "first_name": "Pail",
+  "last_name": "Readitt",
+  "email": "preaditth@hugedomains.com",
+  "password": "kP834Tiz9sr",
+  "category": "user",
+  "image": "user_18.jpg"
+ },
+ {
+  "id": 19,
+  "first_name": "Julina",
+  "last_name": "Powis",
+  "email": "jpowisi@patch.com",
+  "password": "oSMq5eJ",
+  "category": "user",
+  "image": "user_19.jpg"
+ },
+ {
+  "id": 20,
+  "first_name": "Mikaela",
+  "last_name": "Josse",
+  "email": "mjossej@aol.com",
+  "password": "LZaRZ93r",
+  "category": "user",
+  "image": "user_20.jpg"
+ },
+ {
+  "nombre": "hola",
+  "apellido": "hola",
+  "email": "amanditazerpa@gmail.com",
+  "contrasenia": "123456",
+  "password": "$2a$10$KDOOMeat99RFbp2m6.vfQujU/F/y012x.W2YxbxI2.1eAhfwIo2H2"
+ },
+ {
+  "nombre": "nknlnllk",
+  "apellido": "hola",
+  "email": "hola@gmail.com",
+  "contrasenia": "$2a$10$whL06M9szOzp5X/m9zgH9eEzGgsnQYvhMpSAUb/qrtXxTvARFoBpO"
+ },
+ {
+  "nombre": "Gato",
+  "apellido": "Gatote",
+  "email": "gato@gmail.com",
+  "contrasenia": "$2a$10$25pDGuXqzgqSJ222WjwiGe3VuHhMKZQXHnAR.M5s.wOUJX.aK2P8i"
+ },
+ {
+  "nombre": "perro",
+  "apellido": "perrote",
+  "email": "perro@gmail.com",
+  "contrasenia": "$2a$10$FHoTg62pXgNxvwNT0boZDOo4ao3fBCacuqUjNcbfmi15fvi5GIF9O"
+ }
 ]

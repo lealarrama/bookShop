@@ -1,18 +1,17 @@
 const express = require("express");
-const app = express();
 const session = require("express-session");
-
+const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const path = require("path");
 const router = require("./routes/index");
 const productRouter = require("./routes/products");
 const userRouter = require("./routes/users");
-const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
-userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware');
-
-const RUTA = 3030;
-const path = require("path");
 const cookies = require('cookie-parser');
 
+const app = express();
 
+const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware');
+
+const RUTA = 3030;
 
 app.use(session({ secret:'Es un secreto',
 resave:false,

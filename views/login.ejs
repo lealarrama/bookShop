@@ -20,18 +20,18 @@
                 </div>
                 <div class="log-control-formulario">
                     <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="log-control">
-                    <% if(locals.errors && errors.password)  { %>
+                    <% if(locals.errors && errors.contrasenia)  { %>
                         <div>
-                            <%= errors.password.msg %> 
+                            <%= errors.contrasenia.msg %> 
                         </div> 
                         <% } %> 
                 </div>
                 
                 <div class="log-checkbox">
-                    <form>
+                    
                         <input type="checkbox" name="Recuerdame" id="Recuerdame">
                         <label for= "Recuerdame" class="log-label">Recordarme en este equipo</label> 
-                    </form>
+                    
                 </div>
 
                 <div class="log-div-boton">

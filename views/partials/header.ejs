@@ -3,12 +3,21 @@
         <a href="/"><img src="/img/SK libros logo 77 fondo gris.png" alt="" class="header-logo"></a>
         <nav class="header-nav-header-top-bar">
             <ul class="header-lista-top-header">
+                <% if (locals.isLogged) { %>
+                    <li class="header-esconderdelcel header-li-header-top">
+                        <a href="/users/profile/" class=" header-link-registrate">Mi Perfil</a>
+                    </li>
+                    <li class="header-esconderdelcel header-li-header-top">
+                        <a href="/users/logout/" class=" header-link-inicia-sesion">Cerrar Sesión</a>
+                    </li>
+                <% } else { %>
                 <li class="header-esconderdelcel header-li-header-top"> 
                     <a href="/users/register" class="header-link-registrate">Regístrate</a>
                 </li>
                 <li class="header-esconderdelcel header-li-header-top">
                     <a href="/users/login" class=" header-link-inicia-sesion">Inicia Sesión</a>
                 </li>
+                <% } %>
                 <li class="header-li-header-top">
                     <a href="/products/cart">
                         <i class="fas fa-shopping-cart"></i>
