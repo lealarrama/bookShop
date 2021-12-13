@@ -7,13 +7,24 @@
     <%- include("./partials/header") %>
     <main class="log-main">
         <div class="log-contenedor">
-            <form>
+            <form action="/users/login" method='POST' class="reg-form">
                 <h2 class="log-titulo-principal">Inicia sesión</h2>
                 <div class="log-control-formulario">
-                    <input type="text" name="nombreUsuario" placeholder="Correo electrónico" class="log-control">
+                    <input type="text" name="email" placeholder="Correo electrónico" class="log-control">
+                    <% if(locals.errors && errors.email)  { %>
+                        <div>
+                            <%= errors.email.msg %> 
+                        </div> 
+                        <% } %> 
+
                 </div>
                 <div class="log-control-formulario">
                     <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="log-control">
+                    <% if(locals.errors && errors.password)  { %>
+                        <div>
+                            <%= errors.password.msg %> 
+                        </div> 
+                        <% } %> 
                 </div>
                 
                 <div class="log-checkbox">
@@ -24,9 +35,8 @@
                 </div>
 
                 <div class="log-div-boton">
-                    <button type="submit"  class="log-boton-formulario">
-                        <a href="./">Ingresar</a>
-                    </button>
+                    <button type="submit"  class="log-boton-formulario">Ingresar
+                    </button> 
                 </div>
                 
                 <p class="log-p">Olvidé mi contraseña</p>

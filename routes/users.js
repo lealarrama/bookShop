@@ -4,6 +4,11 @@ const { check } = require('express-validator');
 const multer = require ('multer');
 const path = require ('path');
 const fs = require ('fs');
+const guestMiddleware = require ('../middlewares/guestMiddleware');
+const authMiddleware = require ('../middlewares/authMiddleware');
+
+
+
 
 // ************ Multer ************ 
 const storage = multer.diskStorage({
@@ -48,17 +53,23 @@ const validation = [
 const userController= require("../controllers/userController");
 
 /* GET login page. */
-userRouter.get('/login', userController.login);
+userRouter.get('/login', guestMiddleware, userController.login);
+
+/* Process Login  */
+userRouter.post('/login', userController.loginProcess);
+
 
 /* get register page*/
-userRouter.get('/register', userController.register);
+userRouter.get('/register',guestMiddleware ,userController.register);
 
 // Validacion de registro
 userRouter.post('/register',upload.single('image'),validation,userController.processRegister);
 
 // Perfil de usuario
-userRouter.get('/profile/:id', userController.profile);
+userRouter.get('/profile/', authMiddleware, userController.profile);
 
+// Logout
+userRouter.get('/logout/', userController.logout);
 
 
 
