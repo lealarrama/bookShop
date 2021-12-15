@@ -203,5 +203,31 @@
   "apellido": "perrote",
   "email": "perro@gmail.com",
   "contrasenia": "$2a$10$FHoTg62pXgNxvwNT0boZDOo4ao3fBCacuqUjNcbfmi15fvi5GIF9O"
+ },
+ {
+  "nombre": "Karen Amanda ",
+  "apellido": "Zerpa Solórzano ",
+  "email": "manzana@gmail.com",
+  "contrasenia": "$2a$10$j5/MMq4i473KtnaIZOBCvOeYv6kf.zzpEjyRNyLVIvtmJYUj.i8km"
+ },
+ {
+  "nombre": "nknlnllk",
+  "apellido": "postrecito",
+  "email": "postre@gmail.com",
+  "contrasenia": "$2a$10$2f/4cI6bUvlJgYxAXMlXMOJ8x5mOf1mSswCvqrxx3MCYJAN1frQPG"
+ },
+ {
+  "nombre": "cmgcbnbv",
+  "apellido": "Solórzano",
+  "email": "hgfjjn@gmail.com",
+  "contrasenia": "$2a$10$C8myvRiMhQQSXghW3/Iyh.EvMWr3PZQMR8cPzXB9Gtcn7nJu9IYJi",
+  "image": "dd48f7af6004f119a95df069117b3b54.jpg"
+ },
+ {
+  "nombre": "afagddg",
+  "apellido": "adgdgd",
+  "email": "123@gmail.com",
+  "contrasenia": "$2a$10$ZAeIAjEOKy3UV587i61tn.1UrjJtf.ghG3LZWeThHMthL5cia4p/S",
+  "image": "dd48f7af6004f119a95df069117b3b54.jpg"
  }
 ]

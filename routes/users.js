@@ -13,7 +13,7 @@ const authMiddleware = require ('../middlewares/authMiddleware');
 // ************ Multer ************ 
 const storage = multer.diskStorage({
     destination: (req,file, callback)=>{
-        callback (null, path.join(__dirname,'../public/img/products'))
+        callback (null, path.join(__dirname,'../public/img/users'))
     },
     filename: (req,file, callback)=>{
         callback (null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
@@ -31,24 +31,23 @@ const validation = [
     .isEmail().withMessage('Ingrese e-mail válido'),
     body('contrasenia').notEmpty().withMessage('Debes completar este campo').bail()
     .isLength({min:5}).withMessage('La contraseña debe tener como mínimo 5 caracteres'),
-    // body('image').custom((value, {req})=>{
-    //     let file = req.file;
-    //     // let acceptedExtensions =['.jpg','.png','.gif']
+//     body('image').custom((value, {req})=>{
+//         let acceptedExtensions =['.jpg','.jpeg','.png','.gif']
         
-    //     if(!file){
-    //         throw new Error('Tienes que subir una imagen');
+//        if(!req.file){
+//         throw new Error('Tienes que subir una imagen');
 
-    //     }//else{
-    //     //     let fileExtension = path.extname(file.originalname);
-    //     //     if(!acceptedExtensions.includes(fileExtension)) {
-    //     //         throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ') }`);
-    //     //     }
+//        }else{
+//             let fileExtension = path.extname(file.originalname);
+//             if(!acceptedExtensions.includes(fileExtension)) {
+//             throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ') }`);
+//            }
  
-    // //     }
-    //    return true
-    // }
+//          }
+//        return true
+//       }
 
-    // )
+//   )
 ]
 
 const userController= require("../controllers/userController");
@@ -61,11 +60,11 @@ userRouter.post('/login', userController.loginProcess);
 
 
 /* get register page*/
-userRouter.get('/register',guestMiddleware ,userController.register);
+userRouter.get('/register',guestMiddleware, validation, userController.register);
 
 // Validacion de registro
-userRouter.post('/register',//upload.single('image')
-validation,userController.processRegister);
+userRouter.post('/register',upload.single('image'),
+validation, userController.processRegister);
 
 // Perfil de usuario
 userRouter.get('/profile/', authMiddleware, userController.profile);

@@ -51,7 +51,11 @@ const userController = {
     },
 
     processRegister: function(req, res){
-        let resultadoValidacion=validationResult(req);
+        // return res.send({
+        //     body: req.body,
+        //     file: req.file
+        // })
+        let resultadoValidacion = validationResult(req);
         if(resultadoValidacion.errors.length > 0){
             return res.render('register',{
             errors:resultadoValidacion.mapped(),
@@ -74,8 +78,8 @@ const userController = {
 
         let userToCreate = {
             ...req.body,
-            contrasenia: bcryptjs.hashSync(req.body.contrasenia,10),
-            // avatar: req.file.filename
+            contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+            image: req.file.filename,
         }
 
         let userCreated = User.create(userToCreate)
