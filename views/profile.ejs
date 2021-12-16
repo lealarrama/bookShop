@@ -10,8 +10,11 @@
             <div>
             <h1 class="pf-h1">Bienvenido <%= user.nombre %> </h1>
             <h3 class="pf-h3">Tus Datos</h3>
+            <div class="pf-div-foto-user">
+                <p class="pf-texto-foto"><b>Foto de Perfil:</b></p>
+            <img src="/img/users/<%= user.image  %>" alt="" class="pf-foto-user">
+            </div>
             <ul class="pf-ul">
-                <li class="pf-li"><b>Foto de Perfil:</b></li>
                 <li class="pf-li"><b>Nombre y Apellido:</b> <%= user.nombre + ' ' + user.apellido  %></li>
                 <li class="pf-li"><b>Email:</b> <%= user.email  %></li>
             </ul>

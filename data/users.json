@@ -315,5 +315,28 @@
   "apellido": "alvarez",
   "email": "fran@alvarez.com",
   "contrasenia": "$2a$10$pmUjVOHF1OYsmGhvImwjeerx6ZO9bOCyyolFVuxmUumyeAg/eDfha"
+ },
+ {
+  "id": 9,
+  "nombre": "jllkñjpj",
+  "apellido": "pknlknlkn",
+  "email": "fresa@gmail.com",
+  "contrasenia": "$2a$10$Y4DfoCYnFum64KTw61gSMexHrecGhtTw79EUoAF0UdYTOnFlbNbLa"
+ },
+ {
+  "id": 10,
+  "nombre": "gkbhh",
+  "apellido": "kjbkjbmbm",
+  "email": "888@gmail.com",
+  "contrasenia": "$2a$10$2kI1u7Dm4ivImfcWqNKMgeFDmi79AnbE6.msO1xNjIcKiI4bwIb4a",
+  "image": "image-1639623590297.jpg"
+ },
+ {
+  "id": 11,
+  "nombre": "Amanda",
+  "apellido": "Zerpa",
+  "email": "amandazerpa777@gmail.com",
+  "contrasenia": "$2a$10$smRXPLx7zlp2T4GY9Bj.i.SEaqjonaUBPYcmOu43nkqkMFE64T00W",
+  "image": "image-1639626059431.jpg"
  }
 ]

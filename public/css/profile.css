@@ -11,7 +11,7 @@
 }
 .pf-main-segundo-div{
     margin: 20px 0px;
-    height: 350px;
+    height: 470px;
 }
 .pf-h1{
     margin-bottom: 20px;
@@ -27,6 +27,15 @@
 }
 .pf-li{
     margin: 30px 0px;
+}
+.pf-div-foto-user{
+    text-align: left;
+}
+.pf-texto-foto{
+    text-align: left;
+}
+.pf-foto-user{
+    width: 70%;
 }
 
 /*MEDIA QUERIES*/
@@ -46,6 +55,9 @@
 }
 /*TABLET*/
 @media (min-width:481px){
+    .pf-main{
+        margin: 30px 9%;
+    }
   .pf-main-segundo-div{
     display: flex;
     justify-content: space-evenly;
@@ -55,14 +67,34 @@
   }
   .pf-pennywise{
       display: flex;
-      width: 250px;
+      width: 280px;
   }
 }
     /*LAPTOP*/
 @media (min-width:769px){
-     .pf-main{
-         width: 70%;
-         margin:30px 15%;
+    .pf-main {
+        width: 80%;
+        height: 550px;
+        margin: 30px 10%
      }
-    
+     .pf-foto-user{
+         width: 55%;
+     }
+    .pf-pennywise{
+        width: 320px;
+    }
+}
+@media (min-width:1025px){
+    .pf-main {
+        width: 80%;
+        height: 690px;
+        margin: 30px 10%
+     }
+     .pf-foto-user{
+         width: 45%;
+     }
+     .pf-pennywise{
+        width: 390px;
+        height: 600px;
+    }
 }

@@ -63,7 +63,7 @@ userRouter.post('/login', userController.loginProcess);
 userRouter.get('/register',guestMiddleware, validation, userController.register);
 
 // Validacion de registro
-userRouter.post('/register', upload.any(),
+userRouter.post('/register', upload.single('image'),
 validation, userController.processRegister);
 
 // Perfil de usuario
