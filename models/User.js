@@ -44,7 +44,7 @@ const User = {
             id: this.generateId(),
             ...userData
         }
-        allUsers.push(userData);
+        allUsers.push(newUser);
         fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
         return newUser;
     },

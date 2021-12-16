@@ -79,7 +79,7 @@ const userController = {
         let userToCreate = {
             ...req.body,
             contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
-            image: req.file.filename,
+            //image: req.file.filename,
         }
 
         let userCreated = User.create(userToCreate)

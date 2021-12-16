@@ -229,5 +229,36 @@
   "email": "123@gmail.com",
   "contrasenia": "$2a$10$ZAeIAjEOKy3UV587i61tn.1UrjJtf.ghG3LZWeThHMthL5cia4p/S",
   "image": "dd48f7af6004f119a95df069117b3b54.jpg"
+ },
+ {
+  "id": null,
+  "nombre": "hhkkhk",
+  "apellido": "hddhdfsf",
+  "email": "111@gmail.com",
+  "contrasenia": "$2a$10$5L8jVZ9xq2zOH6E5Vur/Wug9yNAwGKvdNNIxWn8.Kj7TQ89nLS5h2",
+  "image": "conifer-2178595_1280.jpg"
+ },
+ {
+  "nombre": "hhkkhk",
+  "apellido": "hddhdfsf",
+  "email": "111@gmail.com",
+  "contrasenia": "$2a$10$5L8jVZ9xq2zOH6E5Vur/Wug9yNAwGKvdNNIxWn8.Kj7TQ89nLS5h2",
+  "image": "conifer-2178595_1280.jpg"
+ },
+ {
+  "id": null,
+  "nombre": "asfdgsgf",
+  "apellido": "adgfg",
+  "email": "222@gmail.com",
+  "contrasenia": "$2a$10$r87/yoAH87j.IRkqHv4R9Oh4NsK3BH/qAkcBN/53WbjrwER3RgK6G",
+  "image": "conifer-2178595_1280.jpg"
+ },
+ {
+  "id": 1,
+  "nombre": "gjgjgjdghd",
+  "apellido": "gjfgjj",
+  "email": "333@gmail.com",
+  "contrasenia": "$2a$10$TkIXlS0eMy2RTt4UFqK4auYue9eDVn5q3DnTxVkiUlby7RJSL9YOK",
+  "image": "conifer-2178595_1280.jpg"
  }
 ]
