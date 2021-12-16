@@ -260,5 +260,60 @@
   "email": "333@gmail.com",
   "contrasenia": "$2a$10$TkIXlS0eMy2RTt4UFqK4auYue9eDVn5q3DnTxVkiUlby7RJSL9YOK",
   "image": "conifer-2178595_1280.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "hola",
+  "apellido": "hola",
+  "email": "lea@lea.com",
+  "contrasenia": "$2a$10$sgFmXVXBbN6j1WSzEpHlku612XHdczzv/2a0bo6xFBGKHR6IGWgMa",
+  "image": "bart.png"
+ },
+ {
+  "id": 3,
+  "nombre": "lea",
+  "apellido": "larrama",
+  "email": "lea@hola.com",
+  "contrasenia": "$2a$10$EFv7aLEG0Ugeg1K2i1y01uoKHo4ZyOSfSCj.At/mgYGXtkVSDNcRG",
+  "image": "bart.png"
+ },
+ {
+  "id": 4,
+  "nombre": "hola12",
+  "apellido": "hola12",
+  "email": "hola@12.com",
+  "contrasenia": "$2a$10$ma5jOUOjh5MwyxBz9A3PJenqB802rqq7wGKh9k2rsfCKDsiJ/iOEG",
+  "image": "bart.png"
+ },
+ {
+  "id": 5,
+  "nombre": "lunes",
+  "apellido": "martes",
+  "email": "lunes@martes.com",
+  "contrasenia": "$2a$10$nrp/r0mSvq2wslD/5GmXj.5I2I9EC1RwpSYQmuNxJvzwNMWNcDm9i",
+  "image": "bart.png"
+ },
+ {
+  "id": 6,
+  "nombre": "hola55",
+  "apellido": "hola45",
+  "email": "hola55@hola.com",
+  "contrasenia": "$2a$10$.JImGX58/xtqOtrLUyrWLexJvAzYOSVJDXOAI64SdQCseCDHj7fWi",
+  "image": "bart.png"
+ },
+ {
+  "id": 7,
+  "nombre": "hola15",
+  "apellido": "holllaaa",
+  "email": "hola@1112.com",
+  "contrasenia": "$2a$10$GmmhV2GELcs7g7ilHkSto.BgtjIvR1QA5AOs1T4CCM5Z2u1v4qyPC",
+  "image": "bart.png"
+ },
+ {
+  "id": 8,
+  "nombre": "fran",
+  "apellido": "alvarez",
+  "email": "fran@alvarez.com",
+  "contrasenia": "$2a$10$pmUjVOHF1OYsmGhvImwjeerx6ZO9bOCyyolFVuxmUumyeAg/eDfha"
  }
 ]

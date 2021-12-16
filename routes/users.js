@@ -13,10 +13,10 @@ const authMiddleware = require ('../middlewares/authMiddleware');
 // ************ Multer ************ 
 const storage = multer.diskStorage({
     destination: (req,file, callback)=>{
-        callback (null, path.join(__dirname,'../public/img/users'))
+        callback(null, path.join(__dirname,'../public/img/users'))
     },
     filename: (req,file, callback)=>{
-        callback (null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
+        callback(null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
     }
 })
 var upload = multer({storage: storage})
@@ -63,7 +63,7 @@ userRouter.post('/login', userController.loginProcess);
 userRouter.get('/register',guestMiddleware, validation, userController.register);
 
 // Validacion de registro
-userRouter.post('/register',upload.single('image'),
+userRouter.post('/register', upload.any(),
 validation, userController.processRegister);
 
 // Perfil de usuario

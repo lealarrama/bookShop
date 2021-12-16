@@ -41,3 +41,32 @@ Mantener el orden con los git pull y git push, para seguir siendo ordenados y qu
 Trabajar a último momento con detalles que faltan o quedan por hacer.
 5. Dejar de hacer.
         -
+
+        SPRINT 4
+
+1. Comenzar a hacer.
+Organizarnos mejor con el código.
+2. Hacer más.
+Ayudarnos entre nosotros con lo que necesitemos.
+3. Continuar haciendo.
+Mantener el orden con los git pull y git push, para seguir siendo ordenados y que no salten errores.
+4. Hacer menos.
+Trabajar a último momento con detalles que faltan o quedan por hacer.
+5. Dejar de hacer.
+No consultarnos sobre cuando pedir ayuda en nuestro proyecto.
+
+        SPRINT 5
+
+1. Comenzar a hacer.
+Estar al día con las consignas del scrum, organizarnos y nos posponer tareas o reuniones de proyecto.
+2. Hacer más.
+Ayudarnos entre nosotros con lo que necesitemos, reunirnos mas seguido para no acumular tareas.
+3. Continuar haciendo.
+Mantener el orden con los git pull y git push, para seguir siendo ordenados y que no salten errores, seguir trabajando en equipo y continuar haciendo reuniones.
+4. Hacer menos.
+Trabajar a último momento con detalles que faltan o quedan por hacer, no acumular tareas ni posponerlas y no dejarnos estar a pesar de la fecha en que estamos(fin de año).
+5. Dejar de hacer.
+Cuando realicemos reuniones no esperar que hay alguien se conecte para hacerlo nosotros
+
+
+  <!-- SPRINT 6 -->

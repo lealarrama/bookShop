@@ -19,8 +19,11 @@ Semana 2 (7-14 de Noviembre):
 Semana 3 (14-22 de Noviembre);
 *Terminamos CRUD, y comenzamos con multer, arreglamos errores y terminamos de crear todos los productos.
 
-<!-- SPRINT 5:
 
-Semana 1 (22-29 de Noviembre):
+SPRINT 5:
 
-Semana 2 (29-6 de Noviembre): -->
+Semana del (29/11-6/12)
+*Realizamos validaciones de inputs, configuramos express Validator y dejamos listo para realizar el registro y el login.
+
+Semana del (7/12-12/12)
+*Instalamos Express-session lo configuramos, creeamos el controller de user y sus métodos, modelos, middleware, cookies, vista de perfil de usuarios y corregimos errores.

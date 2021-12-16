@@ -51,10 +51,7 @@ const userController = {
     },
 
     processRegister: function(req, res){
-        // return res.send({
-        //     body: req.body,
-        //     file: req.file
-        // })
+  
         let resultadoValidacion = validationResult(req);
         if(resultadoValidacion.errors.length > 0){
             return res.render('register',{
@@ -81,7 +78,7 @@ const userController = {
             contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
             //image: req.file.filename,
         }
-
+        console.log(req.body);
         let userCreated = User.create(userToCreate)
         return res.redirect('/users/login')
     
