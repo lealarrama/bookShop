@@ -45,9 +45,9 @@
                         </div>  
                     <% } %> 
 
-                     <div class="cr-divFoto">
-                        <label class="cr-label" for="image">Selecciona una imagen</label>
-                        <input class="cr-fotoCreate" type="file" name="image"
+                     <div>
+                        <label for="image">Selecciona una imagen</label>
+                        <input  type="file" name="image" id="image"
                         value="<%=locals.oldData ? oldData.image : null %>">
                         <% if(locals.errors && errors.image){%>
                             <div>
@@ -56,7 +56,7 @@
                         <% } %> 
     
                     </div>
-                    <button type ='submit' class="reg-botones-nuestra-web"> Registrarme 
+                    <button type='submit' class="reg-botones-nuestra-web"> Registrarme 
                     </button>
                 </form>
             </div>

@@ -2,12 +2,12 @@
 /* MAIN */
 .cr-formCreate{
     border: 6pxsolid #262120;
-        background-color: #bf8a26;
-        text-align: center;
-        border-radius: 5px;
-        margin: 10PX;
-        padding-bottom: 10px;
-        line-height: 3;
+    background-color: #bf8a26;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10PX;
+    padding-bottom: 10px;
+    line-height: 3;
 }
 .cr-tituloCreate{
     font-size: 30px;

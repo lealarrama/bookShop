@@ -7,39 +7,52 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="cr-formCreate" action="/products" method="POST" enctype = "multipart/form-data"> 
-            <h2 class="cr-tituloCreate">Crear producto</h2>
-            <div class="cr-nombreCreate">
-                <label class="cr-label" for="name">Nombre del producto:</label>
-                <input class="cr-nombreProducto" type="text" name="name" placeholder="Ej: El visitante">
+        <form class="editp-formCreate" action="/products" method="POST" enctype="multipart/form-data"> 
+            <h2 class="editp-tituloCreate">Crear producto</h2>
+            <div class="editp-main-div">
+                <ul class="editp-ul">
+                    <li class="editp-label">
+                        <label for="name">Nombre</label>
+                    </li>
+                    <li>
+                        <input class="editp-input" type="text" name="name" placeholder="Ej: El visitante">
+                    </li>
+                    <li class="editp-label">
+                        <label for="description">Descripción</label>
+                    </li>
+                    <li>
+                        <textarea class="editp-input" name="description" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
+                    </li>
+                    <li class="editp-label editp-cambiar-imagen">
+                        <label class="editp-input" for="image">Seleccionar imágenes</label>
+                    </li>
+                    <li>
+                        <input class="cr-fotoCreate" type="file" name="image" id="image">
+                    </li>
+                    <li class="editp-label">
+                        <label for="gender">Género</label>
+                    </li>
+                    <li>
+                        <select class="editp-input" name="gender">
+                            <option value="Suspenso">Suspenso</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Fantasía">Fantasía</option>
+                        </select>
+                    </li>
+                    <li class="editp-label">
+                        <label for="price">Precio del producto</label>
+                    </li>
+                    <li>
+                        <input class="editp-input" type="text" name="price" placeholder="Ej: $2000">
+                    </li>
+                </ul>
             </div>
-            <div class="cr-desCreate">
-                <label class="cr-label" for="description">Describe el producto</label>
-                <textarea class="cr-descProducto" name="description" placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
-            </div>
-            <div class="cr-divFoto">
-                <label class="cr-label" for="image">Selecciona una imagen del producto</label>
-                <input class="cr-fotoCreate" type="file" name="image">
-            </div>
-            <div class="cr-categoriaCreate">
-                <label class="cr-label" for="gender">Género del producto</label>
-                <select class="cr-genero" name="gender">
-                    <option value="Suspenso">Suspenso</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Fantasía">Fantasía</option>
-                </select>
-            </div>
-            <div class="cr-precioCreate">
-                <label class="cr-label" for="price">Precio del producto</label>
-                <input class="cr-precio" type="text" name="price" placeholder="Ej: $2000">
-            </div>
-            <div >
-                    <button class="cr-botónCreate" type="submit"  class="boton-registro">
-                        Crear producto
-                    </button>
+            <div>
+                <button class="cr-botónCreate" type="submit"  class="boton-registro">
+                    Crear
+                </button>
             </div>
         </form>
         <%- include("./partials/footer") %>
-</body>
-
+    </body>
 </html>

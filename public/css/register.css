@@ -36,12 +36,8 @@
     border-radius: 8px;
     margin: 10px;
     width: 45%;
-}
-.reg-botones-nuestra-web a{
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bolder;
+    font-size: 15px;
 }
 .reg-boton-ingresar{
     background-color:#8C1B1B;
@@ -100,6 +96,22 @@
     margin-bottom: 5%;
     background-color: #d9d9d9;
 }
+
+input[type="file"]{
+    display:none
+}
+label[for="image"]{
+    display: inline-block;
+    padding: 6px;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    font-size: 17px;
+    color: black;
+    border-radius: 5px;
+    max-width: 55%;
+    text-align: center;
+    font-family: 'Gemunu Libre',sans-serif;
+}
 /*MEDIA QUERIES*/
 /*MOVIL*/
 @media (min-width:320px){
@@ -130,6 +142,9 @@
     }
     .reg-boton-ingresar{
         width: 20%;
+    }
+    label[for="image"]{
+        width: 200px;
     }
 }
     /*LAPTOP*/

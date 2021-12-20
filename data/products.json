@@ -1,11 +1,11 @@
 [
  {
   "id": 27,
-  "name": "El visitante",
-  "price": "2149",
-  "image": "image-1637627495197.jpg",
-  "description": "Un niño de once años ha sido brutalmente violado y  asesinado. Todas las  pruebas apuntan a uno de los ciudadanos más  queridos de Flint City:  Terry Maitland, entrenador en la liga infantil,  profesor de literatura, marido ejemplar y padre de dos niñas.\r\n",
-  "gender": "Terror"
+  "nombreProducto": "El Visitante",
+  "despripcion": "Un niño de once años ha sido brutalmente violado y asesinado. Todas las pruebas apuntan a uno de los ciudadanos más queridos de Flint City: Terry Maitland, entrenador en la liga infantil, profesor de literatura, marido ejemplar y padre de dos niñas. El detective Ralph Anderson ordena su detención.",
+  "categoria": "Suspenso",
+  "precio": "2149",
+  "image": "image-1637627495197.jpg"
  },
  {
   "id": 28,

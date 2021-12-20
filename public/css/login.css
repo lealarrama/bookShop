@@ -44,7 +44,7 @@ padding: 15px;
     color: white;
     font-size: 18px;
     padding: 8px;
-    /* border-radius: 8px;*/
+    border-radius: 8px;
     margin: 10px;
     width: 50%;
     text-align: center;
@@ -67,4 +67,22 @@ padding: 15px;
 .log-div-boton a{
     text-decoration: none;
     color:white;    
+}
+
+
+/*MEDIA QUERIES*/
+/*TABLET*/
+@media(min-width:481px){
+    .log-boton-formulario{
+        width: 20%;
+    }
+}
+/*PC*/
+@media(min-width:769px){
+    .log-control{
+        width: 30%;
+    }
+    .log-contenedor{
+        width:60%;
+    }
 }

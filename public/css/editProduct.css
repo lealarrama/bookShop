@@ -5,6 +5,23 @@
 }
 
 /* MAIN */
+.editp-ul{
+    list-style: none;
+    text-align: left;
+}
+.editp-label{
+    margin-top: 13px;
+}
+.editp-input{
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    margin: 10px 0px;
+}
+.editp-cambiar-imagen{
+    text-align: center;
+}
 .editp-formCreate{
     border: 1px solid #262120;
     background-color: #bf8a26;
@@ -24,21 +41,6 @@
     flex-direction: column;
     align-items: center;
 }
-.editp-div-inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.editp-input{
-    border-radius: 5px;
-    padding: 10px;
-    width: 200px;
-    border: none;
-    margin-top: 5px;
-}
-.editp-label{
-    margin-top: 15px;
-}
 .editp-botónCreate{
     background-color: #8C1B1B;
     color: white;
@@ -48,47 +50,33 @@
     width: 25%;
     border-radius: 5px;
 }
-a{
-    color: white;
-    text-decoration: none;
-}
-
-
-
-
 
 /*TABLET*/
 @media (min-width:481px){
-
     /*MAIN*/
+    .editp-main-div{
+        margin-right: 110px;
+    }
     .editp-formCreate{
         margin: 20px 70px;
         padding-bottom: 10px;
     }
-    .editp-div-inputs{
-        flex-direction: row;
+    .editp-label{
+        margin-top: 15px;
     }
     .editp-input{
+        position: relative;
+        left: 120px;
+        bottom: 25px;
         width: 240px;
-    }
-    .editp-label{
-        margin: 20px;
-    }
-    .editp-input-solo{
-        margin: 10px 20px;
-    }
-    .editp-descripcion{
-        margin-left: -10px;
-    }
-    .editp-descripcion-label{
-        margin-right: 30px;
+        margin: 0px;
     }
 }
 
-/*LAPTOP
+/*LAPTOP*/
 @media (min-width:769px){
 
-    /*MAIN
+    /*MAIN*/
     .editp-formCreate{
         background-color: #bf8a26;
         text-align: center;
@@ -102,7 +90,23 @@ a{
         font-family: 'GEMUNU LIBRE';
         margin: 11px;
     }
-    label{
+    .editp-input{
+        left: 180px;
+        bottom: 50px;
+    }
+    .editp-label{
         font-size: 20px;
+    }
+    .editp-main-div{
+        margin-right: 170px;
+    }
+}
+@media (min-width:1025px){
+    .editp-input{
+        left: 240px;
+        width: 300px;
+    }
+    .editp-main-div{
+        margin-right: 190px;
     }
 }
