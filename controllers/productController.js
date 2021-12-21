@@ -40,7 +40,7 @@ const productController = {
         };
         products.push(newProduct)
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null,' '))
-        res.redirect('/')
+        res.redirect('/products')
     },
 
     editProduct: function(req, res){
