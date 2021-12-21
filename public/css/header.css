@@ -44,7 +44,11 @@
 header .fa-shopping-cart {
     color:#262120;
     font-size: 22px;
-    padding-right: 32px
+    padding-right: 32px;
+    margin-left: 5px;
+}
+header .fa-sort-down {
+    margin-left: 5px;
 }
 .header-bottom-bar{
     background-color: #8C1B1B;
@@ -53,10 +57,6 @@ header .fa-shopping-cart {
     justify-content: space-between;
     align-items: center;
     padding: 17px 8%;
-}
-header .fa, .fas{
-    font-weight: 900;
-    margin-left: 5px;
 }
 .header-lista-bottom-header{
     list-style: none;
@@ -90,8 +90,8 @@ header .fa-bars{
 .header-boton-buscador{
     border: none;
     border-radius: 5px;
-    margin-left: -15px;
-    background-color: #fff;
+    margin-left: -30px;
+    background-color: transparent;
     padding: 0 5px;
 }
 

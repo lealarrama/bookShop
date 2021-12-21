@@ -43,10 +43,16 @@
                     <li>
                         <input class="editp-input" type="text" name="precio" placeholder="$<%=productToEdit.price%>">
                     </li>
+                    <li class="editp-label">
+                        <label for="discount">Descuento</label>
+                    </li>
+                    <li>
+                        <input class="editp-input" type="text" name="discount" placeholder="Ej: 40%">
+                    </li>
                 </ul>    
             </div>
             <div >
-                <button class="editp-botónCreate" type="submit"  class="editp-boton-registro">Editar</button>
+                <button class="editp-botónCreate" type="submit">Editar</button>
             </div>
         </form>
         <%- include("./partials/footer") %>
