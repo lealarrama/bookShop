@@ -78,7 +78,6 @@ const userController = {
             contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
             image: req.file.filename,
         }
-        console.log(req.body);
         let userCreated = User.create(userToCreate)
         return res.redirect('/users/login')
     

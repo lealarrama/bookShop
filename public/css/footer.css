@@ -4,7 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* FOOTER */
 .footer-mantenteInformado{
     display: flex;
@@ -67,7 +66,7 @@ footer button{
     color: white;
     border-radius: 4px;
     padding: 5px 5px;
-    padding-left: 3px;
+    padding-left: 5px;
     border: none;
     margin-left: -5px;
 }
@@ -84,7 +83,7 @@ footer button{
     border: none;
     border-radius: 4px;
     padding: 10px;
-    height: 5px;
+    height: 24px;
     width: 60%;
 }
 }
@@ -109,9 +108,9 @@ footer button{
         display: flex;
     }
     footer button{
-        padding: 4px;
+        padding: 5px;
         border: none;
-    
+        margin-top: -1px;
     }
     .footer-dejarMail{
         border-radius: 4px;
@@ -119,5 +118,15 @@ footer button{
     }
     .footer-mantenteInformado{
         align-items: center;
+        justify-content: end
+    }
+    .footer-texto{
+        text-align: center;
+    }
+}
+
+@media (min-width:769px){
+    .footer-dejarMail{
+        width: 230px;
     }
 }

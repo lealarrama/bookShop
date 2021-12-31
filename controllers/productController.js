@@ -4,11 +4,11 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-
 const productController = {
  // Todos los productos
     products: function (req, res) {
-        res.render("products", {products : products});
+        const newProduct =  this.update
+        res.render("products", {products : products, newProduct});
     },
 // Detail - Detail from one product
     detail: (req, res) => {
@@ -40,20 +40,17 @@ const productController = {
         };
         products.push(newProduct)
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null,' '))
-        res.redirect('/')
+        res.redirect('/products')
     },
 
     editProduct: function(req, res){
-        const productsFilePath = path.join(__dirname, '../data/products.json');
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let id = req.params.id
-        let productToEdit = products.find(product => product.id == id)
+        const id = req.params.id
+        const productToEdit = products.find(product => product.id == id)
         res.render('editProduct', {productToEdit:productToEdit})
     },
     update: function(req, res){
         let id = req.params.id;
         let productToEdit = products.find(product => product.id == id)
-         let image
 
         if(req.files[0] != undefined){
         image = req.files[0].filename
@@ -67,7 +64,7 @@ const productController = {
             image: image,
         };
 
-        let newProducts = products.map(product => {
+        const newProducts = products.map(product => {
             if (product.id == productToEdit.id) {
                 return product = {...productToEdit};
             }
@@ -75,7 +72,7 @@ const productController = {
         })
 
         fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-        res.redirect('/');
+        res.redirect('/products');
     },
 
     // Delete - Delete one product from DB

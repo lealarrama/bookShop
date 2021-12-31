@@ -31,23 +31,24 @@ const validation = [
     .isEmail().withMessage('Ingrese e-mail válido'),
     body('contrasenia').notEmpty().withMessage('Debes completar este campo').bail()
     .isLength({min:5}).withMessage('La contraseña debe tener como mínimo 5 caracteres'),
-//     body('image').custom((value, {req})=>{
-//         let acceptedExtensions =['.jpg','.jpeg','.png','.gif']
+    body('image').custom((value, {req})=>{
+        const file = req.file
+         let acceptedExtensions =['.jpg','.jpeg','.png','.gif']
         
-//        if(!req.file){
-//         throw new Error('Tienes que subir una imagen');
+        if(!file){
+         throw new Error('Tienes que subir una imagen');
 
-//        }else{
-//             let fileExtension = path.extname(file.originalname);
-//             if(!acceptedExtensions.includes(fileExtension)) {
-//             throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ') }`);
-//            }
+        }else{
+             let fileExtension = path.extname(file.originalname);
+             if(!acceptedExtensions.includes(fileExtension)) {
+             throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ') }`);
+            }
  
-//          }
-//        return true
-//       }
+          }
+        return true
+       }
 
-//   )
+   )
 ]
 
 const userController= require("../controllers/userController");

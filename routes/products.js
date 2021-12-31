@@ -9,10 +9,10 @@ const productController= require("../controllers/productController");
 // ************ Multer ************ 
 const storage = multer.diskStorage({
     destination: (req,file, callback)=>{
-        callback (null, path.join(__dirname,'../public/img/products'))
+        callback(null, path.join(__dirname,'../public/img/products'))
     },
     filename: (req,file, callback)=>{
-        callback (null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
+        callback(null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
     }
 })
 var upload = multer({storage: storage})
@@ -25,7 +25,7 @@ productRouter.get('/cart', productController.productCart);
 
 /* get createProduct page*/
 productRouter.get('/create', productController.createProduct);
-productRouter.post('/', upload.any('image'), productController.store);
+productRouter.post('/', upload.any(), productController.store);
 
 /* get editProduct page*/
 productRouter.get('/edit/:id', productController.editProduct);

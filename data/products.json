@@ -1,13 +1,5 @@
 [
  {
-  "id": 27,
-  "name": "El visitante",
-  "price": "2149",
-  "image": "image-1637627495197.jpg",
-  "description": "Un niño de once años ha sido brutalmente violado y  asesinado. Todas las  pruebas apuntan a uno de los ciudadanos más  queridos de Flint City:  Terry Maitland, entrenador en la liga infantil,  profesor de literatura, marido ejemplar y padre de dos niñas.\r\n",
-  "gender": "Terror"
- },
- {
   "id": 28,
   "name": "El instituto",
   "price": "3749",
@@ -72,11 +64,21 @@
   "gender": "Fantasía"
  },
  {
+  "id": 9,
+  "name": "El Visitante",
+  "price": "2149",
+  "image": "image-1640128942495.jpg",
+  "description": "Un niño de once años ha sido brutalmente violado y asesinado. Todas las pruebas apuntan a uno de los ciudadanos más queridos de Flint City: Terry Maitland, entrenador en la liga infantil, profesor de literatura, marido ejemplar y padre de dos niñas. El detective Ralph Anderson ordena su detención.",
+  "discount": "40",
+  "gender": "Terror"
+ },
+ {
   "id": 10,
   "name": "Misery",
   "price": "1934",
-  "image": "image-1638483497680.jpg",
-  "description": "Paul Shledon es un escritor que sufre un grave accidente y recobra el conocimiento en una apartada casa en la que vive una misteriosa mujer, corpulenta y de extra#o caracter. Se trata de una antigua enfermera, involucrada en varias muertes misteriosas ocurridas en diversos hospitales.",
-  "gender": "Fantasía"
+  "image": "image-1640130828489.jpg",
+  "description": "Paul Shledon es un escritor que sufre un grave accidente y recobra el conocimiento en una apartada casa en la que vive una misteriosa mujer, corpulenta y de extraño carácter. Se trata de una antigua enfermera, involucrada en varias muertes misteriosas ocurridas en diversos hospitales",
+  "discount": "40",
+  "gender": "Terror"
  }
 ]

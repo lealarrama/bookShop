@@ -39,6 +39,11 @@
 }
 
 /*PRODUCTOS*/
+.index-link-descripciones{
+    text-decoration:none;
+    color:black ;
+    font-size: 18px;
+}
 .index-titulo-productos{
     background-color:#262120;
     margin:30px 0 20px 0;
