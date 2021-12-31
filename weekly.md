@@ -27,3 +27,10 @@ Semana del (29/11-6/12)
 
 Semana del (7/12-12/12)
 *Instalamos Express-session lo configuramos, creeamos el controller de user y sus métodos, modelos, middleware, cookies, vista de perfil de usuarios y corregimos errores.
+
+SPRINT 6:
+
+Semana del (20/12-26/12)
+* Desarrollamos el esquema de la base de datos y creeamos las tablas corresponidente en Mysql. Corregimos Arreglos del esquema.
+Semana del (27/12-31/12)
+* Completamos las tablas e instalamos sequalize y Mysql en VisualStudioCode
