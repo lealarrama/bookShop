@@ -1,16 +1,18 @@
-const fs = require('fs');
-const path = require('path');
-const db = require("../data/models/");
+const db = require("../data/models");
+const sequelize = db.sequelize;
+const {Op} = require("sequelize");
+const Productos = db.Producto;
 
-// const productsFilePath = path.join(__dirname, '../data/products.json');
-// const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController = {
     //Listado
     products: function(req, res){
         db.Productos.findAll()
-            .then(function(productos){
-                res.render("products", {productos, productos})
+            .then(function(products){
+                res.render("products", {products: products})
+            })
+            .catch((err)=>{
+                res.send(err)
             })
     },
  // Todos los productos
@@ -20,17 +22,57 @@ const productController = {
     // },
 
 // Detail - Detail from one product
-    detail: (req, res) => {
-		const id = req.params.id
-		const product = products.find(product=>{
-			return product.id == id
-		})
-		res.render('productDetail', {product : product, products})
-	},
+    // detail: (req, res) => {
+	// 	const id = req.params.id
+	// 	const product = products.find(product=>{
+	// 		return product.id == id
+	// 	})
+	// 	res.render('productDetail', {product : product, products})
+	// },
+
+
+    detail: function(req, res){
+        db.Productos.findByPk(req.params.id)
+            .then(function(product){
+            res.render('productDetail',{product:product})
+        }).catch((err)=>{
+            res.send(err)
+        })
+    },
+
+    search: function(req, res){
+        db.Productos.findAll({
+            where:{ 
+               nombre: {[Op.Like]:"%" + req.body.search + "%"}
+            }
+        })
+        .then(products => {
+            if(products.length){
+                return res.render('products', {products: products});
+            }
+            
+            else{ 
+            res.redirect("/")}
+
+        }).catch((err)=>{
+            res.send(err)
+        })
+    },
+
     
     productCart: function(req, res){
-        res.render("productCart");
+    //     res.render("productCart");
+        db.Productos.findAll()
+            .then(products=>{
+                res.render('productCart')
+            })
+        .catch((err)=>{
+            res.send(err)
+        })
+
     },
+    
+    
     
     createProduct: function(req, res){
         db.Productos.findAll().then(products=>{
