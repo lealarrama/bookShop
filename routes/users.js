@@ -6,10 +6,6 @@ const path = require ('path');
 const fs = require ('fs');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
 const authMiddleware = require ('../middlewares/authMiddleware');
-
-
-
-
 // ************ Multer ************ 
 const storage = multer.diskStorage({
     destination: (req,file, callback)=>{
@@ -20,9 +16,6 @@ const storage = multer.diskStorage({
     }
 })
 var upload = multer({storage: storage})
-
-
-
 
 const validation = [
     body('nombre').notEmpty().withMessage('Debes completar este campo'),
@@ -50,7 +43,6 @@ const validation = [
 
    )
 ]
-
 const userController= require("../controllers/userController");
 
 /* GET login page. */
