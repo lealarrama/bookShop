@@ -33,7 +33,7 @@ const productController = {
     },
     
     createProduct: function(req, res){
-        Products.findAll().then(products=>{
+        db.Productos.findAll().then(products=>{
             res.render('createProduct',{products})
         }).catch((err)=>{
             res.send(err)
@@ -43,7 +43,7 @@ const productController = {
 
     // Create -  Method to store
 	store: (req, res) => {
-        Products.create({
+        db.Productos.create({
             nombre: req.body.name,
             precio: req.body.price,
             descuento: req.body.discount,
@@ -71,7 +71,7 @@ const productController = {
 
     editProduct: function(req, res){
         const id = req.params.id
-        Products.findByPK(id).then(productToEdit=>{
+        db.Productos.findByPK(id).then(productToEdit=>{
             res.render('editProduct',{productToEdit})
         }).catch((err)=>{
             res.send(err)
