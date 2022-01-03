@@ -1,15 +1,24 @@
 const fs = require('fs');
 const path = require('path');
+const db = require("../data/models/");
 
 // const productsFilePath = path.join(__dirname, '../data/products.json');
 // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController = {
- // Todos los productos
-    products: function (req, res) {
-        const newProduct =  this.update
-        res.render("products", {products : products, newProduct});
+    //Listado
+    products: function(req, res){
+        db.Productos.findAll()
+            .then(function(productos){
+                res.render("products", {productos, productos})
+            })
     },
+ // Todos los productos
+    // products: function (req, res) {
+    //     const newProduct =  this.update
+    //     res.render("products", {products : products, newProduct});
+    // },
+
 // Detail - Detail from one product
     detail: (req, res) => {
 		const id = req.params.id
@@ -98,13 +107,21 @@ const productController = {
         // res.redirect('/products');
     },
 
+    //Eliminar producto
+    destroy: (req, res)=>{
+        db.Productos.destroy({
+            where: {id: req.params.id}
+        })
+        res.redirect('/products');
+    }
+
     // Delete - Delete one product from DB
-	destroy : (req, res) => {
-		let id = req.params.id;
-		let finalProducts = products.filter(product => product.id != id);
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-		res.redirect('/products');
-	},
+	// destroy : (req, res) => {
+	// 	let id = req.params.id;
+	// 	let finalProducts = products.filter(product => product.id != id);
+	// 	fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
+	// 	res.redirect('/products');
+	// },
 }
 
 module.exports = productController;
