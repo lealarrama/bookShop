@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = "ProductosCarrito";
+    let alias = "CarritoCompras";
     let cols = {
         id: {
             type: dataTypes.INTEGER,
@@ -8,25 +8,25 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             unique: true
         },
-        producto: {
-            type: dataTypes.STRING ,
-            allowNull: false
-        } ,
-        productos_id: {
+        precio_total: {
             type: dataTypes.INTERGER ,
             allowNull: false
         } ,
-        carrito_id: {
+        cantidad_items: {
+            type: dataTypes.INTERGER ,
+            allowNull: false
+        } ,
+        usuario_id: {
             type: dataTypes.INTERGER ,
             allowNull: false
         } ,
     };
     let config = {
-        tableName: "productos_carrito",
+        tableName: "carrito_de_compras",
         timestamps: false
     };
     
-    const ProductoCarrito= sequelize.define(alias, cols, config);
+    const carrito= sequelize.define(alias, cols, config);
     
-    return ProductoCarrito;
+    return carrito;
 }
