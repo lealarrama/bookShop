@@ -1,4 +1,4 @@
-module.exports = (sequelize, dataTypes) => {
+ module.exports = (sequelize, dataTypes) => {
     let alias = "CarritoCompras";
     let cols = {
         id: {
@@ -9,15 +9,15 @@ module.exports = (sequelize, dataTypes) => {
             unique: true
         },
         precio_total: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
         cantidad_items: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
         usuario_id: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
     };

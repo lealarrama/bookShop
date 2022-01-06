@@ -20,5 +20,5 @@ module.exports = (sequelize, dataTypes) => {
     
     const UsuariosCategorias= sequelize.define(alias, cols, config);
     
-    return UsuariosCategoria;
+    return UsuariosCategorias;
 }

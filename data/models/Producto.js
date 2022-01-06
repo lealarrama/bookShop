@@ -13,11 +13,11 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         } ,
         precio: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
         descuento: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
         imagen:{

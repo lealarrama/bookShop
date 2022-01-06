@@ -13,11 +13,11 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         } ,
         productos_id: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
         carrito_id: {
-            type: dataTypes.INTERGER ,
+            type: dataTypes.INTEGER ,
             allowNull: false
         } ,
     };
