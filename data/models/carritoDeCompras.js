@@ -26,7 +26,14 @@
         timestamps: false
     };
     
-    const carrito= sequelize.define(alias, cols, config);
+    const Carrito = sequelize.define(alias, cols, config);
     
-    return carrito;
+    Carrito.associate = models => {
+        Carrito.belongsTo(models.User,{
+            as: 'usuarios',
+            foreignKey: 'usuario_id',
+        })
+    }
+
+    return Carrito;
 }

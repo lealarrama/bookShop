@@ -36,6 +36,6 @@ app.use("/users", userRouter);
 
 app.use("/products", productRouter);
 
-app.listen(RUTA, function(){
+app.listen(3030, function(){
     console.log("Servidor levantado en puerto 3030")
 });

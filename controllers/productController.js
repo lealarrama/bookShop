@@ -90,10 +90,10 @@ const productController = {
             precio: req.body.price,
             descuento: req.body.discount,
             imagen:req.files[0].filename,
-            descripcion: req.file.description,
+            descripcion: req.body.description,
             generos_id: req.body.gender
         }).then(user => {
-                res.redirect('/users/login');
+                res.redirect('/products');
             }).catch((err)=>{
                 res.send(err)
             })
@@ -113,7 +113,7 @@ const productController = {
 
     editProduct: function(req, res){
         const id = req.params.id
-        db.Productos.findByPK(id).then(productToEdit=>{
+        db.Productos.findByPk(id).then(productToEdit=>{
             res.render('editProduct',{productToEdit})
         }).catch((err)=>{
             res.send(err)
@@ -123,6 +123,23 @@ const productController = {
         // res.render('editProduct', {productToEdit:productToEdit})
     },
     update: function(req, res){
+        let productoId = req.params.id;
+        db.Productos.update(
+            {
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                imagen: req.body.foto,
+                generos_id: req.body.categoria,
+                precio: req.body.precio,
+                descuento: req.body.descuento
+            },
+            {
+                where: {id: productoId}
+            }).then(productToEdit=>{
+            res.redirect('/products')
+        }).catch((err)=>{
+            res.send(err)
+        })
         // let id = req.params.id;
         // let productToEdit = products.find(product => product.id == id)
 
