@@ -27,6 +27,18 @@ module.exports = (sequelize, dataTypes) => {
     };
     
     const ProductoCarrito= sequelize.define(alias, cols, config);
+
+
+    // ProductoCarrito.associate = function(models) {
+    //     ProductoCarrito.belongsToMany(models.Producto, { 
+    //         as: "Productos", 
+    //         through:" productos_carrito",  
+    //         foreignKey: "productos_id",
+    //         otherKey:"carrito_id",
+    //         timestamps:false 
+    //     });
+    // }
+
     
     return ProductoCarrito;
 }
