@@ -32,12 +32,11 @@
     border-radius: 5px;
 }
 .log-control-formulario{
-text-align: center;
-padding: 15px;
+    text-align: center;
+    padding: 15px;
 }
 .log-div-boton{
-    text-align: center;
-    
+    text-align: center; 
 }
 .log-boton-formulario{
     background-color:#8C1B1B;
