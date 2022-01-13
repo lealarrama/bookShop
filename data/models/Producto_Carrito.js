@@ -29,15 +29,20 @@ module.exports = (sequelize, dataTypes) => {
     const ProductoCarrito= sequelize.define(alias, cols, config);
 
 
-    // ProductoCarrito.associate = function(models) {
-    //     ProductoCarrito.belongsToMany(models.Producto, { 
-    //         as: "Productos", 
-    //         through:" productos_carrito",  
-    //         foreignKey: "productos_id",
-    //         otherKey:"carrito_id",
-    //         timestamps:false 
-    //     });
-    // }
+    ProductoCarrito.associate = function(models) {
+        ProductoCarrito.belongsToMany(models.Productos, { 
+            as: "productos", 
+            through:"productos_carrito",  
+            foreignKey: "carrito_id",
+            otherKey:"productos_id",
+            timestamps:false 
+        }),
+        ProductoCarrito.belongsTo(models.CarritoCompras, { 
+                as: "carrito_de_compras", 
+                foreignKey: "carrito_id"
+            })
+        }
+    
 
     
     return ProductoCarrito;

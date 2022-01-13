@@ -14,46 +14,15 @@ const userController = {
         })
     },
     loginProcess: (req,res) => {
-        // const userToLoginEmail = Users.findAll({
-        //      where:{
-        //          email: {[Op.eq]:req.body.email},
-        //      }
-        // })
-        // if(userToLoginEmail){
-        //     const  userToLoginPassword = Users.findAll({
-        //         where:{
-        //             contraseña: {[Op.eq]:bcryptjs.hashSync(req.body.contrasenia, 10)},
-        //         }
-        //    });
-        //     if(userToLoginPassword) {
-        //         req.session.userLogged = userToLoginEmail
-        //         if(req.body.Recuerdame){
-        //             res.cookie("email", req.body.email, { maxAge: (1000 * 60) * 60 })
-        //         }
-        //         return res.redirect('/users/profile/')
-        //     }
-        //     return res.render('login',{
-        //       errors: {
-        //         email:{
-        //             msg: 'Las credenciales son inválidas'
-        //             }
-        //         }
-        //     });
-        // }
-        // return res.render('login',{
-        //     errors: {
-        //         email:{
-        //             msg: 'No se encuentra este mail en nuestra base de datos'
-        //         }
-        //     }
-        //  });
+        
         Users.findOne({
              where:{
                     email:{[Op.eq]:req.body.email},
-                    // contraseña: {[Op.eq]:bcryptjs.compareSync(req.body.contrasenia, 10)},
+                    contraseña: {[Op.eq]:bcryptjs.compareSync(req.body.contrasenia)},
                 },
+            
          }).then(user => {
-               if(user = true){
+               if(user != null){
                    res.locals.isLogged = user
                  res.render('profile', {user});
                }else{
