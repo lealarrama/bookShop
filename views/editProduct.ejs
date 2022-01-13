@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <%- include("./partials/head", {title : productToEdit.name + " - SK Libros"}) %>
+        <%- include("./partials/head", {title : productToEdit.nombre + " - SK Libros"}) %>
     </head>
     <body>
         <%- include("./partials/header") %>
         <form class="editp-formCreate" action="/products/edit/<%=productToEdit.id%>?_method=PATCH" method="POST" enctype="multipart/form-data"> 
-            <h2 class="editp-tituloCreate">Estas editando el producto: <%= productToEdit.name%> </h2>
+            <h2 class="editp-tituloCreate">Estas editando el producto: <%= productToEdit.nombre%> </h2>
             <div class="editp-main-div">
                 <ul class="editp-ul">
                     <li class="editp-label">
-                        <label for="nombreProducto">Nombre</label>
+                        <label for="nombre">Nombre</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="nombreProducto" placeholder= "<%=productToEdit.name%>">
+                        <input class="editp-input" type="text" name="nombre" placeholder= "<%=productToEdit.nombre%>">
                     </li>
                     <li class="editp-label">
                         <label for="descripcion">Descripción</label>
                     </li>
                     <li>
-                        <textarea class="editp-input" name="despripcion" placeholder="<%=productToEdit.description%>"></textarea>
+                        <textarea class="editp-input" name="despripcion" placeholder="<%=productToEdit.descripcion%>"></textarea>
                     </li>
                     <li class="editp-label editp-cambiar-imagen">
                         <label for="image" class="editp-input">Cambiar Imagen</label>
@@ -32,22 +32,22 @@
                     </li>
                     <li>
                         <select class="editp-input" name="categoria">
-                            <option value="Suspenso">Suspenso</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
+                            <option value="3">Suspenso</option>
+                            <option value="2">Terror</option>
+                            <option value="1">Fantasía</option>
                         </select>
                     </li>
                     <li class="editp-label">
-                        <label for="editp-precio">Precio</label>
+                        <label for="precio">Precio</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="precio" placeholder="$<%=productToEdit.price%>">
+                        <input class="editp-input" type="text" name="precio" placeholder="$<%=productToEdit.precio%>">
                     </li>
                     <li class="editp-label">
-                        <label for="discount">Descuento</label>
+                        <label for="descuento">Descuento</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="discount" placeholder="Ej: 40%">
+                        <input class="editp-input" type="text" name="descuento" placeholder="<%=productToEdit.descuento%>%">
                     </li>
                 </ul>    
             </div>

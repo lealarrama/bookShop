@@ -36,19 +36,16 @@ module.exports = (sequelize, dataTypes) => {
     };
     const User = sequelize.define(alias, cols, config)
 
-    // User.associate = models => {
-    //     User.belongsTo(models.Genre, {
-    //     as: 'generos',
-    //     foreignKey:'genre_id'})
+    User.associate = models => {
+        User.hasMany(models.CarritoCompras, {
+            as: 'carrito_de_compras',
+            foreignKey:'usuario_id'})
         
-    //     Movie.belongsToMany(models.Actor,{
-    //         as: 'actores',
-    //         through: 'actor_movie',
-    //         foreignKey: 'genre_id',
-    //         otherKey: 'actor_id',
-    //         timestamps: false,
-    //     })
-    //     }
+        User.belongsTo(models.UsuariosCategoria,{
+            as: 'usuarios_categoria',
+            foreignKey: 'categorias_id',
+        })
+    }
 
     return User
 }

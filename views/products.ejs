@@ -14,15 +14,15 @@
                     <div class="index-msj-producto">
                         <p class="index-parrafo-nuevo">Nuevo!</p>
                     </div>
-                    <img src="/img/products/<%= products[i].image %>" alt=""> 
+                    <img src="/img/products/<%= products[i].imagen %>" alt=""> 
                 </div>
                 <div class="index-caja-descripcion">
                     <a href="/products/detail/<%= products[i].id %>" class="index-link-descripciones">
-                        <p class="index-descripciones"><b><%= products[i].name %></b></p>
+                        <p class="index-descripciones"><b><%= products[i].nombre %></b></p>
                     </a>
                     <div class="index-contenedor-detalles">
-                        <p class="index-precios">$<%= products[i].price %></p>
-                        <p class="index-descuentos">40% OFF</p>
+                        <p class="index-precios">$<%= products[i].precio %></p>
+                        <p class="index-descuentos"><%= products[i].descuento %>%</p>
                     </div>
                     <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
