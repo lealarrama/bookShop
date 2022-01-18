@@ -5,6 +5,7 @@ const bcryptjs = require ('bcryptjs');
 const db = require('../data/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
+const req = require('express/lib/request');
 const Users = db.User;
 
 const userController = {
@@ -13,27 +14,45 @@ const userController = {
             res.render('login',{allUsers})
         })
     },
-    loginProcess: (req,res) => {
-        
-        Users.findOne({
-             where:{
-                    email:{[Op.eq]:req.body.email},
-                    contraseña: {[Op.eq]:bcryptjs.compareSync(req.body.contrasenia)},
-                },
-            
-         }).then(user => {
-               if(user != null){
-                   res.locals.isLogged = user
-                 res.render('profile', {user});
-               }else{
-                   res.locals.isLogged = false
-                   res.render('login')
-              }
-            console.log(user)
-        }).catch(err=>{
-                 console.log(err)
-             })
+    loginProcess: async (req, res) => {
+        let userToLogin = await db.User.findOne({
+            where: {
+                email: { [Op.like]: req.body.email }
+            }
+        })
+        if (userToLogin) {
+            let isOkThePassword = bcryptjs.compareSync(req.body.contrasenia, userToLogin.contraseña);
+            if (isOkThePassword) {
+                delete userToLogin.contrasenia;
+                req.session.userLogged = userToLogin;
+
+                // res.send(userToLogin)
+                if (req.body.remember_user) {
+                    res.cookie('email', req.body.email, { maxAge: 5 * 60 * 1000 }); //probamos otra opcion 'email'
+                }
+
+                return res.redirect('profile');
+            } else {//si no coincide la contraseña se renderiza la vista de login con error
+                res.render("login", {
+                    titulo: "Ingresá", old: req.body, errors: {
+                        email: {
+                            msg: "Las credenciales son invalidas"
+                        }
+                    }
+                })
+            }
+
+        } else { //si no se encuentra el mail, volvemos a renderizar la vista de login con mensaje de error
+            res.render("login", {
+                titulo: "Ingresá", errors: {
+                    email: {
+                        msg: "El usuario no se encuentra en la base de datos"
+                    }
+                }
+            })
+        }
     },
+
     register: (req, res)=>{
         Users.findAll().then(allUsers=>{
             res.render('register',{allUsers})

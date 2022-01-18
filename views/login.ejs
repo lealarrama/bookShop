@@ -12,7 +12,7 @@
                 <div class="log-control-formulario">
                     <input type="text" name="email" placeholder="Correo electrónico" class="log-control">
                     <% if(locals.errors && errors.email)  { %>
-                        <div>
+                        <div class="log-errores">
                             <%= errors.email.msg %> 
                         </div> 
                         <% } %> 
@@ -21,7 +21,7 @@
                 <div class="log-control-formulario">
                     <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="log-control">
                     <% if(locals.errors && errors.contrasenia)  { %>
-                        <div>
+                        <div class="log-errores">
                             <%= errors.contrasenia.msg %> 
                         </div> 
                         <% } %> 

@@ -34,3 +34,18 @@ Semana del (20/12-26/12)
 * Desarrollamos el esquema de la base de datos y creeamos las tablas corresponidente en Mysql. Corregimos Arreglos del esquema.
 Semana del (27/12-31/12)
 * Completamos las tablas e instalamos sequalize y Mysql en VisualStudioCode
+Semana del (03/01-09/01)
+* Revisamos lo modelos y el CRUD
+Semana del (10/01-16/01)
+* Arreglamos relaciones y CRUD
+
+SPRINT 7:
+
+Semana del (17/01-/01)
+* 
+Semana del (27/12-31/12)
+* 
+Semana del (03/01-09/01)
+* 
+Semana del (10/01-16/01)
+* 
