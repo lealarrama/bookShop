@@ -48,6 +48,10 @@
     width: 50%;
     text-align: center;
 }
+.text-danger{
+    color:#8C1B1B;
+}
+
 .log-p{
     text-align: center;
     color:white

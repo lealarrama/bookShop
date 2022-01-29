@@ -89,9 +89,9 @@ const productController = {
             nombre: req.body.name,
             precio: req.body.price,
             descuento: req.body.discount,
-            imagen:req.files[0].filename,
+            imagen: req.file.filename,
             descripcion: req.body.description,
-            generos_id: req.body.gender
+            generos_id: req.body.genre
         }).then(user => {
                 res.redirect('/products');
             }).catch((err)=>{
