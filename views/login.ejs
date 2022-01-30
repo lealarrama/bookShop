@@ -7,35 +7,62 @@
     <%- include("./partials/header") %>
     <main class="log-main">
         <div class="log-contenedor">
-            <form action="/users/login" method='POST'>
+            <form action="/users/login" id="formulario" method='POST'>
                 <h2 class="log-titulo-principal">Inicia sesión</h2>
                 <div class="log-control-formulario">
+<<<<<<< HEAD
                     <input type="text" name="email" placeholder="Correo electrónico" class="log-control">
                     <% if(locals.errors && errors.email)  { %>
+=======
+                    <input type="text" name="email" placeholder="Correo electrónico" id="email" class="log-control">
+                    <!-- <% if(locals.errors && errors.email)  { %>
+>>>>>>> 30abe248e0b5db33af017f7d9f9395d707a8a6b5
                         <div class="log-errores">
                             <%= errors.email.msg %> 
                         </div> 
-                        <% } %> 
-
+                        <% } %>  -->
+                    <div><small class="text-danger erEmail"></small> </div>    
+                    <%if(typeof(errors) != "undefined")  { %>
+                        <% for(let i = 0 ; i < errors.length; i++){ %> 
+                        <%if(errors[i].param == "email"){ %>
+                         <small class="text-danger"> <%= errors[i].msg %></small>         
+                         <% } %>
+                         <% } %>        
+                    <% } %> 
                 </div>
                 <div class="log-control-formulario">
+<<<<<<< HEAD
                     <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="log-control">
                     <% if(locals.errors && errors.contrasenia)  { %>
+=======
+                    <input type="password" name="contrasenia"  placeholder="Contraseña" id="password" class="log-control">
+                    <!-- <% if(locals.errors && errors.contrasenia)  { %>
+>>>>>>> 30abe248e0b5db33af017f7d9f9395d707a8a6b5
                         <div class="log-errores">
                             <%= errors.contrasenia.msg %> 
                         </div> 
-                        <% } %> 
+                        <% } %> -->
+                        <div><small class="text-danger erPassword"></small> </div>    
+                    <%if(typeof(errors) != "undefined")  { %>
+                            <% for(let i = 0 ; i < errors.length; i++){ %> 
+                            <%if(errors[i].param == "password"){ %>
+                             <small class="text-danger"> <%= errors[i].msg %></small>         
+                             <% } %>
+                             <% } %>        
+                    <% } %>    
+                        
+
                 </div>
                 
                 <div class="log-checkbox">
                     
-                        <input type="checkbox" name="Recuerdame" id="Recuerdame">
+                        <input type="checkbox" name="Recuerdame" >
                         <label for= "Recuerdame" class="log-label">Recordarme en este equipo</label> 
                     
                 </div>
 
                 <div class="log-div-boton">
-                    <button type="submit"  class="log-boton-formulario">Ingresar
+                    <button type="submit" id="btnSubmit" class="log-boton-formulario">Ingresar
                     </button> 
                 </div>
                 
@@ -54,6 +81,6 @@
         </div>
     </main>
     <%- include("./partials/footer") %>
-
+    <script src="/js/usersLoginFront.js"></script>
 </body>
 </html>

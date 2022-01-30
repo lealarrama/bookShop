@@ -2,8 +2,7 @@ const express = require('express');
 const productRouter = express.Router();
 const multer = require ('multer');
 const path = require ('path');
-
-
+const productsValidation = require("../middlewares/productsValidation");
 const productController= require("../controllers/productController");
 
 // ************ Multer ************ 
@@ -17,6 +16,7 @@ const storage = multer.diskStorage({
 })
 var upload = multer({storage: storage})
 
+
 // /* get products page*/
 productRouter.get('/', productController.products);
 
@@ -24,12 +24,12 @@ productRouter.get('/', productController.products);
 productRouter.get('/cart', productController.productCart);
 
 /* get createProduct page*/
-productRouter.get('/create', productController.createProduct);
-productRouter.post('/', upload.any(), productController.store);
+productRouter.get('/create', productsValidation, productController.createProduct);
+productRouter.post('/', upload.single('image'), productsValidation, productController.store);
 
 /* get editProduct page*/
-productRouter.get('/edit/:id', productController.editProduct);
-productRouter.patch('/edit/:id', upload.any(), productController.update); 
+productRouter.get('/edit/:id',productsValidation, productController.editProduct);
+productRouter.patch('/edit/:id', upload.single('image'), productsValidation, productController.update); 
 
 /*** DELETE ONE PRODUCT***/ 
 productRouter.delete('/delete/:id', productController.destroy); 
