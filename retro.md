@@ -69,4 +69,30 @@ Trabajar a último momento con detalles que faltan o quedan por hacer, no acumul
 Cuando realicemos reuniones no esperar que hay alguien se conecte para hacerlo nosotros
 
 
-  <!-- SPRINT 6 -->
+        SPRINT 6
+
+1. Comenzar a hacer.
+-
+2. Hacer más.
+Reunirnos más seguido 
+3. Continuar haciendo.
+Divirnos las tareas para que sea más llevadero y agil, y avisarnos de los cambios que hagamos en el código.
+4. Hacer menos.
+Trabajar a último momento con detalles que faltan o quedan por hacer, no acumular tareas ni posponerlas y no dejarnos estar.
+5. Dejar de hacer.
+Postergar reuniones planeadas o por planear.
+
+
+
+<!-- SPRINT 7
+
+  1. Comenzar a hacer.
+Estar al día con las consignas del scrum, organizarnos y nos posponer tareas o reuniones de proyecto.
+2. Hacer más.
+Ayudarnos entre nosotros con lo que necesitemos, reunirnos mas seguido para no acumular tareas.
+3. Continuar haciendo.
+Mantener el orden con los git pull y git push, para seguir siendo ordenados y que no salten errores, seguir trabajando en equipo y continuar haciendo reuniones.
+4. Hacer menos.
+Trabajar a último momento con detalles que faltan o quedan por hacer, no acumular tareas ni posponerlas y no dejarnos estar a pesar de la fecha en que estamos(fin de año).
+5. Dejar de hacer.
+Cuando realicemos reuniones no esperar que hay alguien se conecte para hacerlo nosotros -->

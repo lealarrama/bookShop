@@ -128,7 +128,7 @@ const productController = {
             {
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
-                imagen: req.body.foto,
+                imagen:req.files[0].filename,
                 generos_id: req.body.categoria,
                 precio: req.body.precio,
                 descuento: req.body.descuento

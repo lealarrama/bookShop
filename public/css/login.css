@@ -67,6 +67,9 @@
     text-decoration: none;
     color:white;    
 }
+.log-errores{
+    color: white;
+}
 
 
 /*MEDIA QUERIES*/
