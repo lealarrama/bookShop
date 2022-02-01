@@ -9,36 +9,36 @@
         <div class="reg-main-div">
             <div class="reg-div-nuestra-web">
                 <h2>Regístrate</h2>
-                <form action="/users/register" method='POST' class="reg-form" enctype="multipart/form-data">
-                    <input type="text" placeholder="Nombre" class="reg-inputs" name="nombre" 
+                <form action="/users/register" method='POST' id="reg-form" class="reg-form" enctype="multipart/form-data">
+                    <input type="text" placeholder="Nombre" class="reg-inputs" name="nombre" id="reg-nombre"
                     value="<%=locals.oldData ? oldData.nombre : null %>">
-
+                    <div class="errorNombre"></div>
                     <% if(locals.errors && errors.nombre){%>
                         <div>
                         <%= errors.nombre.msg%> 
                         </div>  
                     <% } %> 
                     
-                    <input type="text" placeholder="Apellido" class="reg-inputs" name="apellido" 
+                    <input type="text" placeholder="Apellido" class="reg-inputs" id="reg-apellido" name="apellido" 
                     value="<%=locals.oldData ? oldData.apellido: null %>">
-
+                    <div class="errorApellido"></div>
                     <% if(locals.errors && errors.apellido){%>
                         <div>
                         <%= errors.apellido.msg%> 
                         </div>  
                     <% } %> 
                         
-                    <input type="text" placeholder="E-mail" class="reg-inputs" name="email" 
+                    <input type="text" placeholder="E-mail" class="reg-inputs" id="reg-email" name="email" 
                     value="<%=locals.oldData ? oldData.email : null %>">
-
+                    <div class="errorEmail"></div>
                     <% if(locals.errors && errors.email){%>
                         <div>
                         <%= errors.email.msg%> 
                         </div>  
                     <% } %> 
 
-                    <input type="password" placeholder="Contraseña" class="reg-inputs" name="contrasenia" >
-
+                    <input type="password" placeholder="Contraseña" class="reg-inputs" id="reg-password" name="contrasenia" >
+                    <div class="errorPassword"></div>
                     <% if(locals.errors && errors.contrasenia){%>
                         <div>
                         <%= errors.contrasenia.msg%> 
@@ -47,17 +47,20 @@
 
                      <div>
                         <label for="image">Selecciona una imagen</label>
-                        <input  type="file" name="image" id="image"
+                        <input  type="file" name="image" id="image" class="reg-image"
                         value="<%=locals.oldData ? oldData.image : null %>">
+                        <div class="errorImage"></div>
                         <% if(locals.errors && errors.image){%>
                             <div>
                             <%= errors.image.msg%> 
                             </div>  
                         <% } %> 
-                        <select class="editp-input" name="categoria">
+                        <select class="reg-inputs reg-categoria" name="categoria">
+                            <option value="0">Categoría de usuario...</option>
                             <option value="1">Comprador</option>
                             <option value="3">Vendedor</option>
                         </select>
+                        <div class="errorCategoria"></div>
                     </div>
                     <button type='submit' class="reg-botones-nuestra-web"> Registrarme 
                     </button>
@@ -79,5 +82,6 @@
         </div>
     </main>
     <%- include("./partials/footer") %>
+    <script src="/js/usersRegisterForm.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+const { validationResult } = require('express-validator');
+const path = require ('path');
 const db = require("../data/models");
 const sequelize = db.sequelize;
 const {Op} = require("sequelize");
@@ -71,9 +73,6 @@ const productController = {
         })
 
     },
-    
-    
-    
     createProduct: function(req, res){
         db.Productos.findAll().then(products=>{
             res.render('createProduct',{products})
@@ -85,18 +84,26 @@ const productController = {
 
     // Create -  Method to store
 	store: (req, res) => {
-        db.Productos.create({
-            nombre: req.body.name,
-            precio: req.body.price,
-            descuento: req.body.discount,
-            imagen: req.file.filename,
-            descripcion: req.body.description,
-            generos_id: req.body.genre
-        }).then(user => {
-                res.redirect('/products');
-            }).catch((err)=>{
-                res.send(err)
-            })
+        let resultadoValidacionProduct = validationResult(req);
+        if(!resultadoValidacionProduct.errors.length){
+            db.Productos.create({
+                nombre: req.body.name,
+                precio: req.body.price,
+                descuento: req.body.discount,
+                imagen: req.file.filename,
+                descripcion: req.body.description,
+                generos_id: req.body.genre
+            }).then(user => {
+                    res.redirect('/products');
+                }).catch((err)=>{
+                    res.send(err)
+                })
+        }else{
+            return res.render('createProduct',{
+                errors:resultadoValidacionProduct.mapped(),
+                oldData:req.body})
+        }
+        
         // const newProduct = {
         //     id: products.length + 1,
         //     name: req.body.name,
@@ -113,8 +120,8 @@ const productController = {
 
     editProduct: function(req, res){
         const id = req.params.id
-        db.Productos.findByPk(id).then(productToEdit=>{
-            res.render('editProduct',{productToEdit})
+        db.Productos.findByPk(id).then(productToEdit => {
+            res.render('editProduct',{productToEdit: productToEdit})
         }).catch((err)=>{
             res.send(err)
         })
@@ -122,13 +129,15 @@ const productController = {
         // const productToEdit = products.find(product => product.id == id)
         // res.render('editProduct', {productToEdit:productToEdit})
     },
-    update: function(req, res){
+    update: async function(req, res){
         let productoId = req.params.id;
-        db.Productos.update(
+        let resultadoValidacionProduct = validationResult(req);
+        if(!resultadoValidacionProduct.errors.length){
+        await db.Productos.update(
             {
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
-                imagen:req.files[0].filename,
+                imagen: req.file.filename,
                 generos_id: req.body.categoria,
                 precio: req.body.precio,
                 descuento: req.body.descuento
@@ -136,10 +145,19 @@ const productController = {
             {
                 where: {id: productoId}
             }).then(productToEdit=>{
-            res.redirect('/products')
+            res.redirect('/products',{productToEdit:productToEdit})
+        }).catch((err)=>{
+            res.send(err)
+        })}else{
+            const id = req.params.id
+        await db.Productos.findByPk(id).then(productToEdit => {
+            return res.render('editProduct',{productToEdit: productToEdit,
+            errors:resultadoValidacionProduct.mapped(),
+            oldData:req.body})
         }).catch((err)=>{
             res.send(err)
         })
+        }
         // let id = req.params.id;
         // let productToEdit = products.find(product => product.id == id)
 

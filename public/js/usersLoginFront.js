@@ -1,30 +1,25 @@
-window.addEventListener("load", function(){
-    const formulario = document.getElementById("formulario")
-    const email= document.getElementById("email")
-    const password = document.getElementById("password")
-    const btnSubmit = document.getElementById("btnSubmit")
-    const erEmail= document.querySelector(".erEmail")
-    const erPassword= document.querySelector(".erPassword")
+window.addEventListener('load', function(){
+    let formulario = document.querySelector('#log-form')
+    
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault()
 
-
-    btnSubmit.addEventListener("click", function(evento){
-        evento.preventDefault()
-        let errors={ }
-        if(email.value == null){
-            errors.email= "Este campo debe estar completo"    
-        } 
-        if(password.value == null){
-            errors.password= "Este campo debe estar completo"    
+        const emailLog = document.getElementById("log-email")
+        let errorEmail = document.querySelector('.errorEmail')
+        if(emailLog.value == ""){
+            errorEmail.innerHTML = '<small>Debes colocar un email</small>'
+            errorEmail.style.color = 'white'
         }
-        if(Object.keys(errors).length >= 1){
-            erEmail.innerText = (errors.email) ? errors.email : '';
-            erPassword.innerText = (errors.password) ? errors.password : '';
-        } else {
-        formulario.submit();
+
+        let passwordLog = document.getElementById("password-Log")
+        let erPassword= document.querySelector(".erPassword")
+        if(passwordLog.value == ""){
+            erPassword.innerHTML = '<small>Debes colocar una contraseña</small>'
+            erPassword.style.color = 'white'
         }
-        
-      })
 
-
-
+        else {
+            formulario.submit();
+        }
+    })
 })

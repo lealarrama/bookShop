@@ -25,7 +25,7 @@ productRouter.get('/cart', productController.productCart);
 
 /* get createProduct page*/
 productRouter.get('/create', productsValidation, productController.createProduct);
-productRouter.post('/', upload.single('image'), productsValidation, productController.store);
+productRouter.post('/create', upload.single('image'), productsValidation, productController.store);
 
 /* get editProduct page*/
 productRouter.get('/edit/:id',productsValidation, productController.editProduct);

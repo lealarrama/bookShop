@@ -15,6 +15,7 @@ const userController = {
         })
     },
     loginProcess: async (req, res) => {
+        let resultadoValidacion = validationResult(req);
         let userToLogin = await db.User.findOne({
             where: {
                 email: { [Op.like]: req.body.email }
@@ -27,32 +28,42 @@ const userController = {
                 req.session.userLogged = userToLogin;
 
                 // res.send(userToLogin)
-                if (req.body.remember_user) {
+                if (req.body.Recuerdame) {
                     res.cookie('email', req.body.email, { maxAge: 5 * 60 * 1000 }); //probamos otra opcion 'email'
                 }
 
                 return res.redirect('profile');
-            } else {//si no coincide la contraseña se renderiza la vista de login con error
-                res.render("login", {
-                    titulo: "Ingresá", old: req.body, errors: {
-                        email: {
-                            msg: "Las credenciales son invalidas"
+            } else{//si no coincide la contraseña se renderiza la vista de login con error
+                if(resultadoValidacion.errors.length > 0){
+                        return res.render('login',{
+                        errors:resultadoValidacion.mapped(),
+                        oldData:req.body})
+                }else{
+                    res.render("login", {
+                        titulo: "Ingresá", old: req.body, errors: {
+                            email: {
+                                msg: "Las credenciales son invalidas"
+                            }
                         }
-                    }
-                })
-            }
-
-        } else { //si no se encuentra el mail, volvemos a renderizar la vista de login con mensaje de error
-            res.render("login", {
-                titulo: "Ingresá", errors: {
-                    email: {
-                        msg: "El usuario no se encuentra en la base de datos"
-                    }
+                    })
                 }
-            })
+            }
+        } else { //si no se encuentra el mail, volvemos a renderizar la vista de login con mensaje de error
+            if(resultadoValidacion.errors.length > 0){
+            return res.render('login',{
+            errors:resultadoValidacion.mapped(),
+            oldData:req.body})
+            }else{
+                res.render("login", {
+                        titulo: "Ingresá", errors: {
+                            email: {
+                                msg: "El usuario no se encuentra en la base de datos"
+                            }
+                        }
+                    })
+            }
         }
     },
-
     register: (req, res)=>{
         Users.findAll().then(allUsers=>{
             res.render('register',{allUsers})
@@ -60,43 +71,41 @@ const userController = {
             res.send(err)
         })
     },
-    processRegister: function(req, res){
+    processRegister: async(req, res)=>{
         let resultadoValidacion = validationResult(req);
-         if(resultadoValidacion.errors.length > 0){
-            return res.render('register',{
-            errors:resultadoValidacion.mapped(),
-            oldData:req.body})
-         }
-        //  let userInDB = Users.findAll({
-        //         where:{
-        //             email: {
-        //                 [Op.eq]:req.body.email
-        //                 } 
-        //             }
-        //         }
-        //     );
-        //  if(userInDB = true){
-        //      return res.render('register',{
-        //         errors:{
-        //              email:{
-        //                 msg:'Este mail ya está registrado'
-        //              }
-        //          },
-        //          oldData: req.body
-        //      })
-        //  }
-         Users.create({
-                 nombre: req.body.nombre,
-                 apellido: req.body.apellido,
-                 email: req.body.email,
-                 contraseña:bcryptjs.hashSync(req.body.contrasenia, 10),
-                 imagen: req.file.filename,
-                 categorias_id: req.body.categoria
-             }).then(user => {
-                     res.redirect('/users/login');
-                 }).catch((err)=>{
-                     res.send(err)
-                 })
+        let userInDB = await Users.findOne({
+                    where:{
+                        email: {[Op.eq]:req.body.email}
+                    }
+                });
+        if(!resultadoValidacion && !userInDB){
+            Users.create({
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                email: req.body.email,
+                contraseña:bcryptjs.hashSync(req.body.contrasenia, 10),
+                imagen: req.file.filename,
+                categorias_id: req.body.categoria
+            }).then(user => {
+                    res.redirect('/users/login');
+                }).catch((err)=>{
+                    res.send(err)
+                })
+        }else{
+            if(userInDB){
+                    return res.render('register',{
+                        errors:{
+                            email:{
+                                msg:'Este mail ya está registrado'
+                            }
+                        },
+                        oldData: req.body
+                    })}else{
+                        return res.render('register',{
+                            errors:resultadoValidacion.mapped(),
+                            oldData:req.body})
+                    }
+        }
     },
     profile: function(req, res){
         Users.findByPk(req.params.id).then(profile => {

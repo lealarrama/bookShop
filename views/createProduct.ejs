@@ -7,7 +7,7 @@
 
 <body>
     <%- include("./partials/header") %>
-        <form class="editp-formCreate" id="formulario" action="/products" method="POST" enctype="multipart/form-data"> 
+        <form class="editp-formCreate" id="formulario" action="/products/create" method="POST" enctype="multipart/form-data"> 
             <h2 class="editp-tituloCreate">Crear producto</h2>
             <div class="editp-main-div">
                 <ul class="editp-ul">
@@ -17,12 +17,9 @@
                     <li>
                         <input class="editp-input" type="text" name="name" placeholder="Ej: El visitante"
                         value="<%=locals.oldData ? oldData.name : null %>">
-                
-                    <% if(locals.errors && errors.name)  { %>
-                        <div class="log-errores">
-                            <%= errors.name.msg %> 
-                        </div> 
-                        <% } %> 
+                        <% if(locals.errors && errors.name)  { %>
+                            <small class="editp-small"><%= errors.name.msg %></small> 
+                        <% } %>
                     </li>
                     <li class="editp-label">
                         <label for="description">Descripción</label>
@@ -30,25 +27,16 @@
                     <li>
                         <textarea class="editp-input" name="description" value="<%=locals.oldData ? oldData.description : null %>"
                         placeholder="Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal..."></textarea>
-                        
-                
                         <% if(locals.errors && errors.description)  { %>
-                            <div class="log-errores">
-                                <%= errors.description.msg %> 
-                            </div> 
-                            <% } %> 
-                    
+                            <small class="editp-small"><%= errors.description.msg %></small> 
+                        <% } %>
                     </li>
                     <li class="editp-label editp-cambiar-imagen">
-                        <label class="editp-input" for="image">Seleccionar imágenes</label>
-                    </li>
-                    <li>
-                        <input class="cr-fotoCreate" type="file" name="image" id="image" value="<%=locals.oldData ? oldData.image : null %>">
+                        <label class="labelFoto" for="image">Seleccionar imágenes</label>
                         <% if(locals.errors && errors.image){%>
-                            <div>
-                            <%= errors.image.msg%> 
-                            </div>  
-                        <% } %> 
+                            <small class="editp-small-foto"><%= errors.image.msg%></small>  
+                        <% } %>
+                        <input class="cr-fotoCreate" type="file" name="image" id="image" value="<%=locals.oldData ? oldData.image : null %>"> 
                         
                     </li> 
                     <li class="editp-label">
@@ -62,11 +50,8 @@
                             <option value="1">Fantasía</option>
                         </select> 
                         <% if(locals.errors && errors.genre){%>
-                            <div>
-                            <%= errors.genre.msg%> 
-                            </div>  
-                        <% } %> 
-
+                            <small class="editp-small"><%= errors.genre.msg%></small>  
+                        <% } %>
                     </li>
                     <li class="editp-label">
                         <label for="price">Precio</label>
@@ -74,11 +59,8 @@
                     <li>
                         <input class="editp-input" type="text" name="price" placeholder="Ej: $2000"
                         value="<%=locals.oldData ? oldData.price : null %>">
-                
-                    <% if(locals.errors && errors.price)  { %>
-                        <div class="log-errores">
-                            <%= errors.price.msg %> 
-                        </div> 
+                        <% if(locals.errors && errors.price)  { %>
+                            <small class="editp-small"><%= errors.price.msg %></small> 
                         <% } %> 
                     </li>
                     <li class="editp-label">
@@ -86,12 +68,9 @@
                     </li>
                     <li>
                         <input class="editp-input" type="text" name="discount" placeholder="Ej: 40%" value="<%=locals.oldData ? oldData.discount : null %>">
-                
                         <% if(locals.errors && errors.discount)  { %>
-                            <div class="log-errores">
-                                <%= errors.discount.msg %> 
-                            </div> 
-                            <% } %> 
+                            <small class="editp-small"><%= errors.discount.msg %></small> 
+                        <% } %> 
                     </li>
                 </ul>
             </div>

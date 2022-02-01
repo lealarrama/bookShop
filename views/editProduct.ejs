@@ -6,48 +6,64 @@
     <body>
         <%- include("./partials/header") %>
         <form class="editp-formCreate" action="/products/edit/<%=productToEdit.id%>?_method=PATCH" method="POST" enctype="multipart/form-data"> 
-            <h2 class="editp-tituloCreate">Estas editando el producto: <%= productToEdit.nombre%> </h2>
+            <h2 class="editp-tituloCreate">Editando el producto: <%= productToEdit.nombre%> </h2>
             <div class="editp-main-div">
                 <ul class="editp-ul">
                     <li class="editp-label">
-                        <label for="nombre">Nombre</label>
+                        <label for="name">Nombre</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="nombre" placeholder= "<%=productToEdit.nombre%>">
+                        <input class="editp-input" type="text" name="name" placeholder= "<%=productToEdit.nombre%>">
+                        <% if(locals.errors && errors.name)  { %>
+                            <small class="editp-small"><%= errors.name.msg %></small> 
+                        <% } %>
                     </li>
                     <li class="editp-label">
-                        <label for="descripcion">Descripción</label>
+                        <label for="description">Descripción</label>
                     </li>
                     <li>
-                        <textarea class="editp-input" name="despripcion" placeholder="<%=productToEdit.descripcion%>"></textarea>
+                        <textarea class="editp-input" name="despription" placeholder="<%=productToEdit.descripcion%>"></textarea>
+                        <% if(locals.errors && errors.description)  { %>
+                            <small class="editp-small"><%= errors.description.msg %></small> 
+                        <% } %>
                     </li>
                     <li class="editp-label editp-cambiar-imagen">
-                        <label for="image" class="editp-input">Cambiar Imagen</label>
-                    </li>
-                    <li>
+                        <label for="image" class="editp-input labelFotoEdit">Cambiar Imagen</label>
+                        <% if(locals.errors && errors.image){%>
+                            <small class="editp-small-foto2"><%= errors.image.msg%></small>  
+                        <% } %>
                         <input class="editp-input" type="file" name="image" id="image">
                     </li>
-                    <li class="editp-label">
-                        <label for="categoria">Género</label>
+                    <li class="editp-label label-genre">
+                        <label for="genre">Género</label>
                     </li>
                     <li>
-                        <select class="editp-input" name="categoria">
+                        <select class="editp-input label-genre" name="genre">
                             <option value="3">Suspenso</option>
                             <option value="2">Terror</option>
                             <option value="1">Fantasía</option>
                         </select>
+                        <% if(locals.errors && errors.genre){%>
+                            <small class="editp-small"><%= errors.genre.msg%></small>  
+                        <% } %>
                     </li>
                     <li class="editp-label">
-                        <label for="precio">Precio</label>
+                        <label for="price">Precio</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="precio" placeholder="$<%=productToEdit.precio%>">
+                        <input class="editp-input" type="text" name="price" placeholder="$<%=productToEdit.precio%>">
+                        <% if(locals.errors && errors.price)  { %>
+                            <small class="editp-small"><%= errors.price.msg %></small> 
+                        <% } %>
                     </li>
                     <li class="editp-label">
-                        <label for="descuento">Descuento</label>
+                        <label for="discount">Descuento</label>
                     </li>
                     <li>
-                        <input class="editp-input" type="text" name="descuento" placeholder="<%=productToEdit.descuento%>%">
+                        <input class="editp-input" type="text" name="discount" placeholder="<%=productToEdit.descuento%>%">
+                        <% if(locals.errors && errors.discount)  { %>
+                            <small class="editp-small"><%= errors.discount.msg %></small> 
+                        <% } %>
                     </li>
                 </ul>    
             </div>

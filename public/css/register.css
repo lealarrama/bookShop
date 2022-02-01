@@ -96,15 +96,18 @@
     margin-bottom: 5%;
     background-color: #d9d9d9;
 }
+.reg-categoria{
+    width: 68%;
+}
 input[type="file"]{
     display:none
 }
 label[for="image"]{
     display: inline-block;
-    padding: 6px;
+    padding: 2px;
     background-color: #d9d9d9;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     color: black;
     border-radius: 5px;
     max-width: 55%;

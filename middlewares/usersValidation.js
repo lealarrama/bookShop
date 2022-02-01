@@ -3,12 +3,10 @@ const { body, check } = require('express-validator');
 
 
 const usersValidation = [
-    body('nombre').notEmpty().withMessage('Debes completar este campo'),
-    body ('apellido').notEmpty().withMessage('Debes completar este campo'),
-    body ('email').notEmpty().withMessage('Debes completar este campo').bail()
-    .isEmail().withMessage('Ingrese e-mail válido'),
-    body('contrasenia').notEmpty().withMessage('Debes completar este campo').bail()
-    .isLength({min:5}).withMessage('La contraseña debe tener como mínimo 5 caracteres'),
+    body('nombre').notEmpty().isLength({min:2}).withMessage('El nombre debe tener al menos 2 caracteres'),
+    body ('apellido').notEmpty().isLength({min:2}).withMessage('El apellido debe tener al menos 2 caracteres'),
+    body ('email').notEmpty().isEmail().withMessage('Ingrese e-mail válido'),
+    body('contrasenia').notEmpty().isLength({min:8}).withMessage('La contraseña debe tener al menos 8 caracteres').bail().isStrongPassword().withMessage('La contraseña debe tener al menos 1 número, 1 letra minúscula, 1 letra mayúscula y 1 caracter especial'),
     body('image').custom((value, {req})=>{
         const file = req.file
          let acceptedExtensions =['.jpg','.jpeg','.png','.gif']
