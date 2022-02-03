@@ -28,7 +28,7 @@ productRouter.get('/create', productsValidation, productController.createProduct
 productRouter.post('/create', upload.single('image'), productsValidation, productController.store);
 
 /* get editProduct page*/
-productRouter.get('/edit/:id',productsValidation, productController.editProduct);
+productRouter.get('/edit/:id', productsValidation, productController.editProduct);
 productRouter.patch('/edit/:id', upload.single('image'), productsValidation, productController.update); 
 
 /*** DELETE ONE PRODUCT***/ 
