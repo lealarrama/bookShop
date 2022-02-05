@@ -8,12 +8,18 @@ window.addEventListener('load', function(){
         if(nombreReg.value == ""){
             errorNombre.innerHTML = '<small>Debes escribir un nombre</small>'
             errorNombre.style.color = 'white'
+        } else if(nombreReg.value.length < 5){
+            errorNombre.innerHTML = '<small>El nombre debe tener al menos 5 caracteres</small>'
+            errorNombre.style.color = 'white'
         }
 
         let descripcionEdit = document.querySelector('#editp-descripcion')
         let errorDescripcion = document.querySelector('.errorDescripcion')
         if(descripcionEdit.value == ""){
             errorDescripcion.innerHTML = '<small>Debes escribir una descripción</small>'
+            errorDescripcion.style.color = 'white'
+        } else if(descripcionEdit.value.length < 20){
+            errorDescripcion.innerHTML = '<small>La descripción debe tener al menos 20 caracteres</small>'
             errorDescripcion.style.color = 'white'
         }
         
@@ -36,13 +42,12 @@ window.addEventListener('load', function(){
         if(precioEdit.value == ""){
             errorPrecio.innerHTML = '<small>Debes escribir un precio</small>'
             errorPrecio.style.color = 'white'
-
         }
 
         let descuentoEdit = document.querySelector('#editp-descuento')
         let errorDescuento = document.querySelector('.errorDescuento')
         if(descuentoEdit.value == ""){
-            errorDescuento.innerHTML = '<small>Debes escribir una contraseña</small>'
+            errorDescuento.innerHTML = '<small>Debes escribir un descuento</small>'
             errorDescuento.style.color = 'white'
         }
 

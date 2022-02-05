@@ -40,12 +40,13 @@
                     <li class="editp-label editp-cambiar-imagen">
                         <label class="labelFoto" id="imagen" for="image">Seleccionar imágenes</label>
                         <div class="errorImage"></div>
+                        <input class="cr-fotoCreate" type="file" name="image" id="image" value="<%=locals.oldData ? oldData.image : null %>"> 
                         <% if(locals.errors && errors.image){%>
                             <div>
                                 <%= errors.image.msg%>
                             </div>  
                         <% } %>
-                        <input class="cr-fotoCreate" type="file" name="image" id="image" value="<%=locals.oldData ? oldData.image : null %>"> 
+                       
                         
                     </li> 
                     <li class="editp-label">

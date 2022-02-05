@@ -23,9 +23,9 @@ window.addEventListener('load', function(){
             errorDescripcion.style.color = 'white'
         }
         
-        let imagen = document.querySelector('#imagen')
+        let image = document.querySelector('#image')
         let errorImage = document.querySelector('.errorImage')
-        if(imagen.value == ""){
+        if(image.value == ""){
             errorImage.innerHTML = '<small>Debes subir una imagen</small>'
             errorImage.style.color = 'white'
         }
