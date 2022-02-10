@@ -5,7 +5,10 @@ const path = require("path");
 const router = require("./routes/index");
 const productRouter = require("./routes/products");
 const userRouter = require("./routes/users");
+const productsApiRouter = require('./routes/api/productsApi')
+const usersApiRouter = require('./routes/api/usersApi')
 const cookies = require('cookie-parser');
+
 
 const app = express();
 
@@ -35,6 +38,10 @@ app.use("/", router);
 app.use("/users", userRouter);
 
 app.use("/products", productRouter);
+
+app.use("/api/products", productsApiRouter);
+
+app.use("/api/users", usersApiRouter);
 
 app.listen(3030, function(){
     console.log("Servidor levantado en puerto 3030")

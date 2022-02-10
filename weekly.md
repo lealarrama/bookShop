@@ -41,11 +41,13 @@ Semana del (10/01-16/01)
 
 SPRINT 7:
 
-Semana del (17/01-/01)
-* 
-Semana del (27/12-31/12)
-* 
-Semana del (03/01-09/01)
-* 
-Semana del (10/01-16/01)
-* 
+Semana del (17/01-24/01)
+* Empezamos con las validaciones del BackEnd, trabajando en conjunto hasta que tuvimos un error. 
+Semana del (24/01-31/01)
+* Intentamos solucionar el error, aunque no pudimos, así que comenzamos con las validaciones del FrontEnd para no atrasarnos. Comenzamos con el login, y luego nos dividimos las restantes para hacerlas individualmente.
+Semana del (01/02-05/02)
+* Pudimos arreglar el error del backend, tuvimos una reunión para checkear las validaciones del front y nos repartimos el sprint 8 para comenzarlo.
+
+SPRINT 8:
+Semana del (05/02-12/02)
+*
