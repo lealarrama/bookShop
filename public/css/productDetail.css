@@ -14,11 +14,19 @@
 
 .detail-h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 
 .detail-h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding:1px;
+}
+
+.detail-costadoDerecho{
+    display: flex;
+    /* width: -webkit-fill-available; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .detail-mainarticle{
@@ -70,7 +78,7 @@
     flex-direction: column;
     background-color: white;
     border: 1px solid white;
-    border-radius: 2%;
+    border-radius: 9px;
     margin: 10px;
     padding: 10px;
     align-items: center;
@@ -97,6 +105,7 @@
     border: 1px solid #262120;
     text-align: center;
     padding: 6px;
+    margin: 4px;
 }
 
 .detail-compartir{
@@ -120,7 +129,7 @@
 .fa-envelope:hover{
     background-color: #a45d5d;
 }
-.pdetail-fa-facebook-f{
+.detail-compartir .fa-facebook-f{
     padding: 5px;
     font-size: 20px;
     color: white;
@@ -129,10 +138,10 @@
     border-radius: 20%;
     margin: 3px;
 }
-.pdetail-fa-facebook-f:hover{
+.detail-compartir .facebook-f:hover{
     background-color: #a45d5d;
 }
-.pdetail-fa-twitter{
+.detail-compartir .fa-twitter{
     padding: 5px;
     font-size: 20px;
     color: white;
@@ -141,7 +150,7 @@
     border-radius: 20%;
     margin: 3px;
 }
-.fa-twitter:hover{
+.detail-compartir .fa-twitter:hover{
     background-color: #a45d5d;
 }
 
@@ -191,14 +200,14 @@
 
 .detail-descripcion{
     background-color: white;
-    border-radius: 2%;
+    border-radius: 9px;
     margin: 10px;
     padding:10px;
 }
 
 .detail-descubre{
     background-color: white;
-    border-radius: 2%;
+    border-radius: 9px;
     margin: 10px;
     padding:10px;
     width: 100%;
@@ -206,7 +215,7 @@
 
 .detail-detalledelproducto{
     background-color: white;
-    border-radius: 2%;
+    border-radius: 9px;
     margin: 10px;
     padding:10px;
     width: 100%;
@@ -221,9 +230,9 @@
 
 .detail-productobuscado{
     background-color: white;
-    border-radius: 2%;
+    border-radius: 9px;
     margin: 10px;
-    padding:10px;
+    padding: 10px;
     width: 100%;
 }
 
@@ -326,26 +335,31 @@
 
     .detail-seVeEnTablet{
         background-color: white;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 10px;
-        padding-top: 0px;
-        justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 97%;
+    padding: 10px;
+    padding-top: 0px;
+    margin-left: 12px;
+    justify-content: center;
+    border-radius: 5px;
     }
 
     .detail-tituloTablet{
         display: flex;
         background-color: white;
-        margin: 10px 10px 0px 10px;
-        width: 100%;
+        margin: 10px 10px -8px 12px;
+        width: 277%;
+        padding-bottom: 21px;
         font-size: 20px;
         justify-content: center;
+        border-radius: 5px;
     }
     .detail-estrellasydatos{
         flex-grow: 0.25;
-        padding-left: 10px;
+    padding-left: 10px;
+    text-align: center;
     }
     .detail-precioTablet{
         flex-grow: 0.25;
@@ -375,6 +389,11 @@
     .detail-contenedorEnvio{
         flex-grow: 0.25;
         border-bottom: 1px solid #ebebeb;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
     } 
     .detail-boton{
         background-color: #8C1B1B;
@@ -385,18 +404,19 @@
         padding: 10px;
         border-radius: 5px;
          margin: 10px;
+         width: -webkit-fill-available;
     }
     .detail-boton:hover{
         background-color: #a45d5d;
     }
     .detail-columna{
-        width: 250px;
+        width: 200px;
         align-items: center;
     }
     .detail-columnaTablet{
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 200px;
         align-items: center;
     }
     .detail-columnaMasGrande{
@@ -424,7 +444,9 @@
     }
     .detail-tituloTablet{
         display: none;
-        border-radius: 4px;
+    }
+    .detail-estrellasydatos{
+        text-align: left;
     }
     .detail-artTitulo{
         padding: 0px 10px;
@@ -439,17 +461,22 @@
     }
     .detail-contenedorCompu{
         background-color: white;
-        border-radius: 2%;
+        border-radius: 9px;
         display: flex;
         flex-direction: row;
         padding: 10px;
         margin: 10px;
     }
-    .detail-tituloCompu{
+    
+    .detail-h2{
         padding: 10px;
+        text-align: left;
     }
     .detail-seveEnCompu{
         display: flex;
+    }
+    .detail-seveEnCompu a{
+        text-decoration: none;
     }
     .detail-itemImg{
         flex-direction: row;
@@ -470,7 +497,7 @@
         height: 400px;
         margin: 10px;
         background-color: white;
-        border-radius: 3%;
+        border-radius: 9px;
     }
     .detail-compartir{
         justify-content: left;
@@ -484,12 +511,30 @@
         width: 70%;
         justify-content: space-between;
     }
+    .detail-detalledelproducto{
+        background-color: white;
+        border-radius: 9px;
+        margin: 10px 10px 10px 30px;
+        padding: 10px;
+        width: 96%;
+    }
+    .detail-productobuscado{
+        background-color: white;
+    border-radius: 9px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 10px 10px 30px;
+    padding: 10px;
+    width: 96%;
+    }
     .detail-columna {
         width: 270px; 
         padding: 10px 0px;
     }
     .detail-columnaTablet{
         padding: 10px 0px;
+        width: 250px;
     }
     .detail-columnaCompu{
         display: flex;

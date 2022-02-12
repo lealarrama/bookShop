@@ -15,10 +15,10 @@ module.exports = {
                 data : {
                 count: productos.length,
                 // countByCategory: productos.generos.name,
-                products: {productos}
-                }
-            })
+                productos: {productos}
+            }})
         })
+    
     },
     detail: (req,res) => {
         DB.Productos
@@ -29,10 +29,39 @@ module.exports = {
                     url: 'api/products/:id'
                 },
                 data : {
-                // imagen: productos.imagen,
-                product: {productos}
+                lastProduct: req.params.id,
+                productos: {
+                    id: productos.id,
+                    nombre: productos.nombre,
+                    precio: productos.precio,
+                    descuento: productos.descuento,
+                    imagen: productos.imagen,
+                    descripcion: productos.descripcion,
+                }
                 }
             })
         })
     }, 
+    lastProduct: (req,res)=>{
+        DB.Productos
+        .findOne( { 
+            where: {
+                id: {[DB.Sequelize.Op.gt] : id}
+            },
+            order: [
+            ['id', 'DESC']
+            ],
+        })
+        .then(productos => {
+            return res.json({
+                meta: {
+                    status : 200,
+                    url: 'api/products/last'
+                },
+                data:{
+                    product: {productos}
+                }
+            })
+        })
+    }
 }

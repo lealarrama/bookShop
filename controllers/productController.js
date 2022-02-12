@@ -11,7 +11,7 @@ const productController = {
     products: function(req, res){
         db.Productos.findAll()
             .then(function(products){
-                res.render("products", {products: products})
+                res.render("products" , {products: products})
             })
             .catch((err)=>{
                 res.send(err)

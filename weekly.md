@@ -49,5 +49,9 @@ Semana del (01/02-05/02)
 * Pudimos arreglar el error del backend, tuvimos una reunión para checkear las validaciones del front y nos repartimos el sprint 8 para comenzarlo.
 
 SPRINT 8:
-Semana del (05/02-12/02)
+Semana del (06/02-13/02)
+*Empezamos con el Dashboard, hicimos primero las vistas para dejar el dinamismo para después. Tuvimos un par de problemas con eso, por lo que lo dejamos para resolver en las aplicaciones practicas con ayuda de los profes.
+Semana del (13/02-20/02)
+*Nos dispusimos a arreglar las vistas de nuestro proyecto que se habian dañado.
+Semana del (21/02-28/02)
 *
