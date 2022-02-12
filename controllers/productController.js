@@ -66,7 +66,7 @@ const productController = {
     //     res.render("productCart");
         db.Productos.findAll()
             .then(products=>{
-                res.render('productCart')
+                res.render('productCart', {products : products});
             })
         .catch((err)=>{
             res.send(err)
@@ -139,8 +139,8 @@ const productController = {
                 descripcion: req.body.descripcion,
                 imagen: req.file.filename,
                 generos_id: req.body.categoria,
-                precio: req.body.precio,
-                descuento: req.body.descuento
+                precio: req.body.price,
+                descuento: req.body.discount
             },
             {
                 where: {id: productoId}
