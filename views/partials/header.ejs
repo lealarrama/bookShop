@@ -49,13 +49,13 @@
             </ul>
             <ul class="header-dropdown-display-cat">
                 <li class="header-dropdown-li" >
-                    <a href="#Terror" class="li-dropdown-a">Terror</a>
+                    <a href="/products/terror" class="li-dropdown-a">Terror</a>
                 </li>
                 <li class="header-dropdown-li" >
-                    <a href="#Suspenso" class="li-dropdown-a">Suspenso</a>
+                    <a href="/products/suspenso" class="li-dropdown-a">Suspenso</a>
                 </li>
                 <li class="header-dropdown-li" >
-                    <a href="#Fantasia" class="li-dropdown-a">Fantasía</a>
+                    <a href="/products/fantasia" class="li-dropdown-a">Fantasía</a>
                 </li>
             </ul>
             <ul class="header-dropdown-display-info">
@@ -70,12 +70,12 @@
                 </li>
             </ul>
         </nav>
-        <div class="header-buscador">
-            <input type="text" placeholder="Buscar libros" class="header-input-buscador" name="search">
-            <button class="header-boton-buscador">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
+        <form action="/products/search"  method="POST" class="header-buscador">
+                <input type="text" placeholder="Buscar libros" class="header-input-buscador" name="search">
+                <button class="header-boton-buscador">
+                    <i class="fas fa-search"></i>
+                </button>
+        </form>
     </div>
     <script src="/js/header.js"></script>
 </header>

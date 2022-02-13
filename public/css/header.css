@@ -47,6 +47,9 @@ header .fa-shopping-cart {
     padding-right: 32px;
     margin-left: 5px;
 }
+header .fa-shopping-cart:hover {
+    color:#8C1B1B;
+}
 header .fa-sort-down {
     margin-left: 5px;
 }

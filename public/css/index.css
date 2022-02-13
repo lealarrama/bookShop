@@ -40,6 +40,9 @@
 .index-titulo-productos{
     background-color:#262120;
     margin:30px 0 20px 0;
+    height: 35px;
+    padding: 10px;
+    line-height: 010px;
 }
 .index-titulo-productos h3 a{
     text-decoration:none;
@@ -64,6 +67,9 @@
     width:80%;
     background-color:white;
     margin:5px 30px;
+}
+.index-link-descripciones{
+    text-decoration: none;
 }
 .index-caja-descripcion{
     text-align:center;

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("./partials/head", {title : "Productos - SK Libros"}) %>
+    <%- include("./partials/head", {title : "Fantasía - SK Libros"}) %>
 
 </head>
 <body>
     <%- include("./partials/header") %>
-
+    <div class="index-titulo-productos">
+        <h3>
+            <a href="">Fantasía</a>
+        </h3>
+    </div>
     <section class="index-caja-productos">
         <% for(let i=0; i < products.length ; i++) { %>
             <div class="index-producto">

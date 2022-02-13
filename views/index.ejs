@@ -18,7 +18,7 @@
     <!--PRODUCTOS Terror-->
         <div class="index-titulo-productos">
             <h3>
-                 <a href="" id="Terror">Terror</a>
+                 <a href="/products/terror" id="Terror">Terror</a>
             </h3>
         </div>
         <section class="index-caja-productos">
@@ -37,7 +37,7 @@
                     </a>
                     <div class="index-contenedor-detalles">
                         <p class="index-precios">$<%= terror[i].precio %></p>
-                        <p class="index-descuentos">40% OFF</p>
+                        <p class="index-descuentos"><%=terror[i].descuento%> % OFF</p>
                     </div>
                     <button type="" class="index-agregar-carrito">Agregar al carrito</button>
                 </div>
@@ -53,7 +53,7 @@
     <!--PRODUCTOS Suspenso-->
     <div class="index-titulo-productos">
         <h3>
-             <a href="" id="Suspenso">Suspenso</a>
+             <a href="/products/suspenso" id="Suspenso">Suspenso</a>
         </h3>
     </div>
     <section class="index-caja-productos">
@@ -71,7 +71,7 @@
                 </a>
                 <div class="index-contenedor-detalles">
                     <p class="index-precios">$<%= suspenso[i].precio %></p>
-                    <p class="index-descuentos">40% OFF</p>
+                    <p class="index-descuentos"><%=suspenso[i].descuento%> % OFF</p>
                 </div>
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>
@@ -81,7 +81,7 @@
        <!--PRODUCTOS Fantasía-->
     <div class="index-titulo-productos">
         <h3>
-             <a href="" id="Fantasia">Fantasía</a>
+             <a href="/products/fantasia" id="Fantasia">Fantasía</a>
         </h3>
     </div>
     <section class="index-caja-productos">
@@ -100,7 +100,7 @@
                 </a>
                 <div class="index-contenedor-detalles">
                     <p class="index-precios">$<%= fantasía[i].precio %></p>
-                    <p class="index-descuentos">40% OFF</p>
+                    <p class="index-descuentos"><%=fantasía[i].descuento%> % OFF</p>
                 </div>
                 <button type="" class="index-agregar-carrito">Agregar al carrito</button>
             </div>

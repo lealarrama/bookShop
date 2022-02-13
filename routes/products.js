@@ -19,6 +19,9 @@ var upload = multer({storage: storage})
 
 // /* get products page*/
 productRouter.get('/', productController.products);
+productRouter.get('/terror', productController.productsTerror);
+productRouter.get('/suspenso', productController.productsSuspenso);
+productRouter.get('/fantasia', productController.productsFantasia);
 
 /* get productCart page*/
 productRouter.get('/cart', productController.productCart);
@@ -36,6 +39,8 @@ productRouter.delete('/delete/:id', productController.destroy);
 
 /* get productDetail page*/
 productRouter.get('/detail/:id', productController.detail);
+
+productRouter.post('/search', productController.search);
 
 
 module.exports = productRouter;

@@ -17,6 +17,45 @@ const productController = {
                 res.send(err)
             })
     },
+    productsTerror: function(req, res){
+        db.Productos.findAll({
+            where:{
+                generos_id:2,
+            }
+        })
+            .then(function(products){
+                res.render("productsTerror", {products: products})
+            })
+            .catch((err)=>{
+                res.send(err)
+            })
+    },
+    productsSuspenso: function(req, res){
+        db.Productos.findAll({
+            where:{
+                generos_id:3,
+            }
+        })
+            .then(function(products){
+                res.render("productsSuspenso", {products: products})
+            })
+            .catch((err)=>{
+                res.send(err)
+            })
+    },
+    productsFantasia: function(req, res){
+        db.Productos.findAll({
+            where:{
+                generos_id:1,
+            }
+        })
+            .then(function(products){
+                res.render("productsFantasia", {products: products})
+            })
+            .catch((err)=>{
+                res.send(err)
+            })
+    },
  // Todos los productos
     // products: function (req, res) {
     //     const newProduct =  this.update
@@ -40,29 +79,7 @@ const productController = {
         }).catch((err)=>{
             res.send(err)
         })
-    },
-
-    search: function(req, res){
-        db.Productos.findAll({
-            where:{ 
-               nombre: {[Op.Like]:"%" + req.body.search + "%"}
-            }
-        })
-        .then(products => {
-            if(products.length){
-                return res.render('products', {products: products});
-            }
-            
-            else{ 
-            res.redirect("/")}
-
-        }).catch((err)=>{
-            res.send(err)
-        })
-    },
-
-    
-    productCart: function(req, res){
+    },  productCart: function(req, res){
     //     res.render("productCart");
         db.Productos.findAll()
             .then(products=>{
@@ -73,6 +90,25 @@ const productController = {
         })
 
     },
+    
+
+    search: (req, res) => {
+        db.Productos.findAll({
+            where:{ 
+               nombre: {
+                   [Op.like]:"%" + req.body.search + "%"},
+            },
+        })
+        .then(products => {
+            if(products.length){
+                return res.render('products', {products: products});
+            }else{ 
+            res.redirect("/")}
+        }).catch((err)=>{
+            res.send(err)
+        })
+    },
+
     createProduct: function(req, res){
         db.Productos.findAll().then(products=>{
             res.render('createProduct',{products})
