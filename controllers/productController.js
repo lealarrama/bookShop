@@ -11,7 +11,7 @@ const productController = {
     products: function(req, res){
         db.Productos.findAll()
             .then(function(products){
-                res.render("products", {products: products})
+                res.render("products" , {products: products})
             })
             .catch((err)=>{
                 res.send(err)
@@ -109,6 +109,18 @@ const productController = {
         })
     },
 
+    
+    productCart: function(req, res){
+    //     res.render("productCart");
+        db.Productos.findAll()
+            .then(products=>{
+                res.render('productCart', {products : products});
+            })
+        .catch((err)=>{
+            res.send(err)
+        })
+
+    },
     createProduct: function(req, res){
         db.Productos.findAll().then(products=>{
             res.render('createProduct',{products})
@@ -175,8 +187,8 @@ const productController = {
                 descripcion: req.body.descripcion,
                 imagen: req.file.filename,
                 generos_id: req.body.categoria,
-                precio: req.body.precio,
-                descuento: req.body.descuento
+                precio: req.body.price,
+                descuento: req.body.discount
             },
             {
                 where: {id: productoId}

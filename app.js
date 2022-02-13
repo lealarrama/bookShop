@@ -7,10 +7,13 @@ const productRouter = require("./routes/products");
 const userRouter = require("./routes/users");
 const productsApiRouter = require('./routes/api/productsApi')
 const usersApiRouter = require('./routes/api/usersApi')
+const genresApiRouter = require('./routes/api/genresApi')
 const cookies = require('cookie-parser');
+const cors = require('cors')
 
 
 const app = express();
+
 
 const userLoggedMiddleware = require ('./middlewares/userLoggedMiddleware');
 
@@ -21,6 +24,7 @@ resave:false,
 saveUninitialized:false }))
 
 app.use(cookies());
+app.use(cors())
 
 
 app.use(userLoggedMiddleware),
@@ -42,6 +46,8 @@ app.use("/products", productRouter);
 app.use("/api/products", productsApiRouter);
 
 app.use("/api/users", usersApiRouter);
+
+app.use("/api/genres", genresApiRouter);
 
 app.listen(3030, function(){
     console.log("Servidor levantado en puerto 3030")

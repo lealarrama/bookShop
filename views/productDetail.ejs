@@ -16,28 +16,19 @@
             </div>
         </article>
         </article>
-        <article class="detail-mainarticle">
-            <div class="detail-categorias">
-                <div>
-                    <h4>Categorías:</h4>
-                </div>
-                <p class="detail-p">Terror /</p>
-                <p class="detail-p">Ficción /</p>
-                <p class="detail-p">Suspenso</p>
-            </div>
-        </article>
+      
         <article class="detail-mainarticle">
         <article class="detail-noSeVeEnTablet">
 
             <div class="detail-detalles">
-                <h2 class="detail-h2" class="detail-tituloLibro"><%=product.name%></h2>
+                <h2 class="detail-h2" class="detail-tituloLibro"><%=product.nombre%></h2>
                 <div class="detail-costadoDerecho"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
-                <div class="detail-fotolibro"><img src="/img/products/<%=product.image%>"></div>
+                <div class="detail-fotolibro"><img src="/img/products/<%=product.imagen%>"></div>
                 <div class="detail-costadoDerecho">
                     <div class="detail-precio">
-                        <h2>ARS$ <%= product.price %></h2>
+                        <h2>ARS$ <%= product.precio %></h2>
                     </div>
                     <div class="detail-boton">
                         <p>Añadir al carrito</p>
@@ -47,15 +38,15 @@
                             <h5>Eliminar producto</h5>
                         </button>
                     </form>
-                    <button><div class="detail-boton">
-                        <p>Editar producto</p>
-                    </div></button>
+                    <form action="/products/edit/<%= product.id %>" method="GET">
+                        <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
+                    </form>
                 </div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
                     <div><i class="far fa-envelope"></i></div>
-                    <div><i class="fab pdetail-fa-facebook-f"></i></div>
-                    <div><i class="fab pdetail-fa-twitter"></i></div>
+                    <div><i class="fab fa-facebook-f"></i></div>
+                    <div><i class="fab fa-twitter"></i></div>
                     <div><i class="fab fa-pinterest-p"></i></div>
                 </div>
                 <div class="detail-articulodisponible">
@@ -74,7 +65,7 @@
     <article class="detail-mainarticle">
         <article class="detail-artTitulo">
             <div class="detail-tituloTablet">
-                <h2 class="detail-miniborde"><%= product.name %></h2>
+                <h2 class="detail-miniborde"><%= product.nombre %></h2>
             </div>
         </article>
 </article>
@@ -82,7 +73,7 @@
         <article  class="detail-seVeEnTablet">
 
             <div class="detail-itemImg">
-                <div><img src="/img/products/<%= product.image %>"></div>
+                <div><img src="/img/products/<%= product.imagen %>"></div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
                     <div><i class="far fa-envelope"></i></div>
@@ -97,7 +88,7 @@
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-precioTablet">
-                    <h2 class="detail-h2"><%= product.price %></h2>
+                    <h2 class="detail-h2">ARS$<%= product.precio %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -117,19 +108,19 @@
                         <h5>Eliminar producto</h5>
                     </button>
                 </form>
-                <button><div class="detail-boton">
-                    <p>Editar producto</p>
-                </div></button>
+                <form action="/products/edit/<%= product.id %>" method="GET">
+                    <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
+                </form>
             </div>
         </article>
         </article>
         <article class="detail-mainarticle">
         <article  class="detail-seveEnCompu">
             <div class="detail-contenedorCompu">
-                <div class="detail-itemImg"><img src="/img/products/<%= product.image %>"></div>
+                <div class="detail-itemImg"><img src="/img/products/<%= product.imagen %>"></div>
                 <div class="detail-item-info">
                     <div class="detail-tituloCompu">
-                        <h2 class="detail-h2" class="detail-miniborde"><%= product.name %></h2>
+                        <h2 class="detail-h2" class="detail-miniborde"><%= product.nombre %></h2>
                     </div>
                     <div class="detail-estrellasydatos"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <p class="detail-p">Formato papel, Español / Stephen King</p>
@@ -142,13 +133,13 @@
                         <div><i class="fab fa-pinterest-p"></i></div>
                     </div>
                     <div class="detail-sinopsis">
-                        <p class="detail-p"> <%= product.description %> </p>
+                        <p class="detail-p"> <%= product.descripcion %> </p>
                     </div>
                 </div>
             </div>
             <div class="detail-checkoutTools">
                 <div class="detail-precioTablet">
-                    <h2><%= product.price %></h2>
+                    <h2>ARS$<%= product.precio %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -168,7 +159,9 @@
                     <h5>Eliminar producto</h5>
                 </button>
             </form>
-            <button><a href="/products/edit/<%= product.id %>"><div class="detail-boton"><p>Editar producto</p></div></a></button>
+            <form action="/products/edit/<%= product.id %>" method="GET">
+            <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
+        </form>
             </div>
         </article>
     </article>
@@ -176,15 +169,7 @@
         <article class="detail-mainarticle">
             <div class="detail-descripcion">
                 <h4 class="detail-miniborde">Descripción</h4>
-                <p class="detail-p"> <%= product.description %>
-            </div>
-        </article>
-        <article class="detail-mainarticle">
-            <div class="detail-descubre">
-                <h4 class="detail-miniborde">¡10% de descuento en libros de Suspenso!</h4>
-                <div>
-                    <p class="detail-p">Link</p>
-                </div>
+                <p class="detail-p"> <%= product.descripcion %>
             </div>
         </article>
         <article class="detail-mainarticle">
@@ -236,30 +221,23 @@
             </div>
         </article>
 
-        <article class="detail-mainarticle">
+        
+      <article class="detail-mainarticle">
             <div class="detail-productobuscado">
                 <div class="detail-miniborde">
                     <h4>Los clientes que compraron este producto también compraron</h4>
                 </div>
                 <div class="detail-compraron">
                     <div class="detail-columna">
-                        <img class="detail-sangremanda" src="/img/lasangre-manda.jpg">
+                        <img class="detail-sangremanda" src="/img/products/lasangre-manda.jpg">
                         <h5>La sangre manda</h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="detail-h2" class="detail-precios">$2.000</h2>
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
                     </div>
-                    <div class="detail-columna">
-                        <img class="detail-visitante" src="/img/visitante.jpg">
-                        <h5>El visitante</h5>
-                        <p class="detail-p">Stephen King</p>
-                        <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios">$2.499,99</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
-                    </div>
                     <div class="detail-columnaTablet">
-                        <img class="detail-instituto" src="/img/elinstituto.jpg">
+                        <img class="detail-instituto" src="/img/products/elinstituto.jpg">
                         <h5>El Instituto</h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
@@ -267,7 +245,7 @@
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
                     </div>
                     <div class="detail-columnaCompu">
-                        <img class="detail-drsueño" src="/img/drsueño.jpg">
+                        <img class="detail-drsueño" src="/img/products/drsueño.jpg">
                         <h5>Doctor Sueño</h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
@@ -275,7 +253,7 @@
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
                     </div>
                     <div class="detail-columnaMasGrande">
-                        <img class="detail-billy" src="/img/billysummers.jpeg">
+                        <img class="detail-billy" src="/img/products/billysummers.jpeg">
                         <h5>Billy Summers</h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
@@ -283,8 +261,17 @@
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
                     </div>
                     <div class="detail-columnaMasGrande">
-                        <img class="detail-it" src="/img/it.png">
+                        <img class="detail-it" src="/img/products/it.png">
                         <h5>It</h5>
+                        <p class="detail-p">Stephen King</p>
+                        <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
+                        <h2 class="detail-h2">$1.500,50</h2>
+                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+
+                    </div>
+                    <div class="detail-columna">
+                        <img class="detail-it" src="/img/products/despues.jpg">
+                        <h5>Después</h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="detail-h2">$1.500,50</h2>
@@ -293,7 +280,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </article> 
     </main>
    <%- include("./partials/footer") %>
 </body>
