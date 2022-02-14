@@ -1,120 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <%- include("./partials/head", {title : "SK Libros"}) %>
-</head>
-<body>
+  </head>
+  <body>
     <%- include("./partials/header") %>
     <main class="index-main">
-    <!--CARRUSEL-->
-    <div class="index-slider">
+      <!--CARRUSEL-->
+      <div class="index-slider">
         <ul>
-            <li><img src="img/carrusel 3.png" alt=""></li>
-            <li><img src="img/carrusel.webp" alt=""></li>
-            <li><img src="img/carrusel2.png" alt=""></li>
-            <li><img src="img/carrusel4.png" alt=""></li>
+          <li><img src="img/carrusel 3.png" alt="" /></li>
+          <li><img src="img/carrusel.webp" alt="" /></li>
+          <li><img src="img/carrusel2.png" alt="" /></li>
+          <li><img src="img/carrusel4.png" alt="" /></li>
         </ul>
-    </div>
-    <!--PRODUCTOS Terror-->
-        <div class="index-titulo-productos">
-            <h3>
-                 <a href="/products/terror" id="Terror">Terror</a>
-            </h3>
-        </div>
-        <section class="index-caja-productos">
+      </div>
+      <!--PRODUCTOS Terror-->
+      <div class="index-titulo-productos">
+        <h3>
+          <a href="/products/terror" id="Terror">Terror</a>
+        </h3>
+      </div>
+      <section class="index-caja-productos">
         <% for(let i=0; i < terror.length ; i++) { %>
-        
-            <div class="index-producto">
-                <div class="index-img-productos">
-                    <div class="index-msj-producto">
-                        <p class="index-parrafo-nuevo">Nuevo!</p>
-                    </div>
-                    <a href="/products/detail/<%= terror[i].id %>">
-                    <img src="/img/products/<%= terror[i].imagen %>" alt=""> 
-                    </a>
-                </div>
-                <div class="index-caja-descripcion">
-                    <a href="/products/detail/<%= terror[i].id %>">
-                        <p class="index-descripciones"><b><%= terror[i].nombre %></b></p>
-                    </a>
-                    <div class="index-contenedor-detalles">
-                        <p class="index-precios">$<%= terror[i].precio %></p>
-                        <p class="index-descuentos"><%=terror[i].descuento%> % OFF</p>
-                    </div>
-                    <button type="" class="index-agregar-carrito">Agregar al carrito</button>
-                </div>
-            </div>
-        
-            <% } %>
-        </section>
-    <!--ANUNCIO-->
-        <div class="index-anuncio">
-            <img src="/img/anuncio" class="index-img-anuncio">
-        </div>
-    
-    <!--PRODUCTOS Suspenso-->
-    <div class="index-titulo-productos">
-        <h3>
-             <a href="/products/suspenso" id="Suspenso">Suspenso</a>
-        </h3>
-    </div>
-    <section class="index-caja-productos">
-    <% for(let i=0; i < suspenso.length ; i++) { %>
+
         <div class="index-producto">
-            <div class="index-img-productos">
-                <div class="index-msj-producto">
-                    <p class="index-parrafo-nuevo">Nuevo!</p>
-                </div>
-                <a href="/products/detail/<%= suspenso[i].id %>">
-                <img src="/img/products/<%= suspenso[i].imagen %>" alt=""> 
-                </a>
+          <div class="index-img-productos">
+            <div class="index-msj-producto">
+              <p class="index-parrafo-nuevo">Nuevo!</p>
             </div>
-            <div class="index-caja-descripcion">
-                <a href="/products/detail/<%= suspenso[i].id %>">
-                    <p class="index-descripciones"><b><%= suspenso[i].nombre %></b></p>
-                </a>
-                <div class="index-contenedor-detalles">
-                    <p class="index-precios">$<%= suspenso[i].precio %></p>
-                    <p class="index-descuentos"><%=suspenso[i].descuento%> % OFF</p>
-                </div>
-                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+            <a href="/products/detail/<%= terror[i].id %>">
+              <img src="/img/products/<%= terror[i].imagen %>" alt="" />
+            </a>
+          </div>
+          <div class="index-caja-descripcion">
+            <a href="/products/detail/<%= terror[i].id %>">
+              <p class="index-descripciones"><b><%= terror[i].nombre %></b></p>
+            </a>
+            <div class="index-contenedor-detalles">
+              <p class="index-precios">$<%= toThousand(terror[i].precio) %></p>
+              <p class="index-descuentos"><%=terror[i].descuento%> % OFF</p>
             </div>
+            <button type="" class="index-agregar-carrito">
+              Agregar al carrito
+            </button>
+          </div>
         </div>
-       <% } %>
-    </section>
-       <!--PRODUCTOS Fantasía-->
-    <div class="index-titulo-productos">
+
+        <% } %>
+      </section>
+      <!--ANUNCIO-->
+      <div class="index-anuncio">
+        <img src="/img/anuncio" class="index-img-anuncio" />
+      </div>
+
+      <!--PRODUCTOS Suspenso-->
+      <div class="index-titulo-productos">
         <h3>
-             <a href="/products/fantasia" id="Fantasia">Fantasía</a>
+          <a href="/products/suspenso" id="Suspenso">Suspenso</a>
         </h3>
-    </div>
-    <section class="index-caja-productos">
-    <% for(let i=0; i < fantasía.length ; i++) { %>
-    
+      </div>
+      <section class="index-caja-productos">
+        <% for(let i=0; i < suspenso.length ; i++) { %>
         <div class="index-producto">
-            <div class="index-img-productos">
-                <div class="index-msj-producto">
-                    <p class="index-parrafo-nuevo">Nuevo!</p>
-                </div>
-                <a href="/products/detail/<%= fantasía[i].id %>">
-                <img src="/img/products/<%= fantasía[i].imagen %>" alt=""> 
-                </a>
+          <div class="index-img-productos">
+            <div class="index-msj-producto">
+              <p class="index-parrafo-nuevo">Nuevo!</p>
             </div>
-            <div class="index-caja-descripcion">
-                <a href="/products/detail/<%= fantasía[i].id %>">
-                    <p class="index-descripciones"><b><%= fantasía[i].nombre %></b></p>
-                </a>
-                <div class="index-contenedor-detalles">
-                    <p class="index-precios">$<%= fantasía[i].precio %></p>
-                    <p class="index-descuentos"><%=fantasía[i].descuento%> % OFF</p>
-                </div>
-                <button type="" class="index-agregar-carrito">Agregar al carrito</button>
+            <a href="/products/detail/<%= suspenso[i].id %>">
+              <img src="/img/products/<%= suspenso[i].imagen %>" alt="" />
+            </a>
+          </div>
+          <div class="index-caja-descripcion">
+            <a href="/products/detail/<%= suspenso[i].id %>">
+              <p class="index-descripciones">
+                <b><%= suspenso[i].nombre %></b>
+              </p>
+            </a>
+            <div class="index-contenedor-detalles">
+              <p class="index-precios">
+                $<%= toThousand(suspenso[i].precio) %>
+              </p>
+              <p class="index-descuentos"><%=suspenso[i].descuento%> % OFF</p>
             </div>
+            <button type="" class="index-agregar-carrito">
+              Agregar al carrito
+            </button>
+          </div>
         </div>
-    
-       <% } %>
-    </section>
+        <% } %>
+      </section>
+      <!--PRODUCTOS Fantasía-->
+      <div class="index-titulo-productos">
+        <h3>
+          <a href="/products/fantasia" id="Fantasia">Fantasía</a>
+        </h3>
+      </div>
+      <section class="index-caja-productos">
+        <% for(let i=0; i < fantasía.length ; i++) { %>
+
+        <div class="index-producto">
+          <div class="index-img-productos">
+            <div class="index-msj-producto">
+              <p class="index-parrafo-nuevo">Nuevo!</p>
+            </div>
+            <a href="/products/detail/<%= fantasía[i].id %>">
+              <img src="/img/products/<%= fantasía[i].imagen %>" alt="" />
+            </a>
+          </div>
+          <div class="index-caja-descripcion">
+            <a href="/products/detail/<%= fantasía[i].id %>">
+              <p class="index-descripciones">
+                <b><%= fantasía[i].nombre %></b>
+              </p>
+            </a>
+            <div class="index-contenedor-detalles">
+              <p class="index-precios">
+                $<%= toThousand(fantasía[i].precio) %>
+              </p>
+              <p class="index-descuentos"><%=fantasía[i].descuento%> % OFF</p>
+            </div>
+            <button type="" class="index-agregar-carrito">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <% } %>
+      </section>
     </main>
     <%- include("./partials/footer") %>
-</body>
+  </body>
 </html>

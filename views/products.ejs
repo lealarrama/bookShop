@@ -23,7 +23,7 @@
                         <p class="index-descripciones"><b><%= products[i].nombre %></b></p>
                     </a>
                     <div class="index-contenedor-detalles">
-                        <p class="index-precios">$<%= products[i].precio %></p>
+                        <p class="index-precios">$<%= toThousand(products[i].precio) %></p>
                         <p class="index-descuentos"><%= products[i].descuento %>%</p>
                     </div>
                     <button type="" class="index-agregar-carrito">Agregar al carrito</button>

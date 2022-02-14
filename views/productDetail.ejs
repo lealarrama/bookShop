@@ -28,7 +28,7 @@
                 <div class="detail-fotolibro"><img src="/img/products/<%=product.imagen%>"></div>
                 <div class="detail-costadoDerecho">
                     <div class="detail-precio">
-                        <h2>ARS$ <%= product.precio %></h2>
+                        <h2>ARS$ <%= toThousand(product.precio) %></h2>
                     </div>
                     <div class="detail-boton">
                         <p>Añadir al carrito</p>
@@ -88,7 +88,7 @@
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-precioTablet">
-                    <h2 class="detail-h2">ARS$<%= product.precio %></h2>
+                    <h2 class="detail-h2">ARS$<%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -139,7 +139,7 @@
             </div>
             <div class="detail-checkoutTools">
                 <div class="detail-precioTablet">
-                    <h2>ARS$<%= product.precio %></h2>
+                    <h2>ARS$<%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -229,11 +229,11 @@
                 </div>
                 <div class="detail-compraron">
                     <div class="detail-columna">
-                        <img class="detail-sangremanda" src="/img/products/lasangre-manda.jpg">
-                        <h5>La sangre manda</h5>
+                        <img class="detail-sangremanda" src="/img/products/<%= products.imagen %> ">
+                        <h5><%= products.nombre %></h5>
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios">$2.000</h2>
+                        <h2 class="detail-h2" class="detail-precios"><%= products.precio %></h2>
                         <p class="detail-p" class="detail-botones">Añadir al carrito</p>
                     </div>
                     <div class="detail-columnaTablet">

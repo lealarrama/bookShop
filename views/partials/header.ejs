@@ -1,81 +1,107 @@
 <header>
-    <div class="header-top-bar">
-        <a href="/"><img src="/img/SK libros logo 77 fondo gris.png" alt="" class="header-logo"></a>
-        <nav class="header-nav-header-top-bar">
-            <ul class="header-lista-top-header">
-                <% if (locals.isLogged) { %>
-                    <li class="header-esconderdelcel header-li-header-top">
-                        <a href="/users/profile/" class=" header-link-registrate">Mi Perfil</a>
-                    </li>
-                    <li class="header-esconderdelcel header-li-header-top">
-                        <a href="/users/logout/" class=" header-link-inicia-sesion">Cerrar Sesión</a>
-                    </li>
-                <% } else { %>
-                <li class="header-esconderdelcel header-li-header-top"> 
-                    <a href="/users/register" class="header-link-registrate">Regístrate</a>
-                </li>
-                <li class="header-esconderdelcel header-li-header-top">
-                    <a href="/users/login" class=" header-link-inicia-sesion">Inicia Sesión</a>
-                </li>
-                <% } %>
-                <li class="header-li-header-top">
-                    <a href="/products/cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-bottom-bar">
-        <nav>
-            <ul class="header-lista-bottom-header">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </li>
-                <li>
-                   <a  class="header-links-bottom-header-nav" id="header-categoria">
-                       Categorías
-                       <i class="fas fa-sort-down"></i>
-                   </a> 
-                </li>
-                <li>
-                    <a  class="header-links-bottom-header-nav header-link-informacion" id="header-info">
-                        Información
-                        <i class="fas fa-sort-down"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="header-dropdown-display-cat">
-                <li class="header-dropdown-li" >
-                    <a href="/products/terror" class="li-dropdown-a">Terror</a>
-                </li>
-                <li class="header-dropdown-li" >
-                    <a href="/products/suspenso" class="li-dropdown-a">Suspenso</a>
-                </li>
-                <li class="header-dropdown-li" >
-                    <a href="/products/fantasia" class="li-dropdown-a">Fantasía</a>
-                </li>
-            </ul>
-            <ul class="header-dropdown-display-info">
-                <li class="header-dropdown-li">
-                    <a href="#Envios" class="li-dropdown-a">Envíos</a>
-                </li>
-                <li class="header-dropdown-li">
-                    <a href="#Contacto" class="li-dropdown-a">Contacto</a>
-                </li>
-                <li class="header-dropdown-li">
-                    <a href="https://es.wikipedia.org/wiki/Stephen_King" target="_blank" class="li-dropdown-a">Stephen King</a>
-                </li>
-            </ul>
-        </nav>
-        <form action="/products/search"  method="POST" class="header-buscador">
-                <input type="text" placeholder="Buscar libros" class="header-input-buscador" name="search">
-                <button class="header-boton-buscador">
-                    <i class="fas fa-search"></i>
-                </button>
-        </form>
-    </div>
-    <script src="/js/header.js"></script>
+  <div class="header-top-bar">
+    <a href="/"
+      ><img
+        src="/img/SK libros logo 77 fondo gris.png"
+        alt=""
+        class="header-logo"
+    /></a>
+    <nav class="header-nav-header-top-bar">
+      <ul class="header-lista-top-header">
+        <% if (locals.isLogged) { %>
+        <li class="header-esconderdelcel header-li-header-top">
+          <a href="/users/profile/" class="header-link-registrate">Mi Perfil</a>
+        </li>
+        <li class="header-esconderdelcel header-li-header-top">
+          <a href="/users/logout/" class="header-link-inicia-sesion"
+            >Cerrar Sesión</a
+          >
+        </li>
+        <% } else { %>
+        <li class="header-esconderdelcel header-li-header-top">
+          <a href="/users/register" class="header-link-registrate"
+            >Regístrate</a
+          >
+        </li>
+        <li class="header-esconderdelcel header-li-header-top">
+          <a href="/users/login" class="header-link-inicia-sesion"
+            >Inicia Sesión</a
+          >
+        </li>
+        <% } %>
+        <li class="header-li-header-top">
+          <a href="/products/cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-bottom-bar">
+    <nav class="header-nav-bottom">
+      <ul class="header-lista-bottom-header">
+        <li>
+          <i class="fas fa-bars"></i>
+        </li>
+        <li>
+          <a class="header-links-bottom-header-nav" id="header-categoria">
+            Categorías
+            <i class="fas fa-sort-down"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-links-bottom-header-nav header-link-informacion"
+            id="header-info"
+          >
+            Información
+            <i class="fas fa-sort-down"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="header-dropdown-celu-display">
+          <li>Categorías <i class="fas fa-sort-right"></i></li>
+          <li>Información</li>
+      </ul>
+      <ul class="header-dropdown-display-cat">
+        <li class="header-dropdown-li">
+          <a href="/products/terror" class="li-dropdown-a">Terror</a>
+        </li>
+        <li class="header-dropdown-li">
+          <a href="/products/suspenso" class="li-dropdown-a">Suspenso</a>
+        </li>
+        <li class="header-dropdown-li">
+          <a href="/products/fantasia" class="li-dropdown-a">Fantasía</a>
+        </li>
+      </ul>
+      <ul class="header-dropdown-display-info">
+        <li class="header-dropdown-li">
+          <a href="#Envios" class="li-dropdown-a">Envíos</a>
+        </li>
+        <li class="header-dropdown-li">
+          <a href="#Contacto" class="li-dropdown-a">Contacto</a>
+        </li>
+        <li class="header-dropdown-li ultimoLi">
+          <a
+            href="https://es.wikipedia.org/wiki/Stephen_King"
+            target="_blank"
+            class="li-dropdown-a"
+            >Stephen King</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <form action="/products/search" method="POST" class="header-buscador">
+      <input
+        type="text"
+        placeholder="Buscar libros"
+        class="header-input-buscador"
+        name="search"
+      />
+      <button class="header-boton-buscador">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <script src="/js/header.js"></script>
 </header>
