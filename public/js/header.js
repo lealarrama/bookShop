@@ -47,4 +47,13 @@ window.addEventListener("load", function () {
       dropdownCelu.classList.add('header-dropdown-celu')
       dropdownCelu.classList.remove('header-dropdown-celu-display')
   })
+//   topbar.addEventListener("mouseover", function () {
+//     dropdownInfo.classList.add("header-dropdown-celu-display");
+//   });
+//   main.addEventListener("mouseover", function () {
+//     dropdownInfo.classList.add("header-dropdown-celu-display");
+//   });
+//   buscador.addEventListener("mouseover", function () {
+//     dropdownInfo.classList.add("header-dropdown-celu-display");
+//   });
 });
