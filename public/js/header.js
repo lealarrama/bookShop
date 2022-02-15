@@ -45,8 +45,28 @@ window.addEventListener("load", function () {
       let dropdownCelu = document.querySelector('.header-dropdown-celu-display')
       hamburguesa.style.marginLeft = '-179%'
       dropdownCelu.classList.add('header-dropdown-celu')
-      dropdownCelu.classList.remove('header-dropdown-celu-display')
+      dropdownCelu.classList.remove('header-dropdown-celu')
   })
+
+//   icon.addEventListener("click", () => {
+//     icon.classList.toggle("clicked")
+//     list.classList.toggle("opened")
+
+//     if(icon.classList.contains("clicked")) {
+//         icon.setAttribute('src', "./public/images/icon-close.svg");
+//         headerImg.style.display = "none"
+//         main.style.display = "none"
+//         footer.style.display = "none"
+
+//     } else {
+//         icon.setAttribute('src', "./public/images/icon-hamburger.svg")
+//         headerImg.style.display = "block"
+//         main.style.display = "block"
+//         footer.style.display = "block"
+//     }
+// })
+// }
+
 //   topbar.addEventListener("mouseover", function () {
 //     dropdownInfo.classList.add("header-dropdown-celu-display");
 //   });

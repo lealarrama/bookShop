@@ -93,7 +93,7 @@ const productController = {
     })
       .then((products) => {
         if (products.length) {
-          return res.render("products", { products: products });
+          return res.render("products", { products: products , toThousand});
         } else {
           res.redirect("/");
         }

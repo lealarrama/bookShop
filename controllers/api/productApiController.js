@@ -1,5 +1,6 @@
 const DB = require("../../data/models");
 const {Op} = require("sequelize");
+const Sequelize = DB.sequelize;
 
 module.exports = { 
     list: (req,res) => {
@@ -20,48 +21,39 @@ module.exports = {
         })
     
     },
+
     detail: (req,res) => {
         DB.Productos
-        .findByPk(req.params.id, {include :["generos"]}).then(productos => {
-            return res.json({
-                meta: {
-                    status : 200,
-                    url: 'api/products/:id'
-                },
-                data : {
-                lastProduct: req.params.id,
-                productos: {
-                    id: productos.id,
-                    nombre: productos.nombre,
-                    precio: productos.precio,
-                    descuento: productos.descuento,
-                    imagen: productos.imagen,
-                    descripcion: productos.descripcion,
-                }
-                }
-            })
-        })
-    }, 
-    lastProduct: (req,res)=>{
-        DB.Productos
-        .findOne( { 
-            where: {
-                id: {[DB.Sequelize.Op.gt] : id}
-            },
-            order: [
-            ['id', 'DESC']
-            ],
-        })
+        .findByPk(req.params.id, {include :["generos"]})
         .then(productos => {
             return res.json({
                 meta: {
                     status : 200,
-                    url: 'api/products/last'
+                    url: 'api/products/detalle/:id'
                 },
-                data:{
-                    product: {productos}
-                }
+                data : { productos }
             })
         })
+    },  
+   
+  
+    lastProduct: (req,res)=>{
+        DB.Productos
+        .findAll({ 
+            order: [
+                ['id', 'DESC']
+            ],
+            limit: 1,
+        })
+        .then(producto => {
+            return res.json({
+                meta: {
+                    status : 200,
+                    url: '/api/products/last'
+                },
+                data:{ producto }
+            })
+        })
+        .catch(err => console.log(err))
     }
 }
