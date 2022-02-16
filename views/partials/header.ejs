@@ -8,7 +8,7 @@
     /></a>
     <nav class="header-nav-header-top-bar">
       <ul class="header-lista-top-header">
-        <% if (locals.isLogged) { %>
+        <% if (user) { %>
         <li class="header-esconderdelcel header-li-header-top">
           <a href="/users/profile/" class="header-link-registrate">Mi Perfil</a>
         </li>
@@ -49,7 +49,7 @@
             <i class="fas fa-sort-down"></i>
           </a>
         </li>
-        <% if (locals.isLogged && user.categorias_id == 3) { %>
+        <% if (user && user.categorias_id == 3) { %>
         <li  id="li-admin">
           <a class="header-links-bottom-header-nav header-link-informacion" id="header-admin">
             Administración
@@ -88,29 +88,25 @@
           <li><a href="#Envios" class="ulOcultoCatLi">Envíos</a></li>
           <li><a href="#Contacto" class="ulOcultoCatLi">Contacto</a></li>
           <li>
-            <a
-              href="https://es.wikipedia.org/wiki/Stephen_King"
-              target="_blank"
-              class="ulOcultoCatLi"
-              >Stephen King</a
-            >
+            <a href="https://es.wikipedia.org/wiki/Stephen_King" target="_blank" class="ulOcultoCatLi">Stephen King</a>
           </li>
         </ul>
-        <% if (locals.isLogged) { %>
+        <% if (user) { %>
           <li class="header-dropdown-li">
             <a href="/users/profile" class="li-dropdown-a">Mi Perfil</a>
           </li> 
           <li class="header-dropdown-li">
             <a href="/users/logout/" class="li-dropdown-a">Cerrar Sesión</a>
           </li>
-          <% } %>
+          <% }else{ %>
         <li class="header-dropdown-li">
           <a href="/users/register" class="li-dropdown-a">Regístrate</a>
         </li>
         <li class="header-dropdown-li" id="info-celu">
           <a href="/users/login" class="li-dropdown-a">Iniciar Sesión</a>
         </li>
-      
+      <% 
+      } %> 
       </ul>
       <ul class="header-dropdown-display" id="dropdown-cat">
         <li class="header-dropdown-li">
