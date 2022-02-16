@@ -21,20 +21,20 @@
         <article class="detail-noSeVeEnTablet">
 
             <div class="detail-detalles">
-                <h2 class="detail-h2" class="detail-tituloLibro"><%=product.nombre%></h2>
+                <h2 class="detail-h2" class="detail-tituloLibro" id="titulo"><%=product.nombre%></h2>
                 <div class="detail-costadoDerecho"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-fotolibro"><img src="/img/products/<%=product.imagen%>"></div>
                 <div class="detail-costadoDerecho">
-                    <div class="detail-precio">
+                    <div class="detail-precio" id="precio">
                         <h2>ARS$ <%= toThousand(product.precio) %></h2>
                     </div>
-                    <div class="detail-boton">
+                    <div class="detail-boton" id="btn-añadir">
                         <p>Añadir al carrito</p>
                     </div>
                     <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-                        <button type="submit" class="detail-boton">
+                        <button type="submit" class="detail-boton" id="deleteProduct">
                             <h5>Eliminar producto</h5>
                         </button>
                     </form>
@@ -65,7 +65,7 @@
     <article class="detail-mainarticle">
         <article class="detail-artTitulo">
             <div class="detail-tituloTablet">
-                <h2 class="detail-miniborde"><%= product.nombre %></h2>
+                <h2 class="detail-miniborde" id="titulo"><%= product.nombre %></h2>
             </div>
         </article>
 </article>
@@ -88,7 +88,7 @@
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-precioTablet">
-                    <h2 class="detail-h2">ARS$<%= toThousand(product.precio) %></h2>
+                    <h2 class="detail-h2" id="precio">ARS$<%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -100,11 +100,11 @@
                         <p>Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
                 </div>
-                <div class="detail-boton">
+                <div class="detail-boton" id="btn-añadir">
                     <h5>Añadir al carrito</h5>
                 </div>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-                    <button type="submit" class="detail-boton">
+                    <button type="submit" class="detail-boton" id="deleteProduct">
                         <h5>Eliminar producto</h5>
                     </button>
                 </form>
@@ -120,7 +120,7 @@
                 <div class="detail-itemImg"><img src="/img/products/<%= product.imagen %>"></div>
                 <div class="detail-item-info">
                     <div class="detail-tituloCompu">
-                        <h2 class="detail-h2" class="detail-miniborde"><%= product.nombre %></h2>
+                        <h2 class="detail-h2" id="titulo" class="detail-miniborde"><%= product.nombre %></h2>
                     </div>
                     <div class="detail-estrellasydatos"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <p class="detail-p">Formato papel, Español / Stephen King</p>
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="detail-checkoutTools">
-                <div class="detail-precioTablet">
+                <div class="detail-precioTablet" id="precio">
                     <h2>ARS$<%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
@@ -151,11 +151,11 @@
                         <p class="detail-p">Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
                 </div>
-                <div class="detail-boton">
+                <div class="detail-boton" id="btn-añadir">
                     <h5>Añadir al carrito</h5>
                 </div>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-                <button type="submit" class="detail-boton">
+                <button type="submit" class="detail-boton" id="deleteProduct">
                     <h5>Eliminar producto</h5>
                 </button>
             </form>
@@ -275,7 +275,7 @@
                         <p class="detail-p">Stephen King</p>
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <h2 class="detail-h2">$1.500,50</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+                        <p class="detail-p" class="detail-botones" id="btn-añadir"> Añadir al carrito</p>
 
                     </div>
                 </div>
@@ -283,6 +283,8 @@
         </article> 
     </main>
    <%- include("./partials/footer") %>
+   <script  src="/js/carrito.js"></script>
+   <script  src="/js/btnEliminar.js"></script>
 </body>
 
 </html>
