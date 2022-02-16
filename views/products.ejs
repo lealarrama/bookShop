@@ -6,12 +6,17 @@
 </head>
 <body>
     <%- include("./partials/header") %>
-    <main>
+    <main> 
         <div class="index-titulo-productos">
             <h3>
                 <a href="">Todos los Productos</a>
             </h3>
         </div>
+        <% if(locals.errors && errors.busqueda){%>
+            <div class="error-busqueda">
+            <%= errors.busqueda.msg%> 
+            </div>  
+        <% }%>
         <section class="index-caja-productos">
             <% for(let i=0; i < products.length ; i++) { %>
                 <div class="index-producto">
