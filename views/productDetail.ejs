@@ -73,7 +73,7 @@
         <article  class="detail-seVeEnTablet">
 
             <div class="detail-itemImg">
-                <div><img src="/img/products/<%= product.imagen %>"></div>
+                <div class="detail-imgConteinerTabletCentrar"><img src="/img/products/<%= product.imagen %>"></div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
                     <div><i class="far fa-envelope"></i></div>
@@ -227,57 +227,41 @@
                 <div class="detail-miniborde">
                     <h4>Los clientes que compraron este producto también compraron</h4>
                 </div>
-                <div class="detail-compraron">
-                    <div class="detail-columna">
-                        <img class="detail-sangremanda" src="/img/products/<%= products.imagen %> ">
-                        <h5><%= products.nombre %></h5>
-                        <p class="detail-p">Stephen King</p>
+                <div class="detail-compraron-compu">
+                    <% for(let i=0; i < products.length ; i++) { %>
+                    <div class="detail-columna detail-as">
+                        <img class="detail-sangremanda" src="/img/products/<%= products[i].imagen %> ">
+                        <a href="/products/detail/<%= products[i].id %>" ><h5><%= products[i].nombre %></h5></a>
+                        <p class="detail-p">Stephen King</p>    
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios"><%= products.precio %></h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+                        <h2 class="detail-h2" class="detail-precios">$<%= toThousand(products[i].precio) %></h2>
+                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>    
                     </div>
-                    <div class="detail-columnaTablet">
-                        <img class="detail-instituto" src="/img/products/elinstituto.jpg">
-                        <h5>El Instituto</h5>
-                        <p class="detail-p">Stephen King</p>
+                    <% } %>
+                </div>
+                <div class="detail-compraron-tablet">
+                    <% for(let i=0; i < productsTablet.length ; i++) { %>
+                    <div class="detail-columna detail-as">
+                        <img class="detail-sangremanda" src="/img/products/<%= productsTablet[i].imagen %> ">
+                        <a href="/products/detail/<%= productsTablet[i].id %>" ><h5><%= productsTablet[i].nombre %></h5></a>
+                        <p class="detail-p">Stephen King</p>    
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios">$2.000</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+                        <h2 class="detail-h2" class="detail-precios">$<%= toThousand(productsTablet[i].precio) %></h2>
+                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>    
                     </div>
-                    <div class="detail-columnaCompu">
-                        <img class="detail-drsueño" src="/img/products/drsueño.jpg">
-                        <h5>Doctor Sueño</h5>
-                        <p class="detail-p">Stephen King</p>
+                    <% } %>
+                </div>
+                <div class="detail-compraron-celular">
+                    <% for(let i=0; i < productsCelular.length ; i++) { %>
+                    <div class="detail-columna detail-as">
+                        <img class="detail-sangremanda" src="/img/products/<%= productsCelular[i].imagen %> ">
+                        <a href="/products/detail/<%= productsCelular[i].id %>" ><h5><%= productsCelular[i].nombre %></h5></a>
+                        <p class="detail-p">Stephen King</p>    
                         <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios">$1.999,99</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
+                        <h2 class="detail-h2" class="detail-precios">$<%= toThousand(productsCelular[i].precio) %></h2>
+                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>    
                     </div>
-                    <div class="detail-columnaMasGrande">
-                        <img class="detail-billy" src="/img/products/billysummers.jpeg">
-                        <h5>Billy Summers</h5>
-                        <p class="detail-p">Stephen King</p>
-                        <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2" class="detail-precios">$2.500</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
-                    </div>
-                    <div class="detail-columnaMasGrande">
-                        <img class="detail-it" src="/img/products/it.png">
-                        <h5>It</h5>
-                        <p class="detail-p">Stephen King</p>
-                        <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2">$1.500,50</h2>
-                        <p class="detail-p" class="detail-botones">Añadir al carrito</p>
-
-                    </div>
-                    <div class="detail-columna">
-                        <img class="detail-it" src="/img/products/despues.jpg">
-                        <h5>Después</h5>
-                        <p class="detail-p">Stephen King</p>
-                        <img class="detail-estrellas" src="/img/cuatro-estrellas.png">
-                        <h2 class="detail-h2">$1.500,50</h2>
-                        <p class="detail-p" class="detail-botones" id="btn-añadir"> Añadir al carrito</p>
-
-                    </div>
+                    <% } %>
                 </div>
             </div>
         </article> 
