@@ -75,11 +75,17 @@ const productController = {
     let product = db.Productos.findByPk(req.params.id)
     let products = db.Productos.findAll({
         limit: 6
-    })
+    });
+    let productsTablet = db.Productos.findAll({
+      limit: 3
+  });
+  let productsCelular = db.Productos.findAll({
+    limit: 2
+});
     Promise
-    .all([product,products])
-    .then(([product,products])=>{
-        res.render("productDetail", {product,products, toThousand})
+    .all([product,products,productsTablet,productsCelular])
+    .then(([product,products,productsTablet,productsCelular])=>{
+        res.render("productDetail", {product,products,productsTablet,productsCelular, toThousand})
     })
     .catch(err=>{console.log(err)})
   },
