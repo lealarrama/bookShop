@@ -11,7 +11,7 @@ const Users = db.User;
 const userController = {
     login: function(req, res){
         Users.findAll().then(allUsers=>{
-            res.render('login',{allUsers})
+            res.render('login',{allUsers, user: req.session.userLogged})
         })
     },
     loginProcess: async (req, res) => {
@@ -78,7 +78,7 @@ const userController = {
                         email: {[Op.eq]:req.body.email}
                     }
                 });
-        if(!resultadoValidacion && !userInDB){
+        if(!resultadoValidacion || !userInDB){
             Users.create({
                 nombre: req.body.nombre,
                 apellido: req.body.apellido,
@@ -99,11 +99,13 @@ const userController = {
                                 msg:'Este mail ya está registrado'
                             }
                         },
-                        oldData: req.body
+                        oldData: req.body,
+                        user: req.session.userLogged
                     })}else{
                         return res.render('register',{
                             errors:resultadoValidacion.mapped(),
-                            oldData:req.body})
+                            oldData:req.body,
+                            user: req.session.userLogged})
                     }
         }
     },

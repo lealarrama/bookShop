@@ -29,7 +29,7 @@ const mainControllers = {
         Promise
         .all([fantasía, terror,suspenso])
         .then(([fantasía, terror,suspenso])=>{
-            res.render("index", {fantasía, suspenso, terror, toThousand})
+            res.render("index", {fantasía, suspenso, terror, toThousand, user: req.session.userLogged})
         })
         .catch(err=>{console.log(err)})
         // const productsFilePath = path.join(__dirname, '../data/products.json');

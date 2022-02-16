@@ -11,7 +11,7 @@ const productController = {
   products: function (req, res) {
     db.Productos.findAll()
       .then(function (products) {
-        res.render("products", { products: products, toThousand });
+        res.render("products", { products: products, toThousand, user: req.session.userLogged});
       })
       .catch((err) => {
         res.send(err);
@@ -24,7 +24,7 @@ const productController = {
       },
     })
       .then(function (products) {
-        res.render("productsTerror", { products: products, toThousand });
+        res.render("productsTerror", { products: products, toThousand, user: req.session.userLogged});
       })
       .catch((err) => {
         res.send(err);
@@ -37,7 +37,7 @@ const productController = {
       },
     })
       .then(function (products) {
-        res.render("productsSuspenso", { products: products, toThousand });
+        res.render("productsSuspenso", { products: products, toThousand, user: req.session.userLogged });
       })
       .catch((err) => {
         res.send(err);
@@ -50,7 +50,7 @@ const productController = {
       },
     })
       .then(function (products) {
-        res.render("productsFantasia", { products: products, toThousand});
+        res.render("productsFantasia", { products: products, toThousand, user: req.session.userLogged});
       })
       .catch((err) => {
         res.send(err);
@@ -79,7 +79,7 @@ const productController = {
     Promise
     .all([product,products])
     .then(([product,products])=>{
-        res.render("productDetail", {product,products, toThousand})
+        res.render("productDetail", {product,products, toThousand, user: req.session.userLogged})
     })
     .catch(err=>{console.log(err)})
   },
@@ -93,9 +93,13 @@ const productController = {
     })
       .then((products) => {
         if (products.length) {
-          return res.render("products", { products: products , toThousand});
+          return res.render("products", { products: products , toThousand, user: req.session.userLogged});
         } else {
-          res.redirect("/");
+          res.render("products", { products: products, toThousand,user: req.session.userLogged, errors:{
+            busqueda:{
+              msg:'No hay resultados para su búsqueda'
+            }
+          }});
         }
       })
       .catch((err) => {
@@ -108,31 +112,16 @@ const productController = {
     let carrito = db.CarritoCompras.findAll();
     Promise.all([productos, productosCarrito, carrito])
       .then(([productos, productosCarrito, carrito]) => {
-        res.render("productCart", { productos, productosCarrito, carrito, toThousand });
+        res.render("productCart", { productos, productosCarrito, carrito, toThousand, user: req.session.userLogged });
       })
       .catch((err) => {
         console.log(err);
       });
   },
-  storeCart: (req, res) => {
-    {
-      db.ProductosCarrito.create({
-        producto: product.nombre,
-        productos_id: req.params.id,
-        carrito_id: product.nombre,
-      })
-        .then((user) => {
-          
-        })
-        .catch((err) => {
-          res.send(err);
-        });
-    }
-  },
   createProduct: function (req, res) {
     db.Productos.findAll()
       .then((products) => {
-        res.render("createProduct", { products });
+        res.render("createProduct", { products , user: req.session.userLogged});
       })
       .catch((err) => {
         res.send(err);
@@ -183,7 +172,7 @@ const productController = {
     const id = req.params.id;
     db.Productos.findByPk(id)
       .then((productToEdit) => {
-        res.render("editProduct", { productToEdit: productToEdit });
+        res.render("editProduct", { productToEdit: productToEdit, user: req.session.userLogged });
       })
       .catch((err) => {
         res.send(err);
@@ -210,7 +199,7 @@ const productController = {
         }
       )
         .then((productToEdit) => {
-          res.redirect("/products", { productToEdit: productToEdit });
+          res.redirect("/products", { productToEdit: productToEdit, user: req.session.userLogged});
         })
         .catch((err) => {
           res.send(err);
@@ -221,6 +210,7 @@ const productController = {
         .then((productToEdit) => {
           return res.render("editProduct", {
             productToEdit: productToEdit,
+            user: req.session.userLogged,
             errors: resultadoValidacionProduct.mapped(),
             oldData: req.body,
           });
