@@ -83,9 +83,9 @@ const productController = {
     limit: 2
 });
     Promise
-    .all([product,products])
-    .then(([product,products])=>{
-        res.render("productDetail", {product,products, toThousand, user: req.session.userLogged})
+    .all([product,products,productsCelular,productsTablet])
+    .then(([product,products,productsCelular,productsTablet])=>{
+        res.render("productDetail", {product,products,productsCelular,productsTablet, toThousand, user: req.session.userLogged})
     })
     .catch(err=>{console.log(err)})
   },
