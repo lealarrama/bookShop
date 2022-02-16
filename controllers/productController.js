@@ -198,8 +198,8 @@ const productController = {
     if (!resultadoValidacionProduct.errors.length) {
       await db.Productos.update(
         {
-          nombre: req.body.nombre,
-          descripcion: req.body.descripcion,
+          nombre: req.body.name,
+          descripcion: req.body.description,
           imagen: req.file.filename,
           generos_id: req.body.categoria,
           precio: req.body.price,
@@ -210,7 +210,7 @@ const productController = {
         }
       )
         .then((productToEdit) => {
-          res.redirect("/products", { productToEdit: productToEdit });
+          res.redirect("/products");
         })
         .catch((err) => {
           res.send(err);

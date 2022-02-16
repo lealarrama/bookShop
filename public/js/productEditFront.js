@@ -23,7 +23,7 @@ window.addEventListener('load', function(){
             errorDescripcion.style.color = 'white'
         }
         
-        let imageEdit = document.querySelector('#editp-image')
+        let imageEdit = document.querySelector('#image')
         let errorImage = document.querySelector('.errorImage')
         if(imageEdit.value == ""){
             errorImage.innerHTML = '<small>Debes subir una imagen</small>'
