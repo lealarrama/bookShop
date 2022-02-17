@@ -52,6 +52,6 @@ SPRINT 8:
 Semana del (06/02-13/02)
 *Empezamos con el Dashboard, hicimos primero las vistas para dejar el dinamismo para después. Tuvimos un par de problemas con eso, por lo que lo dejamos para resolver en las aplicaciones practicas con ayuda de los profes.
 Semana del (13/02-20/02)
-*Nos dispusimos a arreglar las vistas de nuestro proyecto que se habian dañado.
+*Nos dispusimos a arreglar las vistas de nuestro proyecto que se habian dañado. Agregamos detalles que faltaban, completamos el carrito.
 Semana del (21/02-28/02)
 *

@@ -33,6 +33,7 @@
                     <div class="detail-boton">
                         <p>Añadir al carrito</p>
                     </div>
+                    <% if (user && user.categorias_id === 3) { %>
                     <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                         <button type="submit" class="detail-boton">
                             <h5>Eliminar producto</h5>
@@ -41,6 +42,7 @@
                     <form action="/products/edit/<%= product.id %>" method="GET">
                         <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
                     </form>
+                    <% } %>
                 </div>
                 <div class="detail-compartir">
                     <h4>Compartir</h4>
@@ -103,6 +105,7 @@
                 <div class="detail-boton">
                     <h5>Añadir al carrito</h5>
                 </div>
+                <% if (user && user.categorias_id === 3) { %>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                     <button type="submit" class="detail-boton" >
                         <h5>Eliminar producto</h5>
@@ -111,6 +114,7 @@
                 <form action="/products/edit/<%= product.id %>" method="GET">
                     <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
                 </form>
+                <% } %>
             </div>
         </article>
         </article>
@@ -157,9 +161,11 @@
                     </select>
                 </p>
                 </div>
+
                 <button type="submit" class="detail-boton" id="btn-agregar">
                     <h5>Añadir al carrito</h5>
                 </button>
+                <% if (user && user.categorias_id === 3) { %>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                 <button type="submit" class="detail-boton" id="deleteProduct">
                     <h5>Eliminar producto</h5>
@@ -168,6 +174,7 @@
             <form action="/products/edit/<%= product.id %>" method="GET">
             <button  type="submit" class="detail-boton"><p>Editar producto</p></a></button>
         </form>
+        <% } %>
             </div>
         </article>
     </article>
