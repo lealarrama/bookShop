@@ -37,7 +37,8 @@ const userController = {
                 if(resultadoValidacion.errors.length > 0){
                         return res.render('login',{
                         errors:resultadoValidacion.mapped(),
-                        oldData:req.body})
+                        oldData:req.body,
+                        user: req.session.userLogged})
                 }else{
                     res.render("login", {
                         titulo: "Ingresá", old: req.body, errors: {
@@ -52,7 +53,8 @@ const userController = {
             if(resultadoValidacion.errors.length > 0){
             return res.render('login',{
             errors:resultadoValidacion.mapped(),
-            oldData:req.body})
+            oldData:req.body,
+            user: req.session.userLogged})
             }else{
                 res.render("login", {
                         titulo: "Ingresá", errors: {
@@ -66,7 +68,7 @@ const userController = {
     },
     register: (req, res)=>{
         Users.findAll().then(allUsers=>{
-            res.render('register',{allUsers})
+            res.render('register',{allUsers, user: req.session.userLogged})
         }).catch((err)=>{
             res.send(err)
         })

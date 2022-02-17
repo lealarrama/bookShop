@@ -157,6 +157,7 @@ const productController = {
       return res.render("createProduct", {
         errors: resultadoValidacionProduct.mapped(),
         oldData: req.body,
+        user: req.session.userLogged
       });
     }
 
@@ -205,7 +206,7 @@ const productController = {
         }
       )
         .then((productToEdit) => {
-          res.redirect("/products", { user: req.session.userLogged});
+          res.redirect("/products");
         })
         .catch((err) => {
           res.send(err);

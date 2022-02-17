@@ -37,21 +37,22 @@ window.addEventListener("load", function () {
   });
 }
   let info = document.querySelector("#header-info");
-  info.addEventListener("mouseover", function () {
-    dropdownInfo.classList.toggle("header-dropdown-display");
-    dropdownInfo.classList.add("header-dropdown-info");
-    dropdownCat.classList.add("header-dropdown-display");
-  });
-  topbar.addEventListener("mouseover", function () {
-    dropdownInfo.classList.add("header-dropdown-display");
-  });
-  main.addEventListener("mouseover", function () {
-    dropdownInfo.classList.add("header-dropdown-display");
-  });
-  buscador.addEventListener("mouseover", function () {
-    dropdownInfo.classList.add("header-dropdown-display");
-  });
-
+  if(info){
+    info.addEventListener("mouseover", function () {
+      dropdownInfo.classList.toggle("header-dropdown-display");
+      dropdownInfo.classList.add("header-dropdown-info");
+      dropdownCat.classList.add("header-dropdown-display");
+    });
+    topbar.addEventListener("mouseover", function () {
+      dropdownInfo.classList.add("header-dropdown-display");
+    });
+    main.addEventListener("mouseover", function () {
+      dropdownInfo.classList.add("header-dropdown-display");
+    });
+    buscador.addEventListener("mouseover", function () {
+      dropdownInfo.classList.add("header-dropdown-display");
+    });
+  }
 
   let hamburguesa = document.querySelector(".fa-bars");
   let dropdownCelu = document.querySelector("#dropdown-celu");
