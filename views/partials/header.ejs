@@ -49,14 +49,14 @@
             <i class="fas fa-sort-down"></i>
           </a>
         </li>
-        <% if (user && user.categorias_id == 3) { %>
+        <% if (user && user.categorias_id === 3) { %>
         <li  id="li-admin">
           <a class="header-links-bottom-header-nav header-link-informacion" id="header-admin">
             Administración
             <i class="fas fa-sort-down"></i>
           </a>
         </li>
-        <% }else{ %>
+        <% }else if(user && user.categorias_id != 3){ %>
         <li>
           <a class="header-links-bottom-header-nav header-link-informacion" id="header-info">
             Información
