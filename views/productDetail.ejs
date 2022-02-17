@@ -21,20 +21,20 @@
         <article class="detail-noSeVeEnTablet">
 
             <div class="detail-detalles">
-                <h2 class="detail-h2" class="detail-tituloLibro" id="titulo"><%=product.nombre%></h2>
+                <h2 class="detail-h2" class="detail-tituloLibro titulo" ><%=product.nombre%></h2>
                 <div class="detail-costadoDerecho"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-fotolibro"><img src="/img/products/<%=product.imagen%>"></div>
                 <div class="detail-costadoDerecho">
-                    <div class="detail-precio" id="precio">
+                    <div class="detail-precio" >
                         <h2>ARS$ <%= toThousand(product.precio) %></h2>
                     </div>
-                    <div class="detail-boton" id="btn-añadir">
+                    <div class="detail-boton">
                         <p>Añadir al carrito</p>
                     </div>
                     <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-                        <button type="submit" class="detail-boton" id="deleteProduct">
+                        <button type="submit" class="detail-boton">
                             <h5>Eliminar producto</h5>
                         </button>
                     </form>
@@ -65,7 +65,7 @@
     <article class="detail-mainarticle">
         <article class="detail-artTitulo">
             <div class="detail-tituloTablet">
-                <h2 class="detail-miniborde" id="titulo"><%= product.nombre %></h2>
+                <h2 class="detail-miniborde titulo" ><%= product.nombre %></h2>
             </div>
         </article>
 </article>
@@ -88,7 +88,7 @@
                     <p class="detail-p">Formato papel, Español / Stephen King</p>
                 </div>
                 <div class="detail-precioTablet">
-                    <h2 class="detail-h2" id="precio">ARS$<%= toThousand(product.precio) %></h2>
+                    <h2 class="detail-h2">ARS$<%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -100,11 +100,11 @@
                         <p>Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
                 </div>
-                <div class="detail-boton" id="btn-añadir">
+                <div class="detail-boton">
                     <h5>Añadir al carrito</h5>
                 </div>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-                    <button type="submit" class="detail-boton" id="deleteProduct">
+                    <button type="submit" class="detail-boton" >
                         <h5>Eliminar producto</h5>
                     </button>
                 </form>
@@ -117,10 +117,10 @@
         <article class="detail-mainarticle">
         <article  class="detail-seveEnCompu">
             <div class="detail-contenedorCompu">
-                <div class="detail-itemImg"><img src="/img/products/<%= product.imagen %>"></div>
+                <div class="detail-itemImg"><img id="imagen" src="/img/products/<%= product.imagen %>"></div>
                 <div class="detail-item-info">
                     <div class="detail-tituloCompu">
-                        <h2 class="detail-h2" id="titulo" class="detail-miniborde"><%= product.nombre %></h2>
+                        <h2 class="detail-h2"  class="detail-miniborde" id="titulo"><%= product.nombre %></h2>
                     </div>
                     <div class="detail-estrellasydatos"><img class="detail-estrellas" src="/img/cuatro-estrellas.png">
                         <p class="detail-p">Formato papel, Español / Stephen King</p>
@@ -138,8 +138,8 @@
                 </div>
             </div>
             <div class="detail-checkoutTools">
-                <div class="detail-precioTablet" id="precio">
-                    <h2>ARS$<%= toThousand(product.precio) %></h2>
+                <div class="detail-precioTablet">
+                    <h2 id="precio">ARS$ <%= toThousand(product.precio) %></h2>
                 </div>
                 <div class="detail-contenedorEnvio">
                     <div class="detail-envio">
@@ -150,10 +150,16 @@
                         <i class="far fa-clock"></i>
                         <p class="detail-p">Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
+                    <p class="pcart-texto"  >Cantidad<select name="cantidad" id="cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </p>
                 </div>
-                <div class="detail-boton" id="btn-añadir">
+                <button type="submit" class="detail-boton" id="btn-agregar">
                     <h5>Añadir al carrito</h5>
-                </div>
+                </button>
                 <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                 <button type="submit" class="detail-boton" id="deleteProduct">
                     <h5>Eliminar producto</h5>
@@ -267,8 +273,9 @@
         </article> 
     </main>
    <%- include("./partials/footer") %>
-   <script  src="/js/carrito.js"></script>
-   <script  src="/js/btnEliminar.js"></script>
+   <script src="/js/btnEliminar.js"></script>
+   <script src="/js/agregar.js"></script>
+   
 </body>
 
 </html>

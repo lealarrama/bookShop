@@ -253,6 +253,7 @@ const productController = {
 
   //Eliminar producto
   destroy: (req, res) => {
+    // window.confirm("Desea eliminar el producto?");
     db.Productos.destroy({
       where: { id: req.params.id },
     });

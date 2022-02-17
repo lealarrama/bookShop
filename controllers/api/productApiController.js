@@ -1,6 +1,7 @@
 const DB = require("../../data/models");
 const {Op} = require("sequelize");
 const Sequelize = DB.sequelize;
+const path = require("path")
 
 module.exports = { 
     list: (req,res) => {
@@ -55,5 +56,10 @@ module.exports = {
             })
         })
         .catch(err => console.log(err))
+    },
+    getImageProduct: (req,res)=>{
+        console.log(req.params.id)
+        return res.sendFile(path.join(__dirname, `../../public/img/products/${req.params.id}`))
     }
+
 }
