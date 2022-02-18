@@ -1,6 +1,6 @@
-window.onload = function (){
+
     const btnAgregarCelu = document.getElementById("btn-agregar-celu")
-    const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 
 
     btnAgregarCelu.addEventListener('click', function(e){
@@ -56,4 +56,3 @@ window.onload = function (){
         alert('Agregaste' + " " + tituloProd + " al carrito")
          
     })
-}

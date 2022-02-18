@@ -1,6 +1,4 @@
-window.onload = function (){
-    const btnAgregarTablet = document.getElementById("btn-agregar-tablet")
-    const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+   const btnAgregarTablet = document.getElementById("btn-agregar-tablet")
 
 
     btnAgregarTablet.addEventListener('click', function(e){
@@ -56,4 +54,3 @@ window.onload = function (){
         alert('Agregaste' + " " + tituloProd + " al carrito")
          
     })
-}

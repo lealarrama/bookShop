@@ -1,4 +1,4 @@
-window.onload = function () {
+
   const btnEliminar = document.getElementById("deleteProduct");
 
   btnEliminar.addEventListener(
@@ -11,4 +11,4 @@ window.onload = function () {
     },
     false
   );
-};
+
