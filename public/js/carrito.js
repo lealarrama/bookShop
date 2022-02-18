@@ -12,32 +12,33 @@ window.onload = function (){
        
         let contenido = `  
         <div class="pcart-conteinerDesc">
-        <a href="/products/detail/${producto.id}" class="pcart-imagenes"><img src="/img/products/${producto.imagen}" alt=""
+            <a href="/products/detail/${producto.id}" class="pcart-imagenes"><img src="/img/products/${producto.imagen}" alt=""
                 class="pcart-foto"></a>
-        <div class="pcart-descripcion">
-            <h2 class="pcart-nombre-libro">${producto.tituloProd}</h2>
-            // <!-- <div class="pcart-estrellas">
-            //     <i class="fas fa-star"></i>
-            //     <i class="fas fa-star"></i>
-            //     <i class="fas fa-star"></i>
-            //     <i class="fas fa-star"></i>
-            //     <i class="fas fa-star"></i>
-            // </div> -->
-            <p class="pcart-texto">Formato papel, Español - Stephen King</p>
-            <p class="pcart-texto"> Disponible en Argentina en 5 días habiles</p>
-        </div>
-    </div>
+            <div class="pcart-descripcion">
+                <h2 class="pcart-nombre-libro">${producto.tituloProd}</h2>
+                   <div class="pcart-estrellas">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div> 
+                <p class="pcart-texto">Formato papel, Español - Stephen King</p>
+                <p class="pcart-texto"> Disponible en Argentina en 5 días habiles</p>
+            </div>
+            
     
-        <div class="pcart-parte-derecha-descripcion">
-        <form action="#" method="GET">
-        <label for="cantidad"></label>
-        <input class="pcart-texto" id="cantidad" value=${producto.inputCantidad} type="text">
-        </form>
-        <h3 class="pcart-precio">ARS${toThousand(producto.precio)} </h3>
-        <button  type="button" class="pcart-boton-eliminar">
-                        <i onclick="borrarItem(${i})" class="fas fa-times"></i> Eliminar
-                    </button>
-        </div>`;
+            <div class="pcart-parte-derecha-descripcion">
+              <form action="#" method="GET">
+                <label for="cantidad"></label>
+                <input class="pcart-cantidad" id="cantidad" value=${producto.inputCantidad} type="text">
+              </form>
+              <h3 class="pcart-precio">${toThousand(producto.precio)} </h3>
+              <button  type="button" class="pcart-boton-eliminar">
+                <i onclick="borrarItem(${i})" class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>`;
   
         div.innerHTML += contenido;
       }

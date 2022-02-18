@@ -10,12 +10,12 @@
     <main>
         <h1 class="pcart-titulo">Tu cesta</h1>
         <div class="pcart-primeros-parrafos">
-            <div class="pcart-inicio">
+            <!-- <div class="pcart-inicio">
                 <p class="pcart-message"><i class="fas fa-gift"></i> Tienes 3 articulos con un totoal de $$$ en tu cesta</p>
                 <div>
                     <button class="pcart-boton-de-pago">Proceder al Pago</button>
                 </div>
-            </div>
+            </div> -->
 
             <p class="pcart-terminos">
                 Al realizar tu pedido confirmas que has leido y aceptas nuetros Terminos y condiciones. Consulta también
@@ -26,94 +26,11 @@
         <div class="pcart-conteinerTodo">
             <section class="pcart-detalle-carrito-compras">
                 <h3 class="pcart-subtítulo">Detalle de su cesta</h3>
-              <article class="pcart-libro" id="vacio">
-                  <!--   <div class="pcart-conteinerDesc">
-                        <a href="/products/detail" class="pcart-imagenes"><img src="/img/products/despues.jpg" alt=""
-                                class="pcart-foto"></a>
-                        <div class="pcart-descripcion">
-                            <h2 class="pcart-nombre-libro">Después</h2>
-                            <div class="pcart-estrellas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="pcart-texto">Formato papel, Español - Stephen King</p>
-                            <p class="pcart-texto"> Disponible en Argentina en 5 días habiles</p>
-                        </div>
-                    </div>
-                    <div class="pcart-parte-derecha-descripcion">
-                        <p class="pcart-texto" id="cantidad">Cantidad<select name="cantidad">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </p>
-                        <h3 class="pcart-precio">ARS $1999 </h3>
-                        <button class="pcart-boton-eliminar">Eliminar</button>
-                    </div>  -->
-                </article> 
-
-                <!-- <article class="pcart-libro">
-                    <div class="pcart-conteinerDesc">
-                        <a href="/products/detail" class="pcart-imagenes"><img src="/img/products/drsueño.jpg" alt=""
-                                class="pcart-foto"></a>
-                        <div class="pcart-descripcion">
-                            <h2 class="pcart-nombre-libro">Dr. Sueño</h2>
-                            <div class="pcart-estrellas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="pcart-texto">Formato papel, Español - Stephen King</p>
-                            <p class="pcart-texto"> Disponible en Argentina en 5 días habiles</p>
-                        </div>
-                    </div>
-                    <div class="pcart-parte-derecha-descripcion">
-                        <p class="pcart-texto" >Cantidad<select name="cantidad">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </p>
-                        <h3 class="pcart-precio">ARS $1050 </h3>
-                        <button class="pcart-boton-eliminar">Eliminar</button>
-                    </div>
-
-                </article> -->
-
-                <!-- <article class="pcart-libro">
-                    <div class="pcart-conteinerDesc">
-                        <a href="/products/detail" class="pcart-imagenes"><img src="/img/products/lasangre-manda.jpg" class="pcart-foto"></a>
-                        <div class="pcart-descripcion">
-                            <h2 class="pcart-nombre-libro">La Sangre Manda</h2>
-                            <div class="pcart-estrellas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="pcart-texto">Formato papel, Español - Stephen King</p>
-                            <p class="pcart-texto"> Disponible en Argentina en 5 días habiles</p>
-                        </div>
-                    </div>
-                    <div class="pcart-parte-derecha-descripcion">
-                        <p class="pcart-texto">Cantidad<select name="cantidad">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </p>
-                        <h3 class="pcart-precio">ARS $2050 </h3>
-                        <button class="pcart-boton-eliminar">Eliminar</button>
-                    </div>
-                </article> -->
+              <article class="pcart-libro" id="vacio"></article> 
 
             </section>
-
+            
+            <button class="pcart-vaciar-carrito"id="cart-botonBorrar" type="button" onclick="">Vaciar Carrito</button>
         
             <article class="pcart-detalle-de-pago">
                 <div class="pcart-info">
@@ -133,7 +50,7 @@
                     </div>
                 </div>
             </article>
-
+            
             <div class="pcart-formas-de-pago">
                 <i class="fab fa-cc-visa"></i>
                 <i class="fab fa-cc-mastercard"></i>
@@ -145,7 +62,6 @@
 
         <button class="pcart-boton-seguir-comprando">Seguir comprando</button>
 
-        <button id="cart-botonBorrar" type="button" onclick="">Vaciar Carrito</button>
 
     </main>
 
