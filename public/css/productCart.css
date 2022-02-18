@@ -60,10 +60,13 @@ main{
 }
 .pcart-descripcion{
     display: block;
-    margin-left: 15%;
 }
 .pcart-texto{
     font-size: 12px;
+}
+.pcart-cantidad{
+    width:30px;
+    text-align: center;
 }
 .pcart-imagenes{
     display: contents;
@@ -90,6 +93,8 @@ main{
 }
 .pcart-conteinerDesc{
     display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 .pcart-libro {
     display: flex;
@@ -98,16 +103,17 @@ main{
     background-color: white;
     padding-bottom: 10px;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .pcart-foto{
     width: 77px;
+    margin-right: 10px;
     box-shadow: 0px 0px 10px rgb(100 100 100);
     
 }
 .pcart-parte-derecha-descripcion{
     text-align: center;
-    display: flex;
     line-height: 2;
     justify-content: center;
     flex-direction: column;
@@ -118,7 +124,21 @@ main{
     color: white;
     background-color: #8C1B1B;
     border-radius: 5px;
+    width: 30px;
 }
+.pcart-vaciar-carrito{
+    text-align: center;
+    background-color:#8C1B1B;
+    color: white;
+    border-radius:5px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .pcart-formas-de-pago{
     display: flex;
     padding: 15px;
@@ -190,7 +210,7 @@ main{
     border-radius: 5px;
 }
 
-/*TERMINA EL MAIN*/
+
 
 /*TABLET*/
 @media (min-width:481px){
@@ -207,16 +227,11 @@ main{
         font-size: 10px;
         padding-top: 15px;
     }
-    .pcart-boton-eliminar{
-        width: 120px;
-        margin-top: 20px;
-    }
+   
     .pcart-libro{
         border-top: none;
     }
-    .pcart-detalle-de-pago{
-    border-top: none;
-    }
+    
     .pcart-gastos{
         padding-right: 200px;
     }
@@ -242,6 +257,7 @@ main{
     }
     .pcart-texto{
         font-size: 20px;
+        
     }
 .pcart-precio{
     font-size: 20px;
@@ -291,4 +307,5 @@ main{
     .pcart-h5{
         font-size: 18px;
     }
+    
 }

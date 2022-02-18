@@ -277,6 +277,9 @@
     .detail-mainarticle img{
         width: 93%;
     }
+    .detail-fotolibro{
+        text-align: center;
+    }
     .detail-compraron-celular{
         display: flex;
         flex-direction: row;
@@ -339,6 +342,17 @@
         align-items: center;
         justify-content: center;
     }
+    .detail-artTitulo{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .detail-mainarticle{
+        display: flex;
+        background-color: #D9D9D9;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
     .detail-compraron-celular{
         display: none;
     }
@@ -376,13 +390,13 @@
 
     .detail-tituloTablet{
         display: flex;
-        background-color: white;
-        margin: 10px 10px -8px 12px;
-        width: 277%;
-        padding-bottom: 21px;
-        font-size: 20px;
-        justify-content: center;
-        border-radius: 5px;
+    background-color: white;
+    margin: 10px 10px -8px 12px;
+    /* width: 147%; */
+    padding-bottom: 21px;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 5px;
     }
     .detail-estrellasydatos{
         flex-grow: 0.25;

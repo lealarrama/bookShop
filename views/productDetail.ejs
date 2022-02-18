@@ -30,7 +30,8 @@
                     <div class="detail-precio" >
                         <h2>ARS$ <%= toThousand(product.precio) %></h2>
                     </div>
-                    <div class="detail-boton">
+                    <!-- BOTON CELU -->
+                    <div class="detail-boton" id="btn-agregar-celu">
                         <p>Añadir al carrito</p>
                     </div>
                     <% if (user && user.categorias_id === 3) { %>
@@ -102,7 +103,8 @@
                         <p>Disponible. Entrega estimada a Argentina entre 17-32 días hábiles.</p>
                     </div>
                 </div>
-                <div class="detail-boton">
+                <!-- BOTON TABLET -->
+                <div class="detail-boton" id="btn-agregar-tablet">
                     <h5>Añadir al carrito</h5>
                 </div>
                 <% if (user && user.categorias_id === 3) { %>
@@ -161,7 +163,7 @@
                     </select>
                 </p>
                 </div>
-
+                <!-- BOTON COMPU -->
                 <button type="submit" class="detail-boton" id="btn-agregar">
                     <h5>Añadir al carrito</h5>
                 </button>
@@ -282,7 +284,8 @@
    <%- include("./partials/footer") %>
    <script src="/js/btnEliminar.js"></script>
    <script src="/js/agregar.js"></script>
-   
+   <script src="/js/agregarCelu.js"></script>
+   <script src="/js/agregarTablet.js"></script>
 </body>
 
 </html>
