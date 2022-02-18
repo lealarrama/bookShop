@@ -12,7 +12,7 @@ window.onload = function (){
        
         let contenido = `  
         <div class="pcart-conteinerDesc">
-            <a href="/products/detail/${producto.id}" class="pcart-imagenes"><img src="/img/products/${producto.imagen}" alt=""
+            <a href="/products/detail/${producto.id}" class="pcart-imagenes"><img src=${producto.imagen} alt=""
                 class="pcart-foto"></a>
             <div class="pcart-descripcion">
                 <h2 class="pcart-nombre-libro">${producto.tituloProd}</h2>

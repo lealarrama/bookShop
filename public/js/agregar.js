@@ -48,7 +48,7 @@ window.onload = function (){
         
 
             let totalCarrito = 0
-            for (let i=0; i<carrito.length; i++) {
+            for (let i = 0; i < carrito.length; i++) {
                let carro = carrito[i].precio * carrito[i].inputCantidad;
                totalCarrito += carro 
             }
