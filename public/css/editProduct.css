@@ -17,6 +17,7 @@
     width: 200px;
     border: none;
     margin: 0px 0px 10px 0px;
+    background-color: white;
 }
 .editp-cambiar-imagen{
     text-align: center;
@@ -77,6 +78,30 @@
 }
 .editp-small{
     margin:-11%;
+}
+.small-errores{
+    position: absolute;
+    width: 200px;
+    bottom: 20px;
+    left: 240px;
+}
+.small-error-imagen{
+    position: absolute;
+    width: 200px;
+    bottom: -15px;
+    left: 230px;
+}
+label[for="imageCrEdit"]{
+    display: inline-block;
+    padding: 1% 80px;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Gemunu Libre',sans-serif;
+    margin-right: -154%;
+    margin-bottom: 40px;
+    font-size: 19px;
 }
 
 /*TABLET*/
