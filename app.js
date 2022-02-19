@@ -21,7 +21,7 @@ const RUTA = 3030;
 
 app.use(session({ secret:'Es un secreto',
 resave:false,
-saveUninitialized:false }))
+saveUninitialized:true }))
 
 app.use(cookies());
 app.use(cors())
