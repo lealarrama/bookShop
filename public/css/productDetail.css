@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+
+.detail-body{
+    background-color: #D9D9D9;
+}
 /* MAIN */
 
 .detail-p{

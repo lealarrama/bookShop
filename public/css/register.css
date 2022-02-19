@@ -25,9 +25,10 @@
 }
 .reg-inputs{
     font-family: 'Gemunu Libre',sans-serif;
-    font-size: 12px;
+    font-size: 17px;
     margin: 4% 0;
-    width: 68%;
+    width: 85%;
+    height: 24px;
     text-align: center;
 }
 .reg-botones-nuestra-web{
@@ -35,9 +36,9 @@
     padding: 8px;
     border-radius: 8px;
     margin: 10px;
-    width: 49%;
+    width: 55%;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
 }
 .reg-boton-ingresar{
     background-color:#8C1B1B;
@@ -97,21 +98,23 @@
     background-color: #d9d9d9;
 }
 .reg-categoria{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Gemunu Libre',sans-serif;
+    text-align: center;
     margin: 4% 0;
-    height: 20px;
+    height: 24px;
     padding-left: 15px;
+    width: 85%;
 }
 input[type="file"]{
     display:none
 }
 label[for="image"]{
     display: inline-block;
-    padding: 2px;
+    padding: 6px;
     background-color: #d9d9d9;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 14px;
     color: black;
     border-radius: 5px;
     max-width: 55%;

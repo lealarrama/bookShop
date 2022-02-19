@@ -54,6 +54,17 @@
     margin: 10px 30px;
     border-radius: 5px;
 }
+.index-button-ver-mas{
+    display: none;
+}
+.fa-plus{
+    color: #8C1B1B;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.fa-plus:hover{
+    color: #BF8A26;
+}
 .index-msj-producto{
     background-color: #8C1B1B;
     color:white;
@@ -211,5 +222,13 @@
         font-size: 20px;
         padding: 10px;
         justify-content: center;
+    }
+    .index-button-ver-mas{
+        display: flex;
+        height: 100px;
+        margin-top: 10%;
+        border: none;
+        background-color: transparent;
+        margin-right: 15px;
     }
 }

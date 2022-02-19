@@ -92,9 +92,11 @@ header .fa-bars{
 .error-busqueda{
     background-color: rgba(140, 27, 27, 0.5);
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
+    padding: 10px;
     text-align: center;
     color: white;
+    margin-bottom: 71%;
 }
 .header-input-buscador{
     border:none;
@@ -277,5 +279,8 @@ header .fa-bars{
     }
     .header-links-bottom-header-nav{
         font-size: 24px;
+    }
+    .error-busqueda{
+        margin-bottom: 0;
     }
 }
