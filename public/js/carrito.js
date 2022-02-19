@@ -47,7 +47,7 @@ window.onload = function (){
     let h3 = document.querySelector("#precioTotal")
     let totalCarrito = localStorage.totalCarrito
     if(typeof localStorage.totalCarrito == 'undefined'){
-      let contenido2 = `0`
+      let contenido2 = '0'
       h3.innerHTML += contenido2
     } else {
       let contenido2 = `${toThousand(totalCarrito)}`
@@ -60,9 +60,16 @@ window.onload = function (){
   function borrarItem(id) {
     let carrito = JSON.parse(localStorage.carrito);
     carrito = carrito.filter((producto, i) => {
+      localStorage.clear(producto);
       return i !== id;
     });
-  
+    let totalCarrito = 0
+            for (let i = 0; i < carrito.length; i++) {
+               let carro = carrito[i].precio * carrito[i].inputCantidad
+               totalCarrito += carro 
+            }
+            localStorage.setItem("totalCarrito", totalCarrito)
+            console.log(totalCarrito)
     localStorage.setItem("carrito", JSON.stringify(carrito));
     location.reload();
   }

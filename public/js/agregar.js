@@ -11,7 +11,7 @@
         
         let imagen = document.querySelector('#imagen').getAttribute("src")
         let tituloProd = document.querySelector('#titulo').innerText
-        let precio = document.querySelector('#precio').innerText
+        let precio = document.querySelector('#precio').getAttribute("data-precio")
         let inputCantidad = document.querySelector('#cantidad').value
 
         let producto = {
@@ -29,9 +29,9 @@
             carrito.push(producto)
             localStorage.setItem("carrito", JSON.stringify(carrito))
             localStorage.setItem("totalCarrito", producto.precio * producto.inputCantidad)
-            
         } else {
             let carrito = JSON.parse(localStorage.carrito)
+            console.log(carrito)
             let arrayProductos = carrito.filter(function(producto){
                 return producto.idProducto == id
             })
@@ -46,13 +46,14 @@
                 // console.log(arrayProductos)
             }
         
-
+            console.log(precio)
             let totalCarrito = 0
             for (let i = 0; i < carrito.length; i++) {
-               let carro = carrito[i].precio * carrito[i].inputCantidad;
+               let carro = carrito[i].precio * carrito[i].inputCantidad
                totalCarrito += carro 
             }
             localStorage.setItem("totalCarrito", totalCarrito)
+            console.log(totalCarrito)
         }
         alert('Agregaste' + " " + tituloProd + " al carrito")
          
