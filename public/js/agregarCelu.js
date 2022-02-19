@@ -10,7 +10,7 @@
         
         let imagen = document.querySelector('#imagen').getAttribute("src")
         let tituloProd = document.querySelector('#titulo').innerText
-        let precio = document.querySelector('#precio').innerText
+        let precio = document.querySelector('#precio').getAttribute("data-precio")
         let inputCantidad = document.querySelector('#cantidad').value
 
         let producto = {
