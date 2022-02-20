@@ -1,14 +1,5 @@
 const express = require("express");
 const session = require("express-session");
-var MySQLStore = require('express-mysql-session')(session);
-var options = {
-    host: '127.0.0.1',
-    port: '3306',
-    user: 'root',
-    password: 'Monopolio1013',
-    database: 'sk_libros'
-};
-var sessionStore = new MySQLStore(options);
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 const path = require("path");
 const router = require("./routes/index");
@@ -30,7 +21,6 @@ const RUTA = 3030;
 
 app.use(session({ secret:'Es un secreto',
 resave:false,
-store:sessionStore,
 saveUninitialized:false }))
 
 app.use(cookies());
@@ -59,6 +49,6 @@ app.use("/api/users", usersApiRouter);
 
 app.use("/api/genres", genresApiRouter);
 
-app.listen(process.env.PORT || 3000, ()=>{
-    console.log("Servidor corriendo en el puerto 3000")
+app.listen(process.env.PORT || 3030, ()=>{
+    console.log("Servidor corriendo en el puerto 3030")
 })
