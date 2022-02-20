@@ -21,7 +21,8 @@ const RUTA = 3030;
 
 app.use(session({ secret:'Es un secreto',
 resave:false,
-saveUninitialized:true }))
+store:true,
+saveUninitialized:false }))
 
 app.use(cookies());
 app.use(cors())
@@ -49,6 +50,6 @@ app.use("/api/users", usersApiRouter);
 
 app.use("/api/genres", genresApiRouter);
 
-app.listen(3030, function(){
-    console.log("Servidor levantado en puerto 3030")
-});
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log("Servidor corriendo en el puerto 3000")
+})
